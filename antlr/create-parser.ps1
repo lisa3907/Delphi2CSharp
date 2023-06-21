@@ -1,0 +1,1 @@
+java -jar antlr-4.13.0-complete.jar -Dlanguage=CSharp -o ..\Generated Delphi.g4

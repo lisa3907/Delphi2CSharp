@@ -32,200 +32,201 @@ using DFA = Antlr4.Runtime.Dfa.DFA;
 
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.13.0")]
 [System.CLSCompliant(false)]
-public partial class DelphiParser : Parser {
+public partial class DelphiParser : Parser
+{
 	protected static DFA[] decisionToDFA;
 	protected static PredictionContextCache sharedContextCache = new PredictionContextCache();
 	public const int
-		T__0=1, ABSOLUTE=2, ABSTRACT=3, ADD=4, AND=5, ANSISTRING=6, ARRAY=7, AS=8, 
-		ASM=9, ASSEMBLER=10, ASSEMBLY=11, AT=12, AUTOMATED=13, BEGIN=14, BREAK=15, 
-		CASE=16, CDECL=17, CLASS=18, CONST=19, CONSTRUCTOR=20, CONTAINS=21, CONTINUE=22, 
-		DEFAULT=23, DEPRECATED=24, DESTRUCTOR=25, DISPID=26, DISPINTERFACE=27, 
-		DIV=28, DO=29, DOWNTO=30, DQ=31, DW=32, DYNAMIC=33, ELSE=34, END=35, EXCEPT=36, 
-		EXIT=37, EXPERIMENTAL=38, EXPORT=39, EXPORTS=40, EXTERNAL=41, FAR=42, 
-		FILE=43, FINAL=44, FINALIZATION=45, FINALLY=46, FOR=47, FORWARD=48, FUNCTION=49, 
-		GOTO=50, HELPER=51, IF=52, IMPLEMENTATION=53, IMPLEMENTS=54, IN=55, INDEX=56, 
-		INHERITED=57, INITIALIZATION=58, INLINE=59, INTERFACE=60, IS=61, LABEL=62, 
-		LIBRARY=63, LOCAL=64, MESSAGE=65, MOD=66, NAME=67, NEAR=68, NIL=69, NODEFAULT=70, 
-		NOT=71, OBJECT=72, OF=73, ON=74, OPERATOR=75, OR=76, OUT=77, OVERLOAD=78, 
-		OVERRIDE=79, PACKAGE=80, PACKED=81, PASCAL=82, PLATFORM=83, POINTER=84, 
-		PRIVATE=85, PROCEDURE=86, PROGRAM=87, PROPERTY=88, PROTECTED=89, PUBLIC=90, 
-		PUBLISHED=91, RAISE=92, READ=93, READONLY=94, RECORD=95, REFERENCE=96, 
-		REGISTER=97, REINTRODUCE=98, REMOVE=99, REPEAT=100, REQUIRES=101, RESIDENT=102, 
-		RESOURCESTRING=103, SAFECALL=104, SEALED=105, SET=106, SHL=107, SHR=108, 
-		STATIC=109, STDCALL=110, STORED=111, STRICT=112, STRING=113, THEN=114, 
-		THREADVAR=115, TO=116, TRY=117, TYPE=118, UNIT=119, UNSAFE=120, UNTIL=121, 
-		USES=122, VAR=123, VARARGS=124, VARIANT=125, VIRTUAL=126, WHILE=127, WITH=128, 
-		WRITE=129, WRITEONLY=130, XOR=131, FALSE=132, TRUE=133, PLUS=134, MINUS=135, 
-		STAR=136, SLASH=137, ASSIGN=138, COMMA=139, SEMI=140, COLON=141, EQUAL=142, 
-		NOT_EQUAL=143, LT=144, LE=145, GE=146, GT=147, LPAREN=148, RPAREN=149, 
-		LBRACK=150, LBRACK2=151, RBRACK=152, RBRACK2=153, POINTER2=154, AT2=155, 
-		DOT=156, DOTDOT=157, LCURLY=158, RCURLY=159, AMBER=160, DOUBLEAT=161, 
-		TkGlobalFunction=162, TkFunctionName=163, TkFunctionArgs=164, TkFunctionBody=165, 
-		TkFunctionReturn=166, TkCustomAttribute=167, TkCustomAttributeArgs=168, 
-		TkNewType=169, TkClass=170, TkRecord=171, TkRecordHelper=172, TkInterface=173, 
-		TkObject=174, TkClassOfType=175, TkVariableType=176, TkVariableIdents=177, 
-		TkVariableParam=178, TkGuid=179, TkClassParents=180, TkClassField=181, 
-		TkAnonymousExpression=182, TkIdentifier=183, TkIntNum=184, TkRealNum=185, 
-		TkHexNum=186, TkAsmHexNum=187, TkAsmHexLabel=188, QuotedString=189, ControlString=190, 
-		Hexdigitseq=191, COMMENT=192, WS=193, UnicodeBOM=194;
+		T__0 = 1, ABSOLUTE = 2, ABSTRACT = 3, ADD = 4, AND = 5, ANSISTRING = 6, ARRAY = 7, AS = 8,
+		ASM = 9, ASSEMBLER = 10, ASSEMBLY = 11, AT = 12, AUTOMATED = 13, BEGIN = 14, BREAK = 15,
+		CASE = 16, CDECL = 17, CLASS = 18, CONST = 19, CONSTRUCTOR = 20, CONTAINS = 21, CONTINUE = 22,
+		DEFAULT = 23, DEPRECATED = 24, DESTRUCTOR = 25, DISPID = 26, DISPINTERFACE = 27,
+		DIV = 28, DO = 29, DOWNTO = 30, DQ = 31, DW = 32, DYNAMIC = 33, ELSE = 34, END = 35, EXCEPT = 36,
+		EXIT = 37, EXPERIMENTAL = 38, EXPORT = 39, EXPORTS = 40, EXTERNAL = 41, FAR = 42,
+		FILE = 43, FINAL = 44, FINALIZATION = 45, FINALLY = 46, FOR = 47, FORWARD = 48, FUNCTION = 49,
+		GOTO = 50, HELPER = 51, IF = 52, IMPLEMENTATION = 53, IMPLEMENTS = 54, IN = 55, INDEX = 56,
+		INHERITED = 57, INITIALIZATION = 58, INLINE = 59, INTERFACE = 60, IS = 61, LABEL = 62,
+		LIBRARY = 63, LOCAL = 64, MESSAGE = 65, MOD = 66, NAME = 67, NEAR = 68, NIL = 69, NODEFAULT = 70,
+		NOT = 71, OBJECT = 72, OF = 73, ON = 74, OPERATOR = 75, OR = 76, OUT = 77, OVERLOAD = 78,
+		OVERRIDE = 79, PACKAGE = 80, PACKED = 81, PASCAL = 82, PLATFORM = 83, POINTER = 84,
+		PRIVATE = 85, PROCEDURE = 86, PROGRAM = 87, PROPERTY = 88, PROTECTED = 89, PUBLIC = 90,
+		PUBLISHED = 91, RAISE = 92, READ = 93, READONLY = 94, RECORD = 95, REFERENCE = 96,
+		REGISTER = 97, REINTRODUCE = 98, REMOVE = 99, REPEAT = 100, REQUIRES = 101, RESIDENT = 102,
+		RESOURCESTRING = 103, SAFECALL = 104, SEALED = 105, SET = 106, SHL = 107, SHR = 108,
+		STATIC = 109, STDCALL = 110, STORED = 111, STRICT = 112, STRING = 113, THEN = 114,
+		THREADVAR = 115, TO = 116, TRY = 117, TYPE = 118, UNIT = 119, UNSAFE = 120, UNTIL = 121,
+		USES = 122, VAR = 123, VARARGS = 124, VARIANT = 125, VIRTUAL = 126, WHILE = 127, WITH = 128,
+		WRITE = 129, WRITEONLY = 130, XOR = 131, FALSE = 132, TRUE = 133, PLUS = 134, MINUS = 135,
+		STAR = 136, SLASH = 137, ASSIGN = 138, COMMA = 139, SEMI = 140, COLON = 141, EQUAL = 142,
+		NOT_EQUAL = 143, LT = 144, LE = 145, GE = 146, GT = 147, LPAREN = 148, RPAREN = 149,
+		LBRACK = 150, LBRACK2 = 151, RBRACK = 152, RBRACK2 = 153, POINTER2 = 154, AT2 = 155,
+		DOT = 156, DOTDOT = 157, LCURLY = 158, RCURLY = 159, AMBER = 160, DOUBLEAT = 161,
+		TkGlobalFunction = 162, TkFunctionName = 163, TkFunctionArgs = 164, TkFunctionBody = 165,
+		TkFunctionReturn = 166, TkCustomAttribute = 167, TkCustomAttributeArgs = 168,
+		TkNewType = 169, TkClass = 170, TkRecord = 171, TkRecordHelper = 172, TkInterface = 173,
+		TkObject = 174, TkClassOfType = 175, TkVariableType = 176, TkVariableIdents = 177,
+		TkVariableParam = 178, TkGuid = 179, TkClassParents = 180, TkClassField = 181,
+		TkAnonymousExpression = 182, TkIdentifier = 183, TkIntNum = 184, TkRealNum = 185,
+		TkHexNum = 186, TkAsmHexNum = 187, TkAsmHexLabel = 188, QuotedString = 189, ControlString = 190,
+		Hexdigitseq = 191, COMMENT = 192, WS = 193, UnicodeBOM = 194;
 	public const int
-		RULE_file = 0, RULE_program = 1, RULE_programHead = 2, RULE_programParmSeq = 3, 
-		RULE_library = 4, RULE_libraryHead = 5, RULE_packageE = 6, RULE_packageHead = 7, 
-		RULE_unit = 8, RULE_unitHead = 9, RULE_unitInterface = 10, RULE_unitImplementation = 11, 
-		RULE_unitBlock = 12, RULE_unitInitialization = 13, RULE_unitFinalization = 14, 
-		RULE_containsClause = 15, RULE_requiresClause = 16, RULE_usesClause = 17, 
-		RULE_usesFileClause = 18, RULE_namespaceFileNameList = 19, RULE_namespaceFileName = 20, 
-		RULE_namespaceNameList = 21, RULE_block = 22, RULE_blockBody = 23, RULE_declSection = 24, 
-		RULE_interfaceDecl = 25, RULE_labelDeclSection = 26, RULE_constSection = 27, 
-		RULE_constKey = 28, RULE_constDeclaration = 29, RULE_typeSection = 30, 
-		RULE_typeDeclaration = 31, RULE_varSection = 32, RULE_varKey = 33, RULE_varDeclaration = 34, 
-		RULE_varValueSpec = 35, RULE_exportsSection = 36, RULE_exportItem = 37, 
-		RULE_typeDecl = 38, RULE_strucType = 39, RULE_strucTypePart = 40, RULE_arrayType = 41, 
-		RULE_arrayIndex = 42, RULE_arraySubType = 43, RULE_setType = 44, RULE_fileType = 45, 
-		RULE_pointerType = 46, RULE_stringType = 47, RULE_codePageNumber = 48, 
-		RULE_procedureType = 49, RULE_methodType = 50, RULE_simpleProcedureType = 51, 
-		RULE_procedureReference = 52, RULE_procedureTypeHeading = 53, RULE_variantType = 54, 
-		RULE_simpleType = 55, RULE_subRangeType = 56, RULE_enumType = 57, RULE_typeId = 58, 
-		RULE_genericTypeIdent = 59, RULE_genericDefinition = 60, RULE_simpleGenericDefinition = 61, 
-		RULE_constrainedGenericDefinition = 62, RULE_constrainedGeneric = 63, 
-		RULE_genericConstraint = 64, RULE_genericPostfix = 65, RULE_classDecl = 66, 
-		RULE_classTypeTypeDecl = 67, RULE_classTypeDecl = 68, RULE_classState = 69, 
-		RULE_classParent = 70, RULE_classItem = 71, RULE_classHelperDecl = 72, 
-		RULE_classHelperItem = 73, RULE_interfaceTypeDecl = 74, RULE_interfaceKey = 75, 
-		RULE_interfaceGuid = 76, RULE_interfaceItem = 77, RULE_objectDecl = 78, 
-		RULE_objectItem = 79, RULE_recordDecl = 80, RULE_simpleRecord = 81, RULE_variantRecord = 82, 
-		RULE_recordItem = 83, RULE_recordField = 84, RULE_recordVariantField = 85, 
-		RULE_recordVariantSection = 86, RULE_recordVariant = 87, RULE_recordHelperDecl = 88, 
-		RULE_recordHelperItem = 89, RULE_classMethod = 90, RULE_classField = 91, 
-		RULE_classProperty = 92, RULE_classPropertyArray = 93, RULE_classPropertyIndex = 94, 
-		RULE_classPropertySpecifier = 95, RULE_classPropertyEndSpecifier = 96, 
-		RULE_classPropertyReadWrite = 97, RULE_classPropertyDispInterface = 98, 
-		RULE_visibility = 99, RULE_exportedProcHeading = 100, RULE_methodDecl = 101, 
-		RULE_methodDeclHeading = 102, RULE_methodKey = 103, RULE_methodName = 104, 
-		RULE_procDecl = 105, RULE_procDeclHeading = 106, RULE_formalParameterSection = 107, 
-		RULE_formalParameterList = 108, RULE_formalParameter = 109, RULE_parmType = 110, 
-		RULE_methodBody = 111, RULE_procBody = 112, RULE_customAttribute = 113, 
-		RULE_customAttributeList = 114, RULE_customAttributeDecl = 115, RULE_expression = 116, 
-		RULE_anonymousExpression = 117, RULE_simpleExpression = 118, RULE_factor = 119, 
-		RULE_stringFactor = 120, RULE_setSection = 121, RULE_designator = 122, 
-		RULE_designatorItem = 123, RULE_expressionList = 124, RULE_colonConstruct = 125, 
-		RULE_operator = 126, RULE_relOp = 127, RULE_statement = 128, RULE_ifStatement = 129, 
-		RULE_caseStatement = 130, RULE_caseItem = 131, RULE_caseLabel = 132, RULE_repeatStatement = 133, 
-		RULE_whileStatement = 134, RULE_forStatement = 135, RULE_withStatement = 136, 
-		RULE_withItem = 137, RULE_compoundStatement = 138, RULE_statementList = 139, 
-		RULE_simpleStatement = 140, RULE_gotoStatement = 141, RULE_constExpression = 142, 
-		RULE_recordConstExpression = 143, RULE_tryStatement = 144, RULE_handlerList = 145, 
-		RULE_handler = 146, RULE_handlerIdent = 147, RULE_handlerStatement = 148, 
-		RULE_raiseStatement = 149, RULE_assemblerStatement = 150, RULE_methodDirective = 151, 
-		RULE_functionDirective = 152, RULE_reintroduceDirective = 153, RULE_overloadDirective = 154, 
-		RULE_bindingDirective = 155, RULE_abstractDirective = 156, RULE_inlineDirective = 157, 
-		RULE_callConvention = 158, RULE_callConventionNoSemi = 159, RULE_oldCallConventionDirective = 160, 
-		RULE_hintingDirective = 161, RULE_externalDirective = 162, RULE_externalSpecifier = 163, 
-		RULE_dispIDDirective = 164, RULE_ident = 165, RULE_usedKeywordsAsNames = 166, 
-		RULE_identList = 167, RULE_identListFlat = 168, RULE_label = 169, RULE_intNum = 170, 
-		RULE_realNum = 171, RULE_namespacedQualifiedIdent = 172, RULE_namespaceName = 173, 
+		RULE_file = 0, RULE_program = 1, RULE_programHead = 2, RULE_programParmSeq = 3,
+		RULE_library = 4, RULE_libraryHead = 5, RULE_packageE = 6, RULE_packageHead = 7,
+		RULE_unit = 8, RULE_unitHead = 9, RULE_unitInterface = 10, RULE_unitImplementation = 11,
+		RULE_unitBlock = 12, RULE_unitInitialization = 13, RULE_unitFinalization = 14,
+		RULE_containsClause = 15, RULE_requiresClause = 16, RULE_usesClause = 17,
+		RULE_usesFileClause = 18, RULE_namespaceFileNameList = 19, RULE_namespaceFileName = 20,
+		RULE_namespaceNameList = 21, RULE_block = 22, RULE_blockBody = 23, RULE_declSection = 24,
+		RULE_interfaceDecl = 25, RULE_labelDeclSection = 26, RULE_constSection = 27,
+		RULE_constKey = 28, RULE_constDeclaration = 29, RULE_typeSection = 30,
+		RULE_typeDeclaration = 31, RULE_varSection = 32, RULE_varKey = 33, RULE_varDeclaration = 34,
+		RULE_varValueSpec = 35, RULE_exportsSection = 36, RULE_exportItem = 37,
+		RULE_typeDecl = 38, RULE_strucType = 39, RULE_strucTypePart = 40, RULE_arrayType = 41,
+		RULE_arrayIndex = 42, RULE_arraySubType = 43, RULE_setType = 44, RULE_fileType = 45,
+		RULE_pointerType = 46, RULE_stringType = 47, RULE_codePageNumber = 48,
+		RULE_procedureType = 49, RULE_methodType = 50, RULE_simpleProcedureType = 51,
+		RULE_procedureReference = 52, RULE_procedureTypeHeading = 53, RULE_variantType = 54,
+		RULE_simpleType = 55, RULE_subRangeType = 56, RULE_enumType = 57, RULE_typeId = 58,
+		RULE_genericTypeIdent = 59, RULE_genericDefinition = 60, RULE_simpleGenericDefinition = 61,
+		RULE_constrainedGenericDefinition = 62, RULE_constrainedGeneric = 63,
+		RULE_genericConstraint = 64, RULE_genericPostfix = 65, RULE_classDecl = 66,
+		RULE_classTypeTypeDecl = 67, RULE_classTypeDecl = 68, RULE_classState = 69,
+		RULE_classParent = 70, RULE_classItem = 71, RULE_classHelperDecl = 72,
+		RULE_classHelperItem = 73, RULE_interfaceTypeDecl = 74, RULE_interfaceKey = 75,
+		RULE_interfaceGuid = 76, RULE_interfaceItem = 77, RULE_objectDecl = 78,
+		RULE_objectItem = 79, RULE_recordDecl = 80, RULE_simpleRecord = 81, RULE_variantRecord = 82,
+		RULE_recordItem = 83, RULE_recordField = 84, RULE_recordVariantField = 85,
+		RULE_recordVariantSection = 86, RULE_recordVariant = 87, RULE_recordHelperDecl = 88,
+		RULE_recordHelperItem = 89, RULE_classMethod = 90, RULE_classField = 91,
+		RULE_classProperty = 92, RULE_classPropertyArray = 93, RULE_classPropertyIndex = 94,
+		RULE_classPropertySpecifier = 95, RULE_classPropertyEndSpecifier = 96,
+		RULE_classPropertyReadWrite = 97, RULE_classPropertyDispInterface = 98,
+		RULE_visibility = 99, RULE_exportedProcHeading = 100, RULE_methodDecl = 101,
+		RULE_methodDeclHeading = 102, RULE_methodKey = 103, RULE_methodName = 104,
+		RULE_procDecl = 105, RULE_procDeclHeading = 106, RULE_formalParameterSection = 107,
+		RULE_formalParameterList = 108, RULE_formalParameter = 109, RULE_parmType = 110,
+		RULE_methodBody = 111, RULE_procBody = 112, RULE_customAttribute = 113,
+		RULE_customAttributeList = 114, RULE_customAttributeDecl = 115, RULE_expression = 116,
+		RULE_anonymousExpression = 117, RULE_simpleExpression = 118, RULE_factor = 119,
+		RULE_stringFactor = 120, RULE_setSection = 121, RULE_designator = 122,
+		RULE_designatorItem = 123, RULE_expressionList = 124, RULE_colonConstruct = 125,
+		RULE_operator = 126, RULE_relOp = 127, RULE_statement = 128, RULE_ifStatement = 129,
+		RULE_caseStatement = 130, RULE_caseItem = 131, RULE_caseLabel = 132, RULE_repeatStatement = 133,
+		RULE_whileStatement = 134, RULE_forStatement = 135, RULE_withStatement = 136,
+		RULE_withItem = 137, RULE_compoundStatement = 138, RULE_statementList = 139,
+		RULE_simpleStatement = 140, RULE_gotoStatement = 141, RULE_constExpression = 142,
+		RULE_recordConstExpression = 143, RULE_tryStatement = 144, RULE_handlerList = 145,
+		RULE_handler = 146, RULE_handlerIdent = 147, RULE_handlerStatement = 148,
+		RULE_raiseStatement = 149, RULE_assemblerStatement = 150, RULE_methodDirective = 151,
+		RULE_functionDirective = 152, RULE_reintroduceDirective = 153, RULE_overloadDirective = 154,
+		RULE_bindingDirective = 155, RULE_abstractDirective = 156, RULE_inlineDirective = 157,
+		RULE_callConvention = 158, RULE_callConventionNoSemi = 159, RULE_oldCallConventionDirective = 160,
+		RULE_hintingDirective = 161, RULE_externalDirective = 162, RULE_externalSpecifier = 163,
+		RULE_dispIDDirective = 164, RULE_ident = 165, RULE_usedKeywordsAsNames = 166,
+		RULE_identList = 167, RULE_identListFlat = 168, RULE_label = 169, RULE_intNum = 170,
+		RULE_realNum = 171, RULE_namespacedQualifiedIdent = 172, RULE_namespaceName = 173,
 		RULE_qualifiedIdent = 174;
 	public static readonly string[] ruleNames = {
-		"file", "program", "programHead", "programParmSeq", "library", "libraryHead", 
-		"packageE", "packageHead", "unit", "unitHead", "unitInterface", "unitImplementation", 
-		"unitBlock", "unitInitialization", "unitFinalization", "containsClause", 
-		"requiresClause", "usesClause", "usesFileClause", "namespaceFileNameList", 
-		"namespaceFileName", "namespaceNameList", "block", "blockBody", "declSection", 
-		"interfaceDecl", "labelDeclSection", "constSection", "constKey", "constDeclaration", 
-		"typeSection", "typeDeclaration", "varSection", "varKey", "varDeclaration", 
-		"varValueSpec", "exportsSection", "exportItem", "typeDecl", "strucType", 
-		"strucTypePart", "arrayType", "arrayIndex", "arraySubType", "setType", 
-		"fileType", "pointerType", "stringType", "codePageNumber", "procedureType", 
-		"methodType", "simpleProcedureType", "procedureReference", "procedureTypeHeading", 
-		"variantType", "simpleType", "subRangeType", "enumType", "typeId", "genericTypeIdent", 
-		"genericDefinition", "simpleGenericDefinition", "constrainedGenericDefinition", 
-		"constrainedGeneric", "genericConstraint", "genericPostfix", "classDecl", 
-		"classTypeTypeDecl", "classTypeDecl", "classState", "classParent", "classItem", 
-		"classHelperDecl", "classHelperItem", "interfaceTypeDecl", "interfaceKey", 
-		"interfaceGuid", "interfaceItem", "objectDecl", "objectItem", "recordDecl", 
-		"simpleRecord", "variantRecord", "recordItem", "recordField", "recordVariantField", 
-		"recordVariantSection", "recordVariant", "recordHelperDecl", "recordHelperItem", 
-		"classMethod", "classField", "classProperty", "classPropertyArray", "classPropertyIndex", 
-		"classPropertySpecifier", "classPropertyEndSpecifier", "classPropertyReadWrite", 
-		"classPropertyDispInterface", "visibility", "exportedProcHeading", "methodDecl", 
-		"methodDeclHeading", "methodKey", "methodName", "procDecl", "procDeclHeading", 
-		"formalParameterSection", "formalParameterList", "formalParameter", "parmType", 
-		"methodBody", "procBody", "customAttribute", "customAttributeList", "customAttributeDecl", 
-		"expression", "anonymousExpression", "simpleExpression", "factor", "stringFactor", 
-		"setSection", "designator", "designatorItem", "expressionList", "colonConstruct", 
-		"operator", "relOp", "statement", "ifStatement", "caseStatement", "caseItem", 
-		"caseLabel", "repeatStatement", "whileStatement", "forStatement", "withStatement", 
-		"withItem", "compoundStatement", "statementList", "simpleStatement", "gotoStatement", 
-		"constExpression", "recordConstExpression", "tryStatement", "handlerList", 
-		"handler", "handlerIdent", "handlerStatement", "raiseStatement", "assemblerStatement", 
-		"methodDirective", "functionDirective", "reintroduceDirective", "overloadDirective", 
-		"bindingDirective", "abstractDirective", "inlineDirective", "callConvention", 
-		"callConventionNoSemi", "oldCallConventionDirective", "hintingDirective", 
-		"externalDirective", "externalSpecifier", "dispIDDirective", "ident", 
-		"usedKeywordsAsNames", "identList", "identListFlat", "label", "intNum", 
+		"file", "program", "programHead", "programParmSeq", "library", "libraryHead",
+		"packageE", "packageHead", "unit", "unitHead", "unitInterface", "unitImplementation",
+		"unitBlock", "unitInitialization", "unitFinalization", "containsClause",
+		"requiresClause", "usesClause", "usesFileClause", "namespaceFileNameList",
+		"namespaceFileName", "namespaceNameList", "block", "blockBody", "declSection",
+		"interfaceDecl", "labelDeclSection", "constSection", "constKey", "constDeclaration",
+		"typeSection", "typeDeclaration", "varSection", "varKey", "varDeclaration",
+		"varValueSpec", "exportsSection", "exportItem", "typeDecl", "strucType",
+		"strucTypePart", "arrayType", "arrayIndex", "arraySubType", "setType",
+		"fileType", "pointerType", "stringType", "codePageNumber", "procedureType",
+		"methodType", "simpleProcedureType", "procedureReference", "procedureTypeHeading",
+		"variantType", "simpleType", "subRangeType", "enumType", "typeId", "genericTypeIdent",
+		"genericDefinition", "simpleGenericDefinition", "constrainedGenericDefinition",
+		"constrainedGeneric", "genericConstraint", "genericPostfix", "classDecl",
+		"classTypeTypeDecl", "classTypeDecl", "classState", "classParent", "classItem",
+		"classHelperDecl", "classHelperItem", "interfaceTypeDecl", "interfaceKey",
+		"interfaceGuid", "interfaceItem", "objectDecl", "objectItem", "recordDecl",
+		"simpleRecord", "variantRecord", "recordItem", "recordField", "recordVariantField",
+		"recordVariantSection", "recordVariant", "recordHelperDecl", "recordHelperItem",
+		"classMethod", "classField", "classProperty", "classPropertyArray", "classPropertyIndex",
+		"classPropertySpecifier", "classPropertyEndSpecifier", "classPropertyReadWrite",
+		"classPropertyDispInterface", "visibility", "exportedProcHeading", "methodDecl",
+		"methodDeclHeading", "methodKey", "methodName", "procDecl", "procDeclHeading",
+		"formalParameterSection", "formalParameterList", "formalParameter", "parmType",
+		"methodBody", "procBody", "customAttribute", "customAttributeList", "customAttributeDecl",
+		"expression", "anonymousExpression", "simpleExpression", "factor", "stringFactor",
+		"setSection", "designator", "designatorItem", "expressionList", "colonConstruct",
+		"operator", "relOp", "statement", "ifStatement", "caseStatement", "caseItem",
+		"caseLabel", "repeatStatement", "whileStatement", "forStatement", "withStatement",
+		"withItem", "compoundStatement", "statementList", "simpleStatement", "gotoStatement",
+		"constExpression", "recordConstExpression", "tryStatement", "handlerList",
+		"handler", "handlerIdent", "handlerStatement", "raiseStatement", "assemblerStatement",
+		"methodDirective", "functionDirective", "reintroduceDirective", "overloadDirective",
+		"bindingDirective", "abstractDirective", "inlineDirective", "callConvention",
+		"callConventionNoSemi", "oldCallConventionDirective", "hintingDirective",
+		"externalDirective", "externalSpecifier", "dispIDDirective", "ident",
+		"usedKeywordsAsNames", "identList", "identListFlat", "label", "intNum",
 		"realNum", "namespacedQualifiedIdent", "namespaceName", "qualifiedIdent"
 	};
 
 	private static readonly string[] _LiteralNames = {
-		null, "'abekat'", "'absolute'", "'abstract'", "'add'", "'and'", "'ansistring'", 
-		"'array'", "'as'", "'asm'", "'assembler'", "'assembly'", "'at'", "'automated'", 
-		"'begin'", "'break'", "'case'", "'cdecl'", "'class'", "'const'", "'constructor'", 
-		"'contains'", "'continue'", "'default'", "'deprecated'", "'destructor'", 
-		"'dispid'", "'dispinterface'", "'div'", "'do'", "'downto'", "'dq'", "'dw'", 
-		"'dynamic'", "'else'", "'end'", "'except'", "'exit'", "'experimental'", 
-		"'export'", "'exports'", "'external'", "'far'", "'file'", "'final'", "'finalization'", 
-		"'finally'", "'for'", "'forward'", "'function'", "'goto'", "'helper'", 
-		"'if'", "'implementation'", "'implements'", "'in'", "'index'", "'inherited'", 
-		"'initialization'", "'inline'", "'interface'", "'is'", "'label'", "'library'", 
-		"'local'", "'message'", "'mod'", "'name'", "'near'", "'nil'", "'nodefault'", 
-		"'not'", "'object'", "'of'", "'on'", "'operator'", "'or'", "'out'", "'overload'", 
-		"'override'", "'package'", "'packed'", "'pascal'", "'platform'", "'pointer'", 
-		"'private'", "'procedure'", "'program'", "'property'", "'protected'", 
-		"'public'", "'published'", "'raise'", "'read'", "'readonly'", "'record'", 
-		"'reference'", "'register'", "'reintroduce'", "'remove'", "'repeat'", 
-		"'requires'", "'resident'", "'resourcestring'", "'safecall'", "'sealed'", 
-		"'set'", "'shl'", "'shr'", "'static'", "'stdcall'", "'stored'", "'strict'", 
-		"'string'", "'then'", "'threadvar'", "'to'", "'try'", "'type'", "'unit'", 
-		"'unsafe'", "'until'", "'uses'", "'var'", "'varargs'", "'variant'", "'virtual'", 
-		"'while'", "'with'", "'write'", "'writeonly'", "'xor'", "'false'", "'true'", 
-		"'+'", "'-'", "'*'", "'/'", "':='", "','", "';'", "':'", "'='", "'<>'", 
-		"'<'", "'<='", "'>='", "'>'", "'('", "')'", "'['", "'(.'", "']'", "'.)'", 
-		"'^'", "'@'", "'.'", "'..'", "'{'", "'}'", "'&'", "'@@'", "'FUNCTION_GLOBAL'", 
-		"'FUNCTION_NAME'", "'FUNCTION_ARGS'", "'FUNCTION_BODY'", "'FUNCTION_RETURN'", 
-		"'CUSTOM_ATTRIBUTE'", "'CUSTOM_ATTRIBUTE_ARGS'", "'NEW_TYPE'", "'CLASS'", 
-		"'RECORD_TYPE'", "'RECORD_HELPER'", "'INTERFACE_TYPE'", "'OBJECT_TYPE'", 
-		"'CLASS_OF_TYPE'", "'VARIABLE_TYPE'", "'VARIABLE_IDENTS'", "'VARIABLE_PARAM'", 
-		"'INTERFACE_GUID'", "'CLASS_PARENTS'", "'CLASS_FIELD'", "'ANONYMOUS_EXPRESSION'", 
+		null, "'abekat'", "'absolute'", "'abstract'", "'add'", "'and'", "'ansistring'",
+		"'array'", "'as'", "'asm'", "'assembler'", "'assembly'", "'at'", "'automated'",
+		"'begin'", "'break'", "'case'", "'cdecl'", "'class'", "'const'", "'constructor'",
+		"'contains'", "'continue'", "'default'", "'deprecated'", "'destructor'",
+		"'dispid'", "'dispinterface'", "'div'", "'do'", "'downto'", "'dq'", "'dw'",
+		"'dynamic'", "'else'", "'end'", "'except'", "'exit'", "'experimental'",
+		"'export'", "'exports'", "'external'", "'far'", "'file'", "'final'", "'finalization'",
+		"'finally'", "'for'", "'forward'", "'function'", "'goto'", "'helper'",
+		"'if'", "'implementation'", "'implements'", "'in'", "'index'", "'inherited'",
+		"'initialization'", "'inline'", "'interface'", "'is'", "'label'", "'library'",
+		"'local'", "'message'", "'mod'", "'name'", "'near'", "'nil'", "'nodefault'",
+		"'not'", "'object'", "'of'", "'on'", "'operator'", "'or'", "'out'", "'overload'",
+		"'override'", "'package'", "'packed'", "'pascal'", "'platform'", "'pointer'",
+		"'private'", "'procedure'", "'program'", "'property'", "'protected'",
+		"'public'", "'published'", "'raise'", "'read'", "'readonly'", "'record'",
+		"'reference'", "'register'", "'reintroduce'", "'remove'", "'repeat'",
+		"'requires'", "'resident'", "'resourcestring'", "'safecall'", "'sealed'",
+		"'set'", "'shl'", "'shr'", "'static'", "'stdcall'", "'stored'", "'strict'",
+		"'string'", "'then'", "'threadvar'", "'to'", "'try'", "'type'", "'unit'",
+		"'unsafe'", "'until'", "'uses'", "'var'", "'varargs'", "'variant'", "'virtual'",
+		"'while'", "'with'", "'write'", "'writeonly'", "'xor'", "'false'", "'true'",
+		"'+'", "'-'", "'*'", "'/'", "':='", "','", "';'", "':'", "'='", "'<>'",
+		"'<'", "'<='", "'>='", "'>'", "'('", "')'", "'['", "'(.'", "']'", "'.)'",
+		"'^'", "'@'", "'.'", "'..'", "'{'", "'}'", "'&'", "'@@'", "'FUNCTION_GLOBAL'",
+		"'FUNCTION_NAME'", "'FUNCTION_ARGS'", "'FUNCTION_BODY'", "'FUNCTION_RETURN'",
+		"'CUSTOM_ATTRIBUTE'", "'CUSTOM_ATTRIBUTE_ARGS'", "'NEW_TYPE'", "'CLASS'",
+		"'RECORD_TYPE'", "'RECORD_HELPER'", "'INTERFACE_TYPE'", "'OBJECT_TYPE'",
+		"'CLASS_OF_TYPE'", "'VARIABLE_TYPE'", "'VARIABLE_IDENTS'", "'VARIABLE_PARAM'",
+		"'INTERFACE_GUID'", "'CLASS_PARENTS'", "'CLASS_FIELD'", "'ANONYMOUS_EXPRESSION'",
 		null, null, null, null, null, null, null, null, null, null, null, "'\\uFEFF'"
 	};
 	private static readonly string[] _SymbolicNames = {
-		null, null, "ABSOLUTE", "ABSTRACT", "ADD", "AND", "ANSISTRING", "ARRAY", 
-		"AS", "ASM", "ASSEMBLER", "ASSEMBLY", "AT", "AUTOMATED", "BEGIN", "BREAK", 
-		"CASE", "CDECL", "CLASS", "CONST", "CONSTRUCTOR", "CONTAINS", "CONTINUE", 
-		"DEFAULT", "DEPRECATED", "DESTRUCTOR", "DISPID", "DISPINTERFACE", "DIV", 
-		"DO", "DOWNTO", "DQ", "DW", "DYNAMIC", "ELSE", "END", "EXCEPT", "EXIT", 
-		"EXPERIMENTAL", "EXPORT", "EXPORTS", "EXTERNAL", "FAR", "FILE", "FINAL", 
-		"FINALIZATION", "FINALLY", "FOR", "FORWARD", "FUNCTION", "GOTO", "HELPER", 
-		"IF", "IMPLEMENTATION", "IMPLEMENTS", "IN", "INDEX", "INHERITED", "INITIALIZATION", 
-		"INLINE", "INTERFACE", "IS", "LABEL", "LIBRARY", "LOCAL", "MESSAGE", "MOD", 
-		"NAME", "NEAR", "NIL", "NODEFAULT", "NOT", "OBJECT", "OF", "ON", "OPERATOR", 
-		"OR", "OUT", "OVERLOAD", "OVERRIDE", "PACKAGE", "PACKED", "PASCAL", "PLATFORM", 
-		"POINTER", "PRIVATE", "PROCEDURE", "PROGRAM", "PROPERTY", "PROTECTED", 
-		"PUBLIC", "PUBLISHED", "RAISE", "READ", "READONLY", "RECORD", "REFERENCE", 
-		"REGISTER", "REINTRODUCE", "REMOVE", "REPEAT", "REQUIRES", "RESIDENT", 
-		"RESOURCESTRING", "SAFECALL", "SEALED", "SET", "SHL", "SHR", "STATIC", 
-		"STDCALL", "STORED", "STRICT", "STRING", "THEN", "THREADVAR", "TO", "TRY", 
-		"TYPE", "UNIT", "UNSAFE", "UNTIL", "USES", "VAR", "VARARGS", "VARIANT", 
-		"VIRTUAL", "WHILE", "WITH", "WRITE", "WRITEONLY", "XOR", "FALSE", "TRUE", 
-		"PLUS", "MINUS", "STAR", "SLASH", "ASSIGN", "COMMA", "SEMI", "COLON", 
-		"EQUAL", "NOT_EQUAL", "LT", "LE", "GE", "GT", "LPAREN", "RPAREN", "LBRACK", 
-		"LBRACK2", "RBRACK", "RBRACK2", "POINTER2", "AT2", "DOT", "DOTDOT", "LCURLY", 
-		"RCURLY", "AMBER", "DOUBLEAT", "TkGlobalFunction", "TkFunctionName", "TkFunctionArgs", 
-		"TkFunctionBody", "TkFunctionReturn", "TkCustomAttribute", "TkCustomAttributeArgs", 
-		"TkNewType", "TkClass", "TkRecord", "TkRecordHelper", "TkInterface", "TkObject", 
-		"TkClassOfType", "TkVariableType", "TkVariableIdents", "TkVariableParam", 
-		"TkGuid", "TkClassParents", "TkClassField", "TkAnonymousExpression", "TkIdentifier", 
-		"TkIntNum", "TkRealNum", "TkHexNum", "TkAsmHexNum", "TkAsmHexLabel", "QuotedString", 
+		null, null, "ABSOLUTE", "ABSTRACT", "ADD", "AND", "ANSISTRING", "ARRAY",
+		"AS", "ASM", "ASSEMBLER", "ASSEMBLY", "AT", "AUTOMATED", "BEGIN", "BREAK",
+		"CASE", "CDECL", "CLASS", "CONST", "CONSTRUCTOR", "CONTAINS", "CONTINUE",
+		"DEFAULT", "DEPRECATED", "DESTRUCTOR", "DISPID", "DISPINTERFACE", "DIV",
+		"DO", "DOWNTO", "DQ", "DW", "DYNAMIC", "ELSE", "END", "EXCEPT", "EXIT",
+		"EXPERIMENTAL", "EXPORT", "EXPORTS", "EXTERNAL", "FAR", "FILE", "FINAL",
+		"FINALIZATION", "FINALLY", "FOR", "FORWARD", "FUNCTION", "GOTO", "HELPER",
+		"IF", "IMPLEMENTATION", "IMPLEMENTS", "IN", "INDEX", "INHERITED", "INITIALIZATION",
+		"INLINE", "INTERFACE", "IS", "LABEL", "LIBRARY", "LOCAL", "MESSAGE", "MOD",
+		"NAME", "NEAR", "NIL", "NODEFAULT", "NOT", "OBJECT", "OF", "ON", "OPERATOR",
+		"OR", "OUT", "OVERLOAD", "OVERRIDE", "PACKAGE", "PACKED", "PASCAL", "PLATFORM",
+		"POINTER", "PRIVATE", "PROCEDURE", "PROGRAM", "PROPERTY", "PROTECTED",
+		"PUBLIC", "PUBLISHED", "RAISE", "READ", "READONLY", "RECORD", "REFERENCE",
+		"REGISTER", "REINTRODUCE", "REMOVE", "REPEAT", "REQUIRES", "RESIDENT",
+		"RESOURCESTRING", "SAFECALL", "SEALED", "SET", "SHL", "SHR", "STATIC",
+		"STDCALL", "STORED", "STRICT", "STRING", "THEN", "THREADVAR", "TO", "TRY",
+		"TYPE", "UNIT", "UNSAFE", "UNTIL", "USES", "VAR", "VARARGS", "VARIANT",
+		"VIRTUAL", "WHILE", "WITH", "WRITE", "WRITEONLY", "XOR", "FALSE", "TRUE",
+		"PLUS", "MINUS", "STAR", "SLASH", "ASSIGN", "COMMA", "SEMI", "COLON",
+		"EQUAL", "NOT_EQUAL", "LT", "LE", "GE", "GT", "LPAREN", "RPAREN", "LBRACK",
+		"LBRACK2", "RBRACK", "RBRACK2", "POINTER2", "AT2", "DOT", "DOTDOT", "LCURLY",
+		"RCURLY", "AMBER", "DOUBLEAT", "TkGlobalFunction", "TkFunctionName", "TkFunctionArgs",
+		"TkFunctionBody", "TkFunctionReturn", "TkCustomAttribute", "TkCustomAttributeArgs",
+		"TkNewType", "TkClass", "TkRecord", "TkRecordHelper", "TkInterface", "TkObject",
+		"TkClassOfType", "TkVariableType", "TkVariableIdents", "TkVariableParam",
+		"TkGuid", "TkClassParents", "TkClassField", "TkAnonymousExpression", "TkIdentifier",
+		"TkIntNum", "TkRealNum", "TkHexNum", "TkAsmHexNum", "TkAsmHexLabel", "QuotedString",
 		"ControlString", "Hexdigitseq", "COMMENT", "WS", "UnicodeBOM"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
@@ -245,32 +246,43 @@ public partial class DelphiParser : Parser {
 
 	public override int[] SerializedAtn { get { return _serializedATN; } }
 
-	static DelphiParser() {
+	static DelphiParser()
+	{
 		decisionToDFA = new DFA[_ATN.NumberOfDecisions];
-		for (int i = 0; i < _ATN.NumberOfDecisions; i++) {
+		for (int i = 0; i < _ATN.NumberOfDecisions; i++)
+		{
 			decisionToDFA[i] = new DFA(_ATN.GetDecisionState(i), i);
 		}
 	}
 
-		public DelphiParser(ITokenStream input) : this(input, Console.Out, Console.Error) { }
+	public DelphiParser(ITokenStream input) : this(input, Console.Out, Console.Error) { }
 
-		public DelphiParser(ITokenStream input, TextWriter output, TextWriter errorOutput)
-		: base(input, output, errorOutput)
+	public DelphiParser(ITokenStream input, TextWriter output, TextWriter errorOutput)
+	: base(input, output, errorOutput)
 	{
 		Interpreter = new ParserATNSimulator(this, _ATN, decisionToDFA, sharedContextCache);
 	}
 
-	public partial class FileContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ProgramContext program() {
+	public partial class FileContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProgramContext program()
+		{
 			return GetRuleContext<ProgramContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public LibraryContext library() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LibraryContext library()
+		{
 			return GetRuleContext<LibraryContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public UnitContext unit() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitContext unit()
+		{
 			return GetRuleContext<UnitContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public PackageEContext packageE() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public PackageEContext packageE()
+		{
 			return GetRuleContext<PackageEContext>(0);
 		}
 		public FileContext(ParserRuleContext parent, int invokingState)
@@ -279,94 +291,108 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_file; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFile(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFile(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FileContext file() {
+	public FileContext file()
+	{
 		FileContext _localctx = new FileContext(Context, State);
 		EnterRule(_localctx, 0, RULE_file);
-		try {
+		try
+		{
 			State = 354;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case T__0:
-			case ASM:
-			case BEGIN:
-			case CLASS:
-			case CONST:
-			case CONSTRUCTOR:
-			case DESTRUCTOR:
-			case EXPORTS:
-			case FUNCTION:
-			case LABEL:
-			case PROCEDURE:
-			case PROGRAM:
-			case RESOURCESTRING:
-			case THREADVAR:
-			case TYPE:
-			case USES:
-			case VAR:
-			case DOT:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 350;
-				program();
-				}
-				break;
-			case LIBRARY:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 351;
-				library();
-				}
-				break;
-			case UNIT:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 352;
-				unit();
-				}
-				break;
-			case PACKAGE:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 353;
-				packageE();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case T__0:
+				case ASM:
+				case BEGIN:
+				case CLASS:
+				case CONST:
+				case CONSTRUCTOR:
+				case DESTRUCTOR:
+				case EXPORTS:
+				case FUNCTION:
+				case LABEL:
+				case PROCEDURE:
+				case PROGRAM:
+				case RESOURCESTRING:
+				case THREADVAR:
+				case TYPE:
+				case USES:
+				case VAR:
+				case DOT:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 350;
+						program();
+					}
+					break;
+				case LIBRARY:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 351;
+						library();
+					}
+					break;
+				case UNIT:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 352;
+						unit();
+					}
+					break;
+				case PACKAGE:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 353;
+						packageE();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProgramContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
+	public partial class ProgramContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BlockContext block()
+		{
 			return GetRuleContext<BlockContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ProgramHeadContext programHead() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProgramHeadContext programHead()
+		{
 			return GetRuleContext<ProgramHeadContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public UsesFileClauseContext usesFileClause() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UsesFileClauseContext usesFileClause()
+		{
 			return GetRuleContext<UsesFileClauseContext>(0);
 		}
 		public ProgramContext(ParserRuleContext parent, int invokingState)
@@ -375,69 +401,82 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_program; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProgram(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProgram(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProgramContext program() {
+	public ProgramContext program()
+	{
 		ProgramContext _localctx = new ProgramContext(Context, State);
 		EnterRule(_localctx, 2, RULE_program);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 357;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==PROGRAM) {
+				State = 357;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == PROGRAM)
 				{
-				State = 356;
-				programHead();
+					{
+						State = 356;
+						programHead();
+					}
 				}
-			}
 
-			State = 360;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==USES) {
+				State = 360;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == USES)
 				{
-				State = 359;
-				usesFileClause();
+					{
+						State = 359;
+						usesFileClause();
+					}
 				}
-			}
 
-			State = 362;
-			block();
-			State = 363;
-			Match(DOT);
+				State = 362;
+				block();
+				State = 363;
+				Match(DOT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProgramHeadContext : ParserRuleContext {
+	public partial class ProgramHeadContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROGRAM() { return GetToken(DelphiParser.PROGRAM, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName()
+		{
 			return GetRuleContext<NamespaceNameContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ProgramParmSeqContext programParmSeq() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProgramParmSeqContext programParmSeq()
+		{
 			return GetRuleContext<ProgramParmSeqContext>(0);
 		}
 		public ProgramHeadContext(ParserRuleContext parent, int invokingState)
@@ -446,65 +485,79 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_programHead; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProgramHead(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProgramHead(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProgramHeadContext programHead() {
+	public ProgramHeadContext programHead()
+	{
 		ProgramHeadContext _localctx = new ProgramHeadContext(Context, State);
 		EnterRule(_localctx, 4, RULE_programHead);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 365;
-			Match(PROGRAM);
-			State = 366;
-			namespaceName();
-			State = 368;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LPAREN) {
+				State = 365;
+				Match(PROGRAM);
+				State = 366;
+				namespaceName();
+				State = 368;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == LPAREN)
 				{
-				State = 367;
-				programParmSeq();
+					{
+						State = 367;
+						programParmSeq();
+					}
 				}
-			}
 
-			State = 370;
-			Match(SEMI);
+				State = 370;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProgramParmSeqContext : ParserRuleContext {
+	public partial class ProgramParmSeqContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public ProgramParmSeqContext(ParserRuleContext parent, int invokingState)
@@ -513,77 +566,92 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_programParmSeq; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProgramParmSeq(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProgramParmSeq(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProgramParmSeqContext programParmSeq() {
+	public ProgramParmSeqContext programParmSeq()
+	{
 		ProgramParmSeqContext _localctx = new ProgramParmSeqContext(Context, State);
 		EnterRule(_localctx, 6, RULE_programParmSeq);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 372;
-			Match(LPAREN);
-			State = 381;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271942938704L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220488493323L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
-				{
-				State = 373;
-				ident();
-				State = 378;
+				State = 372;
+				Match(LPAREN);
+				State = 381;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-				while (_la==COMMA) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271942938704L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220488493323L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+				{
 					{
-					{
-					State = 374;
-					Match(COMMA);
-					State = 375;
-					ident();
+						State = 373;
+						ident();
+						State = 378;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == COMMA)
+						{
+							{
+								{
+									State = 374;
+									Match(COMMA);
+									State = 375;
+									ident();
+								}
+							}
+							State = 380;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
 					}
-					}
-					State = 380;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
 				}
-				}
-			}
 
-			State = 383;
-			Match(RPAREN);
+				State = 383;
+				Match(RPAREN);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class LibraryContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public LibraryHeadContext libraryHead() {
+	public partial class LibraryContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LibraryHeadContext libraryHead()
+		{
 			return GetRuleContext<LibraryHeadContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BlockContext block()
+		{
 			return GetRuleContext<BlockContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public UsesFileClauseContext usesFileClause() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UsesFileClauseContext usesFileClause()
+		{
 			return GetRuleContext<UsesFileClauseContext>(0);
 		}
 		public LibraryContext(ParserRuleContext parent, int invokingState)
@@ -592,64 +660,78 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_library; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterLibrary(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitLibrary(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public LibraryContext library() {
+	public LibraryContext library()
+	{
 		LibraryContext _localctx = new LibraryContext(Context, State);
 		EnterRule(_localctx, 8, RULE_library);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 385;
-			libraryHead();
-			State = 387;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==USES) {
+				State = 385;
+				libraryHead();
+				State = 387;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == USES)
 				{
-				State = 386;
-				usesFileClause();
+					{
+						State = 386;
+						usesFileClause();
+					}
 				}
-			}
 
-			State = 389;
-			block();
-			State = 390;
-			Match(DOT);
+				State = 389;
+				block();
+				State = 390;
+				Match(DOT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class LibraryHeadContext : ParserRuleContext {
+	public partial class LibraryHeadContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LIBRARY() { return GetToken(DelphiParser.LIBRARY, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName()
+		{
 			return GetRuleContext<NamespaceNameContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		public LibraryHeadContext(ParserRuleContext parent, int invokingState)
@@ -658,68 +740,82 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_libraryHead; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterLibraryHead(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitLibraryHead(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public LibraryHeadContext libraryHead() {
+	public LibraryHeadContext libraryHead()
+	{
 		LibraryHeadContext _localctx = new LibraryHeadContext(Context, State);
 		EnterRule(_localctx, 10, RULE_libraryHead);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 392;
-			Match(LIBRARY);
-			State = 393;
-			namespaceName();
-			State = 397;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 394;
-				hintingDirective();
-				}
-				}
-				State = 399;
+				State = 392;
+				Match(LIBRARY);
+				State = 393;
+				namespaceName();
+				State = 397;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 400;
-			Match(SEMI);
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
+				{
+					{
+						{
+							State = 394;
+							hintingDirective();
+						}
+					}
+					State = 399;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 400;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class PackageEContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public PackageHeadContext packageHead() {
+	public partial class PackageEContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public PackageHeadContext packageHead()
+		{
 			return GetRuleContext<PackageHeadContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RequiresClauseContext requiresClause() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RequiresClauseContext requiresClause()
+		{
 			return GetRuleContext<RequiresClauseContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ContainsClauseContext containsClause() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ContainsClauseContext containsClause()
+		{
 			return GetRuleContext<ContainsClauseContext>(0);
 		}
 		public PackageEContext(ParserRuleContext parent, int invokingState)
@@ -728,59 +824,69 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_packageE; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterPackageE(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitPackageE(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public PackageEContext packageE() {
+	public PackageEContext packageE()
+	{
 		PackageEContext _localctx = new PackageEContext(Context, State);
 		EnterRule(_localctx, 12, RULE_packageE);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 402;
-			packageHead();
-			State = 403;
-			requiresClause();
-			State = 405;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==CONTAINS) {
+				State = 402;
+				packageHead();
+				State = 403;
+				requiresClause();
+				State = 405;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == CONTAINS)
 				{
-				State = 404;
-				containsClause();
+					{
+						State = 404;
+						containsClause();
+					}
 				}
-			}
 
-			State = 407;
-			Match(END);
-			State = 408;
-			Match(DOT);
+				State = 407;
+				Match(END);
+				State = 408;
+				Match(DOT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class PackageHeadContext : ParserRuleContext {
+	public partial class PackageHeadContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PACKAGE() { return GetToken(DelphiParser.PACKAGE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName()
+		{
 			return GetRuleContext<NamespaceNameContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -790,54 +896,69 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_packageHead; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterPackageHead(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitPackageHead(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public PackageHeadContext packageHead() {
+	public PackageHeadContext packageHead()
+	{
 		PackageHeadContext _localctx = new PackageHeadContext(Context, State);
 		EnterRule(_localctx, 14, RULE_packageHead);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 410;
-			Match(PACKAGE);
-			State = 411;
-			namespaceName();
-			State = 412;
-			Match(SEMI);
+				State = 410;
+				Match(PACKAGE);
+				State = 411;
+				namespaceName();
+				State = 412;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public UnitHeadContext unitHead() {
+	public partial class UnitContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitHeadContext unitHead()
+		{
 			return GetRuleContext<UnitHeadContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public UnitInterfaceContext unitInterface() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitInterfaceContext unitInterface()
+		{
 			return GetRuleContext<UnitInterfaceContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public UnitImplementationContext unitImplementation() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitImplementationContext unitImplementation()
+		{
 			return GetRuleContext<UnitImplementationContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public UnitBlockContext unitBlock() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitBlockContext unitBlock()
+		{
 			return GetRuleContext<UnitBlockContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
@@ -847,57 +968,70 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unit; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnit(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnit(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitContext unit() {
+	public UnitContext unit()
+	{
 		UnitContext _localctx = new UnitContext(Context, State);
 		EnterRule(_localctx, 16, RULE_unit);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 414;
-			unitHead();
-			State = 415;
-			unitInterface();
-			State = 416;
-			unitImplementation();
-			State = 417;
-			unitBlock();
-			State = 418;
-			Match(DOT);
+				State = 414;
+				unitHead();
+				State = 415;
+				unitInterface();
+				State = 416;
+				unitImplementation();
+				State = 417;
+				unitBlock();
+				State = 418;
+				Match(DOT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitHeadContext : ParserRuleContext {
+	public partial class UnitHeadContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode UNIT() { return GetToken(DelphiParser.UNIT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName()
+		{
 			return GetRuleContext<NamespaceNameContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		public UnitHeadContext(ParserRuleContext parent, int invokingState)
@@ -906,67 +1040,81 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unitHead; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnitHead(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnitHead(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitHeadContext unitHead() {
+	public UnitHeadContext unitHead()
+	{
 		UnitHeadContext _localctx = new UnitHeadContext(Context, State);
 		EnterRule(_localctx, 18, RULE_unitHead);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 420;
-			Match(UNIT);
-			State = 421;
-			namespaceName();
-			State = 425;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 422;
-				hintingDirective();
-				}
-				}
-				State = 427;
+				State = 420;
+				Match(UNIT);
+				State = 421;
+				namespaceName();
+				State = 425;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 428;
-			Match(SEMI);
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
+				{
+					{
+						{
+							State = 422;
+							hintingDirective();
+						}
+					}
+					State = 427;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 428;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitInterfaceContext : ParserRuleContext {
+	public partial class UnitInterfaceContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INTERFACE() { return GetToken(DelphiParser.INTERFACE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public UsesClauseContext usesClause() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UsesClauseContext usesClause()
+		{
 			return GetRuleContext<UsesClauseContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceDeclContext[] interfaceDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceDeclContext[] interfaceDecl()
+		{
 			return GetRuleContexts<InterfaceDeclContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceDeclContext interfaceDecl(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceDeclContext interfaceDecl(int i)
+		{
 			return GetRuleContext<InterfaceDeclContext>(i);
 		}
 		public UnitInterfaceContext(ParserRuleContext parent, int invokingState)
@@ -975,73 +1123,88 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unitInterface; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnitInterface(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnitInterface(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitInterfaceContext unitInterface() {
+	public UnitInterfaceContext unitInterface()
+	{
 		UnitInterfaceContext _localctx = new UnitInterfaceContext(Context, State);
 		EnterRule(_localctx, 20, RULE_unitInterface);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 430;
-			Match(INTERFACE);
-			State = 432;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==USES) {
-				{
-				State = 431;
-				usesClause();
-				}
-			}
-
-			State = 437;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 564049500438530L) != 0) || ((((_la - 86)) & ~0x3f) == 0 && ((1L << (_la - 86)) & 142270922753L) != 0)) {
-				{
-				{
-				State = 434;
-				interfaceDecl();
-				}
-				}
-				State = 439;
+				State = 430;
+				Match(INTERFACE);
+				State = 432;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				if (_la == USES)
+				{
+					{
+						State = 431;
+						usesClause();
+					}
+				}
+
+				State = 437;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 564049500438530L) != 0) || ((((_la - 86)) & ~0x3f) == 0 && ((1L << (_la - 86)) & 142270922753L) != 0))
+				{
+					{
+						{
+							State = 434;
+							interfaceDecl();
+						}
+					}
+					State = 439;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitImplementationContext : ParserRuleContext {
+	public partial class UnitImplementationContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IMPLEMENTATION() { return GetToken(DelphiParser.IMPLEMENTATION, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public UsesClauseContext usesClause() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UsesClauseContext usesClause()
+		{
 			return GetRuleContext<UsesClauseContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DeclSectionContext[] declSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DeclSectionContext[] declSection()
+		{
 			return GetRuleContexts<DeclSectionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DeclSectionContext declSection(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DeclSectionContext declSection(int i)
+		{
 			return GetRuleContext<DeclSectionContext>(i);
 		}
 		public UnitImplementationContext(ParserRuleContext parent, int invokingState)
@@ -1050,70 +1213,83 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unitImplementation; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnitImplementation(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnitImplementation(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitImplementationContext unitImplementation() {
+	public UnitImplementationContext unitImplementation()
+	{
 		UnitImplementationContext _localctx = new UnitImplementationContext(Context, State);
 		EnterRule(_localctx, 22, RULE_unitImplementation);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 440;
-			Match(IMPLEMENTATION);
-			State = 442;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==USES) {
-				{
-				State = 441;
-				usesClause();
-				}
-			}
-
-			State = 447;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 4612250067927826434L) != 0) || ((((_la - 86)) & ~0x3f) == 0 && ((1L << (_la - 86)) & 142270922753L) != 0)) {
-				{
-				{
-				State = 444;
-				declSection();
-				}
-				}
-				State = 449;
+				State = 440;
+				Match(IMPLEMENTATION);
+				State = 442;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				if (_la == USES)
+				{
+					{
+						State = 441;
+						usesClause();
+					}
+				}
+
+				State = 447;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 4612250067927826434L) != 0) || ((((_la - 86)) & ~0x3f) == 0 && ((1L << (_la - 86)) & 142270922753L) != 0))
+				{
+					{
+						{
+							State = 444;
+							declSection();
+						}
+					}
+					State = 449;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitBlockContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public UnitInitializationContext unitInitialization() {
+	public partial class UnitBlockContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitInitializationContext unitInitialization()
+		{
 			return GetRuleContext<UnitInitializationContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CompoundStatementContext compoundStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CompoundStatementContext compoundStatement()
+		{
 			return GetRuleContext<CompoundStatementContext>(0);
 		}
 		public UnitBlockContext(ParserRuleContext parent, int invokingState)
@@ -1122,69 +1298,81 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unitBlock; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnitBlock(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnitBlock(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitBlockContext unitBlock() {
+	public UnitBlockContext unitBlock()
+	{
 		UnitBlockContext _localctx = new UnitBlockContext(Context, State);
 		EnterRule(_localctx, 24, RULE_unitBlock);
-		try {
+		try
+		{
 			State = 455;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case INITIALIZATION:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 450;
-				unitInitialization();
-				State = 451;
-				Match(END);
-				}
-				break;
-			case BEGIN:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 453;
-				compoundStatement();
-				}
-				break;
-			case END:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 454;
-				Match(END);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case INITIALIZATION:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 450;
+						unitInitialization();
+						State = 451;
+						Match(END);
+					}
+					break;
+				case BEGIN:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 453;
+						compoundStatement();
+					}
+					break;
+				case END:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 454;
+						Match(END);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitInitializationContext : ParserRuleContext {
+	public partial class UnitInitializationContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INITIALIZATION() { return GetToken(DelphiParser.INITIALIZATION, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList()
+		{
 			return GetRuleContext<StatementListContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public UnitFinalizationContext unitFinalization() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UnitFinalizationContext unitFinalization()
+		{
 			return GetRuleContext<UnitFinalizationContext>(0);
 		}
 		public UnitInitializationContext(ParserRuleContext parent, int invokingState)
@@ -1193,55 +1381,65 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unitInitialization; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnitInitialization(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnitInitialization(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitInitializationContext unitInitialization() {
+	public UnitInitializationContext unitInitialization()
+	{
 		UnitInitializationContext _localctx = new UnitInitializationContext(Context, State);
 		EnterRule(_localctx, 26, RULE_unitInitialization);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 457;
-			Match(INITIALIZATION);
-			State = 458;
-			statementList();
-			State = 460;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==FINALIZATION) {
+				State = 457;
+				Match(INITIALIZATION);
+				State = 458;
+				statementList();
+				State = 460;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == FINALIZATION)
 				{
-				State = 459;
-				unitFinalization();
+					{
+						State = 459;
+						unitFinalization();
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UnitFinalizationContext : ParserRuleContext {
+	public partial class UnitFinalizationContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FINALIZATION() { return GetToken(DelphiParser.FINALIZATION, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList()
+		{
 			return GetRuleContext<StatementListContext>(0);
 		}
 		public UnitFinalizationContext(ParserRuleContext parent, int invokingState)
@@ -1250,44 +1448,53 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_unitFinalization; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUnitFinalization(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUnitFinalization(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UnitFinalizationContext unitFinalization() {
+	public UnitFinalizationContext unitFinalization()
+	{
 		UnitFinalizationContext _localctx = new UnitFinalizationContext(Context, State);
 		EnterRule(_localctx, 28, RULE_unitFinalization);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 462;
-			Match(FINALIZATION);
-			State = 463;
-			statementList();
+				State = 462;
+				Match(FINALIZATION);
+				State = 463;
+				statementList();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ContainsClauseContext : ParserRuleContext {
+	public partial class ContainsClauseContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CONTAINS() { return GetToken(DelphiParser.CONTAINS, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceFileNameListContext namespaceFileNameList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceFileNameListContext namespaceFileNameList()
+		{
 			return GetRuleContext<NamespaceFileNameListContext>(0);
 		}
 		public ContainsClauseContext(ParserRuleContext parent, int invokingState)
@@ -1296,44 +1503,53 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_containsClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterContainsClause(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitContainsClause(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ContainsClauseContext containsClause() {
+	public ContainsClauseContext containsClause()
+	{
 		ContainsClauseContext _localctx = new ContainsClauseContext(Context, State);
 		EnterRule(_localctx, 30, RULE_containsClause);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 465;
-			Match(CONTAINS);
-			State = 466;
-			namespaceFileNameList();
+				State = 465;
+				Match(CONTAINS);
+				State = 466;
+				namespaceFileNameList();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RequiresClauseContext : ParserRuleContext {
+	public partial class RequiresClauseContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REQUIRES() { return GetToken(DelphiParser.REQUIRES, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameListContext namespaceNameList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameListContext namespaceNameList()
+		{
 			return GetRuleContext<NamespaceNameListContext>(0);
 		}
 		public RequiresClauseContext(ParserRuleContext parent, int invokingState)
@@ -1342,44 +1558,53 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_requiresClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRequiresClause(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRequiresClause(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RequiresClauseContext requiresClause() {
+	public RequiresClauseContext requiresClause()
+	{
 		RequiresClauseContext _localctx = new RequiresClauseContext(Context, State);
 		EnterRule(_localctx, 32, RULE_requiresClause);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 468;
-			Match(REQUIRES);
-			State = 469;
-			namespaceNameList();
+				State = 468;
+				Match(REQUIRES);
+				State = 469;
+				namespaceNameList();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UsesClauseContext : ParserRuleContext {
+	public partial class UsesClauseContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode USES() { return GetToken(DelphiParser.USES, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameListContext namespaceNameList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameListContext namespaceNameList()
+		{
 			return GetRuleContext<NamespaceNameListContext>(0);
 		}
 		public UsesClauseContext(ParserRuleContext parent, int invokingState)
@@ -1388,44 +1613,53 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_usesClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUsesClause(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUsesClause(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UsesClauseContext usesClause() {
+	public UsesClauseContext usesClause()
+	{
 		UsesClauseContext _localctx = new UsesClauseContext(Context, State);
 		EnterRule(_localctx, 34, RULE_usesClause);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 471;
-			Match(USES);
-			State = 472;
-			namespaceNameList();
+				State = 471;
+				Match(USES);
+				State = 472;
+				namespaceNameList();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UsesFileClauseContext : ParserRuleContext {
+	public partial class UsesFileClauseContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode USES() { return GetToken(DelphiParser.USES, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceFileNameListContext namespaceFileNameList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceFileNameListContext namespaceFileNameList()
+		{
 			return GetRuleContext<NamespaceFileNameListContext>(0);
 		}
 		public UsesFileClauseContext(ParserRuleContext parent, int invokingState)
@@ -1434,51 +1668,64 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_usesFileClause; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUsesFileClause(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUsesFileClause(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UsesFileClauseContext usesFileClause() {
+	public UsesFileClauseContext usesFileClause()
+	{
 		UsesFileClauseContext _localctx = new UsesFileClauseContext(Context, State);
 		EnterRule(_localctx, 36, RULE_usesFileClause);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 474;
-			Match(USES);
-			State = 475;
-			namespaceFileNameList();
+				State = 474;
+				Match(USES);
+				State = 475;
+				namespaceFileNameList();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class NamespaceFileNameListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceFileNameContext[] namespaceFileName() {
+	public partial class NamespaceFileNameListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceFileNameContext[] namespaceFileName()
+		{
 			return GetRuleContexts<NamespaceFileNameContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceFileNameContext namespaceFileName(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceFileNameContext namespaceFileName(int i)
+		{
 			return GetRuleContext<NamespaceFileNameContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public NamespaceFileNameListContext(ParserRuleContext parent, int invokingState)
@@ -1487,60 +1734,70 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_namespaceFileNameList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterNamespaceFileNameList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitNamespaceFileNameList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public NamespaceFileNameListContext namespaceFileNameList() {
+	public NamespaceFileNameListContext namespaceFileNameList()
+	{
 		NamespaceFileNameListContext _localctx = new NamespaceFileNameListContext(Context, State);
 		EnterRule(_localctx, 38, RULE_namespaceFileNameList);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 477;
-			namespaceFileName();
-			State = 482;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 478;
-				Match(COMMA);
-				State = 479;
+				State = 477;
 				namespaceFileName();
-				}
-				}
-				State = 484;
+				State = 482;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 485;
-			Match(SEMI);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 478;
+							Match(COMMA);
+							State = 479;
+							namespaceFileName();
+						}
+					}
+					State = 484;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 485;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class NamespaceFileNameContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName() {
+	public partial class NamespaceFileNameContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName()
+		{
 			return GetRuleContext<NamespaceNameContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IN() { return GetToken(DelphiParser.IN, 0); }
@@ -1551,62 +1808,76 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_namespaceFileName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterNamespaceFileName(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitNamespaceFileName(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public NamespaceFileNameContext namespaceFileName() {
+	public NamespaceFileNameContext namespaceFileName()
+	{
 		NamespaceFileNameContext _localctx = new NamespaceFileNameContext(Context, State);
 		EnterRule(_localctx, 40, RULE_namespaceFileName);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 487;
-			namespaceName();
-			State = 490;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==IN) {
+				State = 487;
+				namespaceName();
+				State = 490;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == IN)
 				{
-				State = 488;
-				Match(IN);
-				State = 489;
-				Match(QuotedString);
+					{
+						State = 488;
+						Match(IN);
+						State = 489;
+						Match(QuotedString);
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class NamespaceNameListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext[] namespaceName() {
+	public partial class NamespaceNameListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext[] namespaceName()
+		{
 			return GetRuleContexts<NamespaceNameContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName(int i)
+		{
 			return GetRuleContext<NamespaceNameContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public NamespaceNameListContext(ParserRuleContext parent, int invokingState)
@@ -1615,66 +1886,80 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_namespaceNameList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterNamespaceNameList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitNamespaceNameList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public NamespaceNameListContext namespaceNameList() {
+	public NamespaceNameListContext namespaceNameList()
+	{
 		NamespaceNameListContext _localctx = new NamespaceNameListContext(Context, State);
 		EnterRule(_localctx, 42, RULE_namespaceNameList);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 492;
-			namespaceName();
-			State = 497;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 493;
-				Match(COMMA);
-				State = 494;
+				State = 492;
 				namespaceName();
-				}
-				}
-				State = 499;
+				State = 497;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 500;
-			Match(SEMI);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 493;
+							Match(COMMA);
+							State = 494;
+							namespaceName();
+						}
+					}
+					State = 499;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 500;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class BlockContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public DeclSectionContext[] declSection() {
+	public partial class BlockContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DeclSectionContext[] declSection()
+		{
 			return GetRuleContexts<DeclSectionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DeclSectionContext declSection(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DeclSectionContext declSection(int i)
+		{
 			return GetRuleContext<DeclSectionContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public BlockBodyContext blockBody() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BlockBodyContext blockBody()
+		{
 			return GetRuleContext<BlockBodyContext>(0);
 		}
 		public BlockContext(ParserRuleContext parent, int invokingState)
@@ -1683,69 +1968,83 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_block; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterBlock(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitBlock(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public BlockContext block() {
+	public BlockContext block()
+	{
 		BlockContext _localctx = new BlockContext(Context, State);
 		EnterRule(_localctx, 44, RULE_block);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 505;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,19,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 502;
-					declSection();
-					}
-					} 
-				}
-				State = 507;
+				State = 505;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,19,Context);
-			}
-			State = 509;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,20,Context) ) {
-			case 1:
+				_alt = Interpreter.AdaptivePredict(TokenStream, 19, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
 				{
-				State = 508;
-				blockBody();
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 502;
+								declSection();
+							}
+						}
+					}
+					State = 507;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 19, Context);
 				}
-				break;
-			}
+				State = 509;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 20, Context))
+				{
+					case 1:
+						{
+							State = 508;
+							blockBody();
+						}
+						break;
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class BlockBodyContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public CompoundStatementContext compoundStatement() {
+	public partial class BlockBodyContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CompoundStatementContext compoundStatement()
+		{
 			return GetRuleContext<CompoundStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public AssemblerStatementContext assemblerStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public AssemblerStatementContext assemblerStatement()
+		{
 			return GetRuleContext<AssemblerStatementContext>(0);
 		}
 		public BlockBodyContext(ParserRuleContext parent, int invokingState)
@@ -1754,77 +2053,101 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_blockBody; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterBlockBody(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitBlockBody(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public BlockBodyContext blockBody() {
+	public BlockBodyContext blockBody()
+	{
 		BlockBodyContext _localctx = new BlockBodyContext(Context, State);
 		EnterRule(_localctx, 46, RULE_blockBody);
-		try {
+		try
+		{
 			State = 513;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case BEGIN:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 511;
-				compoundStatement();
-				}
-				break;
-			case ASM:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 512;
-				assemblerStatement();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case BEGIN:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 511;
+						compoundStatement();
+					}
+					break;
+				case ASM:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 512;
+						assemblerStatement();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class DeclSectionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public LabelDeclSectionContext labelDeclSection() {
+	public partial class DeclSectionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LabelDeclSectionContext labelDeclSection()
+		{
 			return GetRuleContext<LabelDeclSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstSectionContext constSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstSectionContext constSection()
+		{
 			return GetRuleContext<ConstSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeSectionContext typeSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeSectionContext typeSection()
+		{
 			return GetRuleContext<TypeSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarSectionContext varSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarSectionContext varSection()
+		{
 			return GetRuleContext<VarSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExportedProcHeadingContext exportedProcHeading() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExportedProcHeadingContext exportedProcHeading()
+		{
 			return GetRuleContext<ExportedProcHeadingContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDeclContext methodDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDeclContext methodDecl()
+		{
 			return GetRuleContext<MethodDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ProcDeclContext procDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcDeclContext procDecl()
+		{
 			return GetRuleContext<ProcDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExportsSectionContext exportsSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExportsSectionContext exportsSection()
+		{
 			return GetRuleContext<ExportsSectionContext>(0);
 		}
 		public DeclSectionContext(ParserRuleContext parent, int invokingState)
@@ -1833,114 +2156,136 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_declSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterDeclSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitDeclSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public DeclSectionContext declSection() {
+	public DeclSectionContext declSection()
+	{
 		DeclSectionContext _localctx = new DeclSectionContext(Context, State);
 		EnterRule(_localctx, 48, RULE_declSection);
-		try {
+		try
+		{
 			State = 523;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,22,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 515;
-				labelDeclSection();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 516;
-				constSection();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 517;
-				typeSection();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 518;
-				varSection();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 519;
-				exportedProcHeading();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 520;
-				methodDecl();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 521;
-				procDecl();
-				}
-				break;
-			case 8:
-				EnterOuterAlt(_localctx, 8);
-				{
-				State = 522;
-				exportsSection();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 22, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 515;
+						labelDeclSection();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 516;
+						constSection();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 517;
+						typeSection();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 518;
+						varSection();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 519;
+						exportedProcHeading();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 520;
+						methodDecl();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 521;
+						procDecl();
+					}
+					break;
+				case 8:
+					EnterOuterAlt(_localctx, 8);
+					{
+						State = 522;
+						exportsSection();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class InterfaceDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ProcDeclContext procDecl() {
+	public partial class InterfaceDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcDeclContext procDecl()
+		{
 			return GetRuleContext<ProcDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDeclContext methodDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDeclContext methodDecl()
+		{
 			return GetRuleContext<MethodDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeSectionContext typeSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeSectionContext typeSection()
+		{
 			return GetRuleContext<TypeSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarSectionContext varSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarSectionContext varSection()
+		{
 			return GetRuleContext<VarSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExportedProcHeadingContext exportedProcHeading() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExportedProcHeadingContext exportedProcHeading()
+		{
 			return GetRuleContext<ExportedProcHeadingContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExportsSectionContext exportsSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExportsSectionContext exportsSection()
+		{
 			return GetRuleContext<ExportsSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstSectionContext constSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstSectionContext constSection()
+		{
 			return GetRuleContext<ConstSectionContext>(0);
 		}
 		public InterfaceDeclContext(ParserRuleContext parent, int invokingState)
@@ -1949,98 +2294,112 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_interfaceDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterInterfaceDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitInterfaceDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public InterfaceDeclContext interfaceDecl() {
+	public InterfaceDeclContext interfaceDecl()
+	{
 		InterfaceDeclContext _localctx = new InterfaceDeclContext(Context, State);
 		EnterRule(_localctx, 50, RULE_interfaceDecl);
-		try {
+		try
+		{
 			State = 532;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,23,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 525;
-				procDecl();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 526;
-				methodDecl();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 527;
-				typeSection();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 528;
-				varSection();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 529;
-				exportedProcHeading();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 530;
-				exportsSection();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 531;
-				constSection();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 23, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 525;
+						procDecl();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 526;
+						methodDecl();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 527;
+						typeSection();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 528;
+						varSection();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 529;
+						exportedProcHeading();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 530;
+						exportsSection();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 531;
+						constSection();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class LabelDeclSectionContext : ParserRuleContext {
+	public partial class LabelDeclSectionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LABEL() { return GetToken(DelphiParser.LABEL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public LabelContext[] label() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LabelContext[] label()
+		{
 			return GetRuleContexts<LabelContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public LabelContext label(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LabelContext label(int i)
+		{
 			return GetRuleContext<LabelContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public LabelDeclSectionContext(ParserRuleContext parent, int invokingState)
@@ -2049,68 +2408,82 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_labelDeclSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterLabelDeclSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitLabelDeclSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public LabelDeclSectionContext labelDeclSection() {
+	public LabelDeclSectionContext labelDeclSection()
+	{
 		LabelDeclSectionContext _localctx = new LabelDeclSectionContext(Context, State);
 		EnterRule(_localctx, 52, RULE_labelDeclSection);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 534;
-			Match(LABEL);
-			State = 535;
-			label();
-			State = 540;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 536;
-				Match(COMMA);
-				State = 537;
+				State = 534;
+				Match(LABEL);
+				State = 535;
 				label();
-				}
-				}
-				State = 542;
+				State = 540;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 543;
-			Match(SEMI);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 536;
+							Match(COMMA);
+							State = 537;
+							label();
+						}
+					}
+					State = 542;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 543;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ConstSectionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ConstKeyContext constKey() {
+	public partial class ConstSectionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstKeyContext constKey()
+		{
 			return GetRuleContext<ConstKeyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstDeclarationContext[] constDeclaration() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstDeclarationContext[] constDeclaration()
+		{
 			return GetRuleContexts<ConstDeclarationContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstDeclarationContext constDeclaration(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstDeclarationContext constDeclaration(int i)
+		{
 			return GetRuleContext<ConstDeclarationContext>(i);
 		}
 		public ConstSectionContext(ParserRuleContext parent, int invokingState)
@@ -2119,57 +2492,66 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterConstSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitConstSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ConstSectionContext constSection() {
+	public ConstSectionContext constSection()
+	{
 		ConstSectionContext _localctx = new ConstSectionContext(Context, State);
 		EnterRule(_localctx, 54, RULE_constSection);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 545;
-			constKey();
-			State = 549;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,25,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 546;
-					constDeclaration();
-					}
-					} 
-				}
-				State = 551;
+				State = 545;
+				constKey();
+				State = 549;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,25,Context);
-			}
+				_alt = Interpreter.AdaptivePredict(TokenStream, 25, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 546;
+								constDeclaration();
+							}
+						}
+					}
+					State = 551;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 25, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ConstKeyContext : ParserRuleContext {
+	public partial class ConstKeyContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CONST() { return GetToken(DelphiParser.CONST, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RESOURCESTRING() { return GetToken(DelphiParser.RESOURCESTRING, 0); }
 		public ConstKeyContext(ParserRuleContext parent, int invokingState)
@@ -2178,67 +2560,88 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constKey; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterConstKey(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitConstKey(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ConstKeyContext constKey() {
+	public ConstKeyContext constKey()
+	{
 		ConstKeyContext _localctx = new ConstKeyContext(Context, State);
 		EnterRule(_localctx, 56, RULE_constKey);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 552;
-			_la = TokenStream.LA(1);
-			if ( !(_la==CONST || _la==RESOURCESTRING) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 552;
+				_la = TokenStream.LA(1);
+				if (!(_la == CONST || _la == RESOURCESTRING))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ConstDeclarationContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+	public partial class ConstDeclarationContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL() { return GetToken(DelphiParser.EQUAL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression()
+		{
 			return GetRuleContext<ConstExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		public ConstDeclarationContext(ParserRuleContext parent, int invokingState)
@@ -2247,88 +2650,102 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constDeclaration; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterConstDeclaration(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitConstDeclaration(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ConstDeclarationContext constDeclaration() {
+	public ConstDeclarationContext constDeclaration()
+	{
 		ConstDeclarationContext _localctx = new ConstDeclarationContext(Context, State);
 		EnterRule(_localctx, 58, RULE_constDeclaration);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 555;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==T__0) {
-				{
-				State = 554;
-				customAttribute();
-				}
-			}
-
-			State = 557;
-			ident();
-			State = 560;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==COLON) {
-				{
-				State = 558;
-				Match(COLON);
-				State = 559;
-				typeDecl();
-				}
-			}
-
-			State = 562;
-			Match(EQUAL);
-			State = 563;
-			constExpression();
-			State = 567;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 564;
-				hintingDirective();
-				}
-				}
-				State = 569;
+				State = 555;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 570;
-			Match(SEMI);
+				if (_la == T__0)
+				{
+					{
+						State = 554;
+						customAttribute();
+					}
+				}
+
+				State = 557;
+				ident();
+				State = 560;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == COLON)
+				{
+					{
+						State = 558;
+						Match(COLON);
+						State = 559;
+						typeDecl();
+					}
+				}
+
+				State = 562;
+				Match(EQUAL);
+				State = 563;
+				constExpression();
+				State = 567;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
+				{
+					{
+						{
+							State = 564;
+							hintingDirective();
+						}
+					}
+					State = 569;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 570;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class TypeSectionContext : ParserRuleContext {
+	public partial class TypeSectionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TYPE() { return GetToken(DelphiParser.TYPE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclarationContext[] typeDeclaration() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclarationContext[] typeDeclaration()
+		{
 			return GetRuleContexts<TypeDeclarationContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclarationContext typeDeclaration(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclarationContext typeDeclaration(int i)
+		{
 			return GetRuleContext<TypeDeclarationContext>(i);
 		}
 		public TypeSectionContext(ParserRuleContext parent, int invokingState)
@@ -2337,74 +2754,93 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_typeSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterTypeSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitTypeSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public TypeSectionContext typeSection() {
+	public TypeSectionContext typeSection()
+	{
 		TypeSectionContext _localctx = new TypeSectionContext(Context, State);
 		EnterRule(_localctx, 60, RULE_typeSection);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 572;
-			Match(TYPE);
-			State = 573;
-			typeDeclaration();
-			State = 577;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,29,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 574;
-					typeDeclaration();
-					}
-					} 
-				}
-				State = 579;
+				State = 572;
+				Match(TYPE);
+				State = 573;
+				typeDeclaration();
+				State = 577;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,29,Context);
-			}
+				_alt = Interpreter.AdaptivePredict(TokenStream, 29, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 574;
+								typeDeclaration();
+							}
+						}
+					}
+					State = 579;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 29, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class TypeDeclarationContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public GenericTypeIdentContext genericTypeIdent() {
+	public partial class TypeDeclarationContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericTypeIdentContext genericTypeIdent()
+		{
 			return GetRuleContext<GenericTypeIdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL() { return GetToken(DelphiParser.EQUAL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		public TypeDeclarationContext(ParserRuleContext parent, int invokingState)
@@ -2413,78 +2849,93 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_typeDeclaration; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterTypeDeclaration(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitTypeDeclaration(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public TypeDeclarationContext typeDeclaration() {
+	public TypeDeclarationContext typeDeclaration()
+	{
 		TypeDeclarationContext _localctx = new TypeDeclarationContext(Context, State);
 		EnterRule(_localctx, 62, RULE_typeDeclaration);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 581;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==T__0) {
-				{
-				State = 580;
-				customAttribute();
-				}
-			}
-
-			State = 583;
-			genericTypeIdent();
-			State = 584;
-			Match(EQUAL);
-			State = 585;
-			typeDecl();
-			State = 589;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 586;
-				hintingDirective();
-				}
-				}
-				State = 591;
+				State = 581;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 592;
-			Match(SEMI);
+				if (_la == T__0)
+				{
+					{
+						State = 580;
+						customAttribute();
+					}
+				}
+
+				State = 583;
+				genericTypeIdent();
+				State = 584;
+				Match(EQUAL);
+				State = 585;
+				typeDecl();
+				State = 589;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
+				{
+					{
+						{
+							State = 586;
+							hintingDirective();
+						}
+					}
+					State = 591;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 592;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VarSectionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public VarKeyContext varKey() {
+	public partial class VarSectionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarKeyContext varKey()
+		{
 			return GetRuleContext<VarKeyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarDeclarationContext[] varDeclaration() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarDeclarationContext[] varDeclaration()
+		{
 			return GetRuleContexts<VarDeclarationContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarDeclarationContext varDeclaration(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarDeclarationContext varDeclaration(int i)
+		{
 			return GetRuleContext<VarDeclarationContext>(i);
 		}
 		public VarSectionContext(ParserRuleContext parent, int invokingState)
@@ -2493,59 +2944,68 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_varSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVarSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVarSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VarSectionContext varSection() {
+	public VarSectionContext varSection()
+	{
 		VarSectionContext _localctx = new VarSectionContext(Context, State);
 		EnterRule(_localctx, 64, RULE_varSection);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 594;
-			varKey();
-			State = 595;
-			varDeclaration();
-			State = 599;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,32,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 596;
-					varDeclaration();
-					}
-					} 
-				}
-				State = 601;
+				State = 594;
+				varKey();
+				State = 595;
+				varDeclaration();
+				State = 599;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,32,Context);
-			}
+				_alt = Interpreter.AdaptivePredict(TokenStream, 32, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 596;
+								varDeclaration();
+							}
+						}
+					}
+					State = 601;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 32, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VarKeyContext : ParserRuleContext {
+	public partial class VarKeyContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DelphiParser.VAR, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode THREADVAR() { return GetToken(DelphiParser.THREADVAR, 0); }
 		public VarKeyContext(ParserRuleContext parent, int invokingState)
@@ -2554,66 +3014,87 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_varKey; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVarKey(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVarKey(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VarKeyContext varKey() {
+	public VarKeyContext varKey()
+	{
 		VarKeyContext _localctx = new VarKeyContext(Context, State);
 		EnterRule(_localctx, 66, RULE_varKey);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 602;
-			_la = TokenStream.LA(1);
-			if ( !(_la==THREADVAR || _la==VAR) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 602;
+				_la = TokenStream.LA(1);
+				if (!(_la == THREADVAR || _la == VAR))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VarDeclarationContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentListFlatContext identListFlat() {
+	public partial class VarDeclarationContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentListFlatContext identListFlat()
+		{
 			return GetRuleContext<IdentListFlatContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarValueSpecContext varValueSpec() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarValueSpecContext varValueSpec()
+		{
 			return GetRuleContext<VarValueSpecContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		public VarDeclarationContext(ParserRuleContext parent, int invokingState)
@@ -2622,86 +3103,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_varDeclaration; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVarDeclaration(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVarDeclaration(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VarDeclarationContext varDeclaration() {
+	public VarDeclarationContext varDeclaration()
+	{
 		VarDeclarationContext _localctx = new VarDeclarationContext(Context, State);
 		EnterRule(_localctx, 68, RULE_varDeclaration);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 605;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==T__0) {
-				{
-				State = 604;
-				customAttribute();
-				}
-			}
-
-			State = 607;
-			identListFlat();
-			State = 608;
-			Match(COLON);
-			State = 609;
-			typeDecl();
-			State = 611;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==ABSOLUTE || _la==EQUAL) {
-				{
-				State = 610;
-				varValueSpec();
-				}
-			}
-
-			State = 616;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 613;
-				hintingDirective();
-				}
-				}
-				State = 618;
+				State = 605;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 619;
-			Match(SEMI);
+				if (_la == T__0)
+				{
+					{
+						State = 604;
+						customAttribute();
+					}
+				}
+
+				State = 607;
+				identListFlat();
+				State = 608;
+				Match(COLON);
+				State = 609;
+				typeDecl();
+				State = 611;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == ABSOLUTE || _la == EQUAL)
+				{
+					{
+						State = 610;
+						varValueSpec();
+					}
+				}
+
+				State = 616;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
+				{
+					{
+						{
+							State = 613;
+							hintingDirective();
+						}
+					}
+					State = 618;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 619;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VarValueSpecContext : ParserRuleContext {
+	public partial class VarValueSpecContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ABSOLUTE() { return GetToken(DelphiParser.ABSOLUTE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression()
+		{
 			return GetRuleContext<ConstExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL() { return GetToken(DelphiParser.EQUAL, 0); }
@@ -2711,82 +3206,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_varValueSpec; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVarValueSpec(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVarValueSpec(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VarValueSpecContext varValueSpec() {
+	public VarValueSpecContext varValueSpec()
+	{
 		VarValueSpecContext _localctx = new VarValueSpecContext(Context, State);
 		EnterRule(_localctx, 70, RULE_varValueSpec);
-		try {
+		try
+		{
 			State = 627;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,36,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 621;
-				Match(ABSOLUTE);
-				State = 622;
-				ident();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 623;
-				Match(ABSOLUTE);
-				State = 624;
-				constExpression();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 625;
-				Match(EQUAL);
-				State = 626;
-				constExpression();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 36, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 621;
+						Match(ABSOLUTE);
+						State = 622;
+						ident();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 623;
+						Match(ABSOLUTE);
+						State = 624;
+						constExpression();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 625;
+						Match(EQUAL);
+						State = 626;
+						constExpression();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExportsSectionContext : ParserRuleContext {
+	public partial class ExportsSectionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXPORTS() { return GetToken(DelphiParser.EXPORTS, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExportItemContext[] exportItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExportItemContext[] exportItem()
+		{
 			return GetRuleContexts<ExportItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExportItemContext exportItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExportItemContext exportItem(int i)
+		{
 			return GetRuleContext<ExportItemContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public ExportsSectionContext(ParserRuleContext parent, int invokingState)
@@ -2795,77 +3308,91 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_exportsSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExportsSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExportsSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExportsSectionContext exportsSection() {
+	public ExportsSectionContext exportsSection()
+	{
 		ExportsSectionContext _localctx = new ExportsSectionContext(Context, State);
 		EnterRule(_localctx, 72, RULE_exportsSection);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 629;
-			Match(EXPORTS);
-			State = 630;
-			ident();
-			State = 631;
-			exportItem();
-			State = 638;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 632;
-				Match(COMMA);
-				State = 633;
+				State = 629;
+				Match(EXPORTS);
+				State = 630;
 				ident();
-				State = 634;
+				State = 631;
 				exportItem();
-				}
-				}
-				State = 640;
+				State = 638;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 641;
-			Match(SEMI);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 632;
+							Match(COMMA);
+							State = 633;
+							ident();
+							State = 634;
+							exportItem();
+						}
+					}
+					State = 640;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 641;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExportItemContext : ParserRuleContext {
+	public partial class ExportItemContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INDEX() { return GetToken(DelphiParser.INDEX, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NAME() { return GetToken(DelphiParser.NAME, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RESIDENT() { return GetToken(DelphiParser.RESIDENT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterListContext formalParameterList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterListContext formalParameterList()
+		{
 			return GetRuleContext<FormalParameterListContext>(0);
 		}
 		public ExportItemContext(ParserRuleContext parent, int invokingState)
@@ -2874,118 +3401,146 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_exportItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExportItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExportItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExportItemContext exportItem() {
+	public ExportItemContext exportItem()
+	{
 		ExportItemContext _localctx = new ExportItemContext(Context, State);
 		EnterRule(_localctx, 74, RULE_exportItem);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 648;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LPAREN) {
-				{
-				State = 643;
-				Match(LPAREN);
-				State = 645;
+				State = 648;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271943462992L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2883288972791916811L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
+				if (_la == LPAREN)
+				{
 					{
-					State = 644;
-					formalParameterList();
+						State = 643;
+						Match(LPAREN);
+						State = 645;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271943462992L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2883288972791916811L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+						{
+							{
+								State = 644;
+								formalParameterList();
+							}
+						}
+
+						State = 647;
+						Match(RPAREN);
 					}
 				}
 
-				State = 647;
-				Match(RPAREN);
-				}
-			}
-
-			State = 652;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==INDEX) {
+				State = 652;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == INDEX)
 				{
-				State = 650;
-				Match(INDEX);
-				State = 651;
-				expression();
+					{
+						State = 650;
+						Match(INDEX);
+						State = 651;
+						expression();
+					}
 				}
-			}
 
-			State = 656;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==NAME) {
+				State = 656;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == NAME)
 				{
-				State = 654;
-				Match(NAME);
-				State = 655;
-				expression();
+					{
+						State = 654;
+						Match(NAME);
+						State = 655;
+						expression();
+					}
 				}
-			}
 
-			State = 659;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==RESIDENT) {
+				State = 659;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == RESIDENT)
 				{
-				State = 658;
-				Match(RESIDENT);
+					{
+						State = 658;
+						Match(RESIDENT);
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class TypeDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public StrucTypeContext strucType() {
+	public partial class TypeDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StrucTypeContext strucType()
+		{
 			return GetRuleContext<StrucTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public PointerTypeContext pointerType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public PointerTypeContext pointerType()
+		{
 			return GetRuleContext<PointerTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public StringTypeContext stringType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StringTypeContext stringType()
+		{
 			return GetRuleContext<StringTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ProcedureTypeContext procedureType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcedureTypeContext procedureType()
+		{
 			return GetRuleContext<ProcedureTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VariantTypeContext variantType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VariantTypeContext variantType()
+		{
 			return GetRuleContext<VariantTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TYPE() { return GetToken(DelphiParser.TYPE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public GenericPostfixContext genericPostfix() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericPostfixContext genericPostfix()
+		{
 			return GetRuleContext<GenericPostfixContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleTypeContext simpleType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleTypeContext simpleType()
+		{
 			return GetRuleContext<SimpleTypeContext>(0);
 		}
 		public TypeDeclContext(ParserRuleContext parent, int invokingState)
@@ -2994,110 +3549,122 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_typeDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterTypeDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitTypeDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public TypeDeclContext typeDecl() {
+	public TypeDeclContext typeDecl()
+	{
 		TypeDeclContext _localctx = new TypeDeclContext(Context, State);
 		EnterRule(_localctx, 76, RULE_typeDecl);
 		int _la;
-		try {
+		try
+		{
 			State = 674;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,45,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 661;
-				strucType();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 662;
-				pointerType();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 663;
-				stringType();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 664;
-				procedureType();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 665;
-				variantType();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 667;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==TYPE) {
-					{
-					State = 666;
-					Match(TYPE);
-					}
-				}
-
-				State = 669;
-				typeId();
-				State = 671;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,44,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 45, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 670;
-					genericPostfix();
+						State = 661;
+						strucType();
 					}
 					break;
-				}
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 673;
-				simpleType();
-				}
-				break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 662;
+						pointerType();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 663;
+						stringType();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 664;
+						procedureType();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 665;
+						variantType();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 667;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == TYPE)
+						{
+							{
+								State = 666;
+								Match(TYPE);
+							}
+						}
+
+						State = 669;
+						typeId();
+						State = 671;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 44, Context))
+						{
+							case 1:
+								{
+									State = 670;
+									genericPostfix();
+								}
+								break;
+						}
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 673;
+						simpleType();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class StrucTypeContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public StrucTypePartContext strucTypePart() {
+	public partial class StrucTypeContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StrucTypePartContext strucTypePart()
+		{
 			return GetRuleContext<StrucTypePartContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PACKED() { return GetToken(DelphiParser.PACKED, 0); }
@@ -3107,61 +3674,77 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_strucType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterStrucType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitStrucType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public StrucTypeContext strucType() {
+	public StrucTypeContext strucType()
+	{
 		StrucTypeContext _localctx = new StrucTypeContext(Context, State);
 		EnterRule(_localctx, 78, RULE_strucType);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 677;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==PACKED) {
+				State = 677;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == PACKED)
 				{
-				State = 676;
-				Match(PACKED);
+					{
+						State = 676;
+						Match(PACKED);
+					}
 				}
-			}
 
-			State = 679;
-			strucTypePart();
+				State = 679;
+				strucTypePart();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class StrucTypePartContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ArrayTypeContext arrayType() {
+	public partial class StrucTypePartContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ArrayTypeContext arrayType()
+		{
 			return GetRuleContext<ArrayTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SetTypeContext setType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SetTypeContext setType()
+		{
 			return GetRuleContext<SetTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FileTypeContext fileType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FileTypeContext fileType()
+		{
 			return GetRuleContext<FileTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassDeclContext classDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassDeclContext classDecl()
+		{
 			return GetRuleContext<ClassDeclContext>(0);
 		}
 		public StrucTypePartContext(ParserRuleContext parent, int invokingState)
@@ -3170,88 +3753,104 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_strucTypePart; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterStrucTypePart(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitStrucTypePart(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public StrucTypePartContext strucTypePart() {
+	public StrucTypePartContext strucTypePart()
+	{
 		StrucTypePartContext _localctx = new StrucTypePartContext(Context, State);
 		EnterRule(_localctx, 80, RULE_strucTypePart);
-		try {
+		try
+		{
 			State = 685;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case ARRAY:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 681;
-				arrayType();
-				}
-				break;
-			case SET:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 682;
-				setType();
-				}
-				break;
-			case FILE:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 683;
-				fileType();
-				}
-				break;
-			case CLASS:
-			case DISPINTERFACE:
-			case INTERFACE:
-			case OBJECT:
-			case RECORD:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 684;
-				classDecl();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case ARRAY:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 681;
+						arrayType();
+					}
+					break;
+				case SET:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 682;
+						setType();
+					}
+					break;
+				case FILE:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 683;
+						fileType();
+					}
+					break;
+				case CLASS:
+				case DISPINTERFACE:
+				case INTERFACE:
+				case OBJECT:
+				case RECORD:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 684;
+						classDecl();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ArrayTypeContext : ParserRuleContext {
+	public partial class ArrayTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ARRAY() { return GetToken(DelphiParser.ARRAY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ArraySubTypeContext arraySubType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ArraySubTypeContext arraySubType()
+		{
 			return GetRuleContext<ArraySubTypeContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ArrayIndexContext[] arrayIndex() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ArrayIndexContext[] arrayIndex()
+		{
 			return GetRuleContexts<ArrayIndexContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ArrayIndexContext arrayIndex(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ArrayIndexContext arrayIndex(int i)
+		{
 			return GetRuleContext<ArrayIndexContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public ArrayTypeContext(ParserRuleContext parent, int invokingState)
@@ -3260,98 +3859,115 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_arrayType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterArrayType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitArrayType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ArrayTypeContext arrayType() {
+	public ArrayTypeContext arrayType()
+	{
 		ArrayTypeContext _localctx = new ArrayTypeContext(Context, State);
 		EnterRule(_localctx, 82, RULE_arrayType);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 687;
-			Match(ARRAY);
-			State = 702;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LBRACK) {
+				State = 687;
+				Match(ARRAY);
+				State = 702;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == LBRACK)
 				{
-				State = 688;
-				Match(LBRACK);
-				State = 690;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874563387901L) != 0)) {
 					{
-					State = 689;
-					arrayIndex();
-					}
-				}
-
-				State = 698;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==COMMA) {
-					{
-					{
-					State = 692;
-					Match(COMMA);
-					State = 694;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-					if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874563387901L) != 0)) {
+						State = 688;
+						Match(LBRACK);
+						State = 690;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874563387901L) != 0))
 						{
-						State = 693;
-						arrayIndex();
+							{
+								State = 689;
+								arrayIndex();
+							}
 						}
-					}
 
-					}
-					}
-					State = 700;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 701;
-				Match(RBRACK);
-				}
-			}
+						State = 698;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == COMMA)
+						{
+							{
+								{
+									State = 692;
+									Match(COMMA);
+									State = 694;
+									ErrorHandler.Sync(this);
+									_la = TokenStream.LA(1);
+									if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874563387901L) != 0))
+									{
+										{
+											State = 693;
+											arrayIndex();
+										}
+									}
 
-			State = 704;
-			Match(OF);
-			State = 705;
-			arraySubType();
+								}
+							}
+							State = 700;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 701;
+						Match(RBRACK);
+					}
+				}
+
+				State = 704;
+				Match(OF);
+				State = 705;
+				arraySubType();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ArrayIndexContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+	public partial class ArrayIndexContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOTDOT() { return GetToken(DelphiParser.DOTDOT, 0); }
@@ -3361,59 +3977,69 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_arrayIndex; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterArrayIndex(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitArrayIndex(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ArrayIndexContext arrayIndex() {
+	public ArrayIndexContext arrayIndex()
+	{
 		ArrayIndexContext _localctx = new ArrayIndexContext(Context, State);
 		EnterRule(_localctx, 84, RULE_arrayIndex);
-		try {
+		try
+		{
 			State = 712;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,52,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 707;
-				typeId();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 708;
-				expression();
-				State = 709;
-				Match(DOTDOT);
-				State = 710;
-				expression();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 52, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 707;
+						typeId();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 708;
+						expression();
+						State = 709;
+						Match(DOTDOT);
+						State = 710;
+						expression();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ArraySubTypeContext : ParserRuleContext {
+	public partial class ArraySubTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CONST() { return GetToken(DelphiParser.CONST, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		public ArraySubTypeContext(ParserRuleContext parent, int invokingState)
@@ -3422,56 +4048,66 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_arraySubType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterArraySubType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitArraySubType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ArraySubTypeContext arraySubType() {
+	public ArraySubTypeContext arraySubType()
+	{
 		ArraySubTypeContext _localctx = new ArraySubTypeContext(Context, State);
 		EnterRule(_localctx, 86, RULE_arraySubType);
-		try {
+		try
+		{
 			State = 716;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,53,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 714;
-				Match(CONST);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 715;
-				typeDecl();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 53, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 714;
+						Match(CONST);
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 715;
+						typeDecl();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SetTypeContext : ParserRuleContext {
+	public partial class SetTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SET() { return GetToken(DelphiParser.SET, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		public SetTypeContext(ParserRuleContext parent, int invokingState)
@@ -3480,47 +4116,56 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_setType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSetType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSetType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SetTypeContext setType() {
+	public SetTypeContext setType()
+	{
 		SetTypeContext _localctx = new SetTypeContext(Context, State);
 		EnterRule(_localctx, 88, RULE_setType);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 718;
-			Match(SET);
-			State = 719;
-			Match(OF);
-			State = 720;
-			typeDecl();
+				State = 718;
+				Match(SET);
+				State = 719;
+				Match(OF);
+				State = 720;
+				typeDecl();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class FileTypeContext : ParserRuleContext {
+	public partial class FileTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FILE() { return GetToken(DelphiParser.FILE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		public FileTypeContext(ParserRuleContext parent, int invokingState)
@@ -3529,54 +4174,64 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_fileType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFileType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFileType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FileTypeContext fileType() {
+	public FileTypeContext fileType()
+	{
 		FileTypeContext _localctx = new FileTypeContext(Context, State);
 		EnterRule(_localctx, 90, RULE_fileType);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 722;
-			Match(FILE);
-			State = 725;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,54,Context) ) {
-			case 1:
+				State = 722;
+				Match(FILE);
+				State = 725;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 54, Context))
 				{
-				State = 723;
-				Match(OF);
-				State = 724;
-				typeDecl();
+					case 1:
+						{
+							State = 723;
+							Match(OF);
+							State = 724;
+							typeDecl();
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class PointerTypeContext : ParserRuleContext {
+	public partial class PointerTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode POINTER2() { return GetToken(DelphiParser.POINTER2, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode POINTER() { return GetToken(DelphiParser.POINTER, 0); }
@@ -3586,66 +4241,78 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_pointerType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterPointerType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitPointerType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public PointerTypeContext pointerType() {
+	public PointerTypeContext pointerType()
+	{
 		PointerTypeContext _localctx = new PointerTypeContext(Context, State);
 		EnterRule(_localctx, 92, RULE_pointerType);
-		try {
+		try
+		{
 			State = 730;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case POINTER2:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 727;
-				Match(POINTER2);
-				State = 728;
-				typeDecl();
-				}
-				break;
-			case POINTER:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 729;
-				Match(POINTER);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case POINTER2:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 727;
+						Match(POINTER2);
+						State = 728;
+						typeDecl();
+					}
+					break;
+				case POINTER:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 729;
+						Match(POINTER);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class StringTypeContext : ParserRuleContext {
+	public partial class StringTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRING() { return GetToken(DelphiParser.STRING, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ANSISTRING() { return GetToken(DelphiParser.ANSISTRING, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TYPE() { return GetToken(DelphiParser.TYPE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CodePageNumberContext codePageNumber() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CodePageNumberContext codePageNumber()
+		{
 			return GetRuleContext<CodePageNumberContext>(0);
 		}
 		public StringTypeContext(ParserRuleContext parent, int invokingState)
@@ -3654,93 +4321,106 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_stringType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterStringType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitStringType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public StringTypeContext stringType() {
+	public StringTypeContext stringType()
+	{
 		StringTypeContext _localctx = new StringTypeContext(Context, State);
 		EnterRule(_localctx, 94, RULE_stringType);
 		int _la;
-		try {
+		try
+		{
 			State = 746;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case STRING:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 732;
-				Match(STRING);
-				State = 737;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,56,Context) ) {
-				case 1:
+			switch (TokenStream.LA(1))
+			{
+				case STRING:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 733;
-					Match(LBRACK);
-					State = 734;
-					expression();
-					State = 735;
-					Match(RBRACK);
+						State = 732;
+						Match(STRING);
+						State = 737;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 56, Context))
+						{
+							case 1:
+								{
+									State = 733;
+									Match(LBRACK);
+									State = 734;
+									expression();
+									State = 735;
+									Match(RBRACK);
+								}
+								break;
+						}
 					}
 					break;
-				}
-				}
-				break;
-			case ANSISTRING:
-			case TYPE:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 740;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==TYPE) {
+				case ANSISTRING:
+				case TYPE:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 739;
-					Match(TYPE);
-					}
-				}
+						State = 740;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == TYPE)
+						{
+							{
+								State = 739;
+								Match(TYPE);
+							}
+						}
 
-				State = 742;
-				Match(ANSISTRING);
-				State = 744;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,58,Context) ) {
-				case 1:
-					{
-					State = 743;
-					codePageNumber();
+						State = 742;
+						Match(ANSISTRING);
+						State = 744;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 58, Context))
+						{
+							case 1:
+								{
+									State = 743;
+									codePageNumber();
+								}
+								break;
+						}
 					}
 					break;
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CodePageNumberContext : ParserRuleContext {
+	public partial class CodePageNumberContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IntNumContext intNum() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IntNumContext intNum()
+		{
 			return GetRuleContext<IntNumContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
@@ -3750,51 +4430,64 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_codePageNumber; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCodePageNumber(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCodePageNumber(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CodePageNumberContext codePageNumber() {
+	public CodePageNumberContext codePageNumber()
+	{
 		CodePageNumberContext _localctx = new CodePageNumberContext(Context, State);
 		EnterRule(_localctx, 96, RULE_codePageNumber);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 748;
-			Match(LPAREN);
-			State = 749;
-			intNum();
-			State = 750;
-			Match(RPAREN);
+				State = 748;
+				Match(LPAREN);
+				State = 749;
+				intNum();
+				State = 750;
+				Match(RPAREN);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProcedureTypeContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public MethodTypeContext methodType() {
+	public partial class ProcedureTypeContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodTypeContext methodType()
+		{
 			return GetRuleContext<MethodTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleProcedureTypeContext simpleProcedureType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleProcedureTypeContext simpleProcedureType()
+		{
 			return GetRuleContext<SimpleProcedureTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ProcedureReferenceContext procedureReference() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcedureReferenceContext procedureReference()
+		{
 			return GetRuleContext<ProcedureReferenceContext>(0);
 		}
 		public ProcedureTypeContext(ParserRuleContext parent, int invokingState)
@@ -3803,61 +4496,71 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procedureType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProcedureType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProcedureType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProcedureTypeContext procedureType() {
+	public ProcedureTypeContext procedureType()
+	{
 		ProcedureTypeContext _localctx = new ProcedureTypeContext(Context, State);
 		EnterRule(_localctx, 98, RULE_procedureType);
-		try {
+		try
+		{
 			State = 755;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,60,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 752;
-				methodType();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 753;
-				simpleProcedureType();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 754;
-				procedureReference();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 60, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 752;
+						methodType();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 753;
+						simpleProcedureType();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 754;
+						procedureReference();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodTypeContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ProcedureTypeHeadingContext procedureTypeHeading() {
+	public partial class MethodTypeContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcedureTypeHeadingContext procedureTypeHeading()
+		{
 			return GetRuleContext<ProcedureTypeHeadingContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
@@ -3868,48 +4571,59 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodTypeContext methodType() {
+	public MethodTypeContext methodType()
+	{
 		MethodTypeContext _localctx = new MethodTypeContext(Context, State);
 		EnterRule(_localctx, 100, RULE_methodType);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 757;
-			procedureTypeHeading();
-			State = 758;
-			Match(OF);
-			State = 759;
-			Match(OBJECT);
+				State = 757;
+				procedureTypeHeading();
+				State = 758;
+				Match(OF);
+				State = 759;
+				Match(OBJECT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SimpleProcedureTypeContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ProcedureTypeHeadingContext procedureTypeHeading() {
+	public partial class SimpleProcedureTypeContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcedureTypeHeadingContext procedureTypeHeading()
+		{
 			return GetRuleContext<ProcedureTypeHeadingContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CallConventionNoSemiContext callConventionNoSemi() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CallConventionNoSemiContext callConventionNoSemi()
+		{
 			return GetRuleContext<CallConventionNoSemiContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -3919,64 +4633,75 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleProcedureType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSimpleProcedureType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSimpleProcedureType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SimpleProcedureTypeContext simpleProcedureType() {
+	public SimpleProcedureTypeContext simpleProcedureType()
+	{
 		SimpleProcedureTypeContext _localctx = new SimpleProcedureTypeContext(Context, State);
 		EnterRule(_localctx, 102, RULE_simpleProcedureType);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 761;
-			procedureTypeHeading();
-			State = 766;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,62,Context) ) {
-			case 1:
-				{
-				State = 763;
+				State = 761;
+				procedureTypeHeading();
+				State = 766;
 				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==SEMI) {
-					{
-					State = 762;
-					Match(SEMI);
-					}
-				}
+				switch (Interpreter.AdaptivePredict(TokenStream, 62, Context))
+				{
+					case 1:
+						{
+							State = 763;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+							if (_la == SEMI)
+							{
+								{
+									State = 762;
+									Match(SEMI);
+								}
+							}
 
-				State = 765;
-				callConventionNoSemi();
+							State = 765;
+							callConventionNoSemi();
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProcedureReferenceContext : ParserRuleContext {
+	public partial class ProcedureReferenceContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REFERENCE() { return GetToken(DelphiParser.REFERENCE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TO() { return GetToken(DelphiParser.TO, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ProcedureTypeHeadingContext procedureTypeHeading() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcedureTypeHeadingContext procedureTypeHeading()
+		{
 			return GetRuleContext<ProcedureTypeHeadingContext>(0);
 		}
 		public ProcedureReferenceContext(ParserRuleContext parent, int invokingState)
@@ -3985,53 +4710,66 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procedureReference; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProcedureReference(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProcedureReference(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProcedureReferenceContext procedureReference() {
+	public ProcedureReferenceContext procedureReference()
+	{
 		ProcedureReferenceContext _localctx = new ProcedureReferenceContext(Context, State);
 		EnterRule(_localctx, 104, RULE_procedureReference);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 768;
-			Match(REFERENCE);
-			State = 769;
-			Match(TO);
-			State = 770;
-			procedureTypeHeading();
+				State = 768;
+				Match(REFERENCE);
+				State = 769;
+				Match(TO);
+				State = 770;
+				procedureTypeHeading();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProcedureTypeHeadingContext : ParserRuleContext {
+	public partial class ProcedureTypeHeadingContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DelphiParser.FUNCTION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterSectionContext formalParameterSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterSectionContext formalParameterSection()
+		{
 			return GetRuleContext<FormalParameterSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(DelphiParser.PROCEDURE, 0); }
@@ -4041,90 +4779,101 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procedureTypeHeading; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProcedureTypeHeading(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProcedureTypeHeading(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProcedureTypeHeadingContext procedureTypeHeading() {
+	public ProcedureTypeHeadingContext procedureTypeHeading()
+	{
 		ProcedureTypeHeadingContext _localctx = new ProcedureTypeHeadingContext(Context, State);
 		EnterRule(_localctx, 106, RULE_procedureTypeHeading);
 		int _la;
-		try {
+		try
+		{
 			State = 785;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case FUNCTION:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 772;
-				Match(FUNCTION);
-				State = 774;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
+			switch (TokenStream.LA(1))
+			{
+				case FUNCTION:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 773;
-					formalParameterSection();
-					}
-				}
+						State = 772;
+						Match(FUNCTION);
+						State = 774;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 773;
+								formalParameterSection();
+							}
+						}
 
-				State = 776;
-				Match(COLON);
-				State = 778;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,64,Context) ) {
-				case 1:
-					{
-					State = 777;
-					customAttribute();
+						State = 776;
+						Match(COLON);
+						State = 778;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 64, Context))
+						{
+							case 1:
+								{
+									State = 777;
+									customAttribute();
+								}
+								break;
+						}
+						State = 780;
+						typeDecl();
 					}
 					break;
-				}
-				State = 780;
-				typeDecl();
-				}
-				break;
-			case PROCEDURE:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 781;
-				Match(PROCEDURE);
-				State = 783;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,65,Context) ) {
-				case 1:
+				case PROCEDURE:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 782;
-					formalParameterSection();
+						State = 781;
+						Match(PROCEDURE);
+						State = 783;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 65, Context))
+						{
+							case 1:
+								{
+									State = 782;
+									formalParameterSection();
+								}
+								break;
+						}
 					}
 					break;
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VariantTypeContext : ParserRuleContext {
+	public partial class VariantTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VARIANT() { return GetToken(DelphiParser.VARIANT, 0); }
 		public VariantTypeContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
@@ -4132,47 +4881,60 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_variantType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVariantType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVariantType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VariantTypeContext variantType() {
+	public VariantTypeContext variantType()
+	{
 		VariantTypeContext _localctx = new VariantTypeContext(Context, State);
 		EnterRule(_localctx, 108, RULE_variantType);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 787;
-			Match(VARIANT);
+				State = 787;
+				Match(VARIANT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SimpleTypeContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+	public partial class SimpleTypeContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SubRangeTypeContext subRangeType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SubRangeTypeContext subRangeType()
+		{
 			return GetRuleContext<SubRangeTypeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public EnumTypeContext enumType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public EnumTypeContext enumType()
+		{
 			return GetRuleContext<EnumTypeContext>(0);
 		}
 		public SimpleTypeContext(ParserRuleContext parent, int invokingState)
@@ -4181,64 +4943,76 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSimpleType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSimpleType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SimpleTypeContext simpleType() {
+	public SimpleTypeContext simpleType()
+	{
 		SimpleTypeContext _localctx = new SimpleTypeContext(Context, State);
 		EnterRule(_localctx, 110, RULE_simpleType);
-		try {
+		try
+		{
 			State = 792;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,67,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 789;
-				ident();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 790;
-				subRangeType();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 791;
-				enumType();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 67, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 789;
+						ident();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 790;
+						subRangeType();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 791;
+						enumType();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SubRangeTypeContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext[] constExpression() {
+	public partial class SubRangeTypeContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext[] constExpression()
+		{
 			return GetRuleContexts<ConstExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression(int i)
+		{
 			return GetRuleContext<ConstExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOTDOT() { return GetToken(DelphiParser.DOTDOT, 0); }
@@ -4248,72 +5022,92 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_subRangeType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSubRangeType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSubRangeType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SubRangeTypeContext subRangeType() {
+	public SubRangeTypeContext subRangeType()
+	{
 		SubRangeTypeContext _localctx = new SubRangeTypeContext(Context, State);
 		EnterRule(_localctx, 112, RULE_subRangeType);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 794;
-			constExpression();
-			State = 797;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,68,Context) ) {
-			case 1:
-				{
-				State = 795;
-				Match(DOTDOT);
-				State = 796;
+				State = 794;
 				constExpression();
+				State = 797;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 68, Context))
+				{
+					case 1:
+						{
+							State = 795;
+							Match(DOTDOT);
+							State = 796;
+							constExpression();
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class EnumTypeContext : ParserRuleContext {
+	public partial class EnumTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] EQUAL() { return GetTokens(DelphiParser.EQUAL); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode EQUAL(int i)
+		{
 			return GetToken(DelphiParser.EQUAL, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public EnumTypeContext(ParserRuleContext parent, int invokingState)
@@ -4322,86 +5116,98 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_enumType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterEnumType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitEnumType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public EnumTypeContext enumType() {
+	public EnumTypeContext enumType()
+	{
 		EnumTypeContext _localctx = new EnumTypeContext(Context, State);
 		EnterRule(_localctx, 114, RULE_enumType);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 799;
-			Match(LPAREN);
-			State = 800;
-			ident();
-			State = 803;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==EQUAL) {
-				{
-				State = 801;
-				Match(EQUAL);
-				State = 802;
-				expression();
-				}
-			}
-
-			State = 813;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 805;
-				Match(COMMA);
-				State = 806;
+				State = 799;
+				Match(LPAREN);
+				State = 800;
 				ident();
-				State = 809;
+				State = 803;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-				if (_la==EQUAL) {
+				if (_la == EQUAL)
+				{
 					{
-					State = 807;
-					Match(EQUAL);
-					State = 808;
-					expression();
+						State = 801;
+						Match(EQUAL);
+						State = 802;
+						expression();
 					}
 				}
 
-				}
-				}
-				State = 815;
+				State = 813;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 816;
-			Match(RPAREN);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 805;
+							Match(COMMA);
+							State = 806;
+							ident();
+							State = 809;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+							if (_la == EQUAL)
+							{
+								{
+									State = 807;
+									Match(EQUAL);
+									State = 808;
+									expression();
+								}
+							}
+
+						}
+					}
+					State = 815;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 816;
+				Match(RPAREN);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class TypeIdContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public NamespacedQualifiedIdentContext namespacedQualifiedIdent() {
+	public partial class TypeIdContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespacedQualifiedIdentContext namespacedQualifiedIdent()
+		{
 			return GetRuleContext<NamespacedQualifiedIdentContext>(0);
 		}
 		public TypeIdContext(ParserRuleContext parent, int invokingState)
@@ -4410,44 +5216,55 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_typeId; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterTypeId(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitTypeId(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public TypeIdContext typeId() {
+	public TypeIdContext typeId()
+	{
 		TypeIdContext _localctx = new TypeIdContext(Context, State);
 		EnterRule(_localctx, 116, RULE_typeId);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 818;
-			namespacedQualifiedIdent();
+				State = 818;
+				namespacedQualifiedIdent();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class GenericTypeIdentContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public QualifiedIdentContext qualifiedIdent() {
+	public partial class GenericTypeIdentContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public QualifiedIdentContext qualifiedIdent()
+		{
 			return GetRuleContext<QualifiedIdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GenericDefinitionContext genericDefinition() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericDefinitionContext genericDefinition()
+		{
 			return GetRuleContext<GenericDefinitionContext>(0);
 		}
 		public GenericTypeIdentContext(ParserRuleContext parent, int invokingState)
@@ -4456,55 +5273,67 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_genericTypeIdent; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterGenericTypeIdent(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitGenericTypeIdent(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public GenericTypeIdentContext genericTypeIdent() {
+	public GenericTypeIdentContext genericTypeIdent()
+	{
 		GenericTypeIdentContext _localctx = new GenericTypeIdentContext(Context, State);
 		EnterRule(_localctx, 118, RULE_genericTypeIdent);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 820;
-			qualifiedIdent();
-			State = 822;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LT) {
+				State = 820;
+				qualifiedIdent();
+				State = 822;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == LT)
 				{
-				State = 821;
-				genericDefinition();
+					{
+						State = 821;
+						genericDefinition();
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class GenericDefinitionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleGenericDefinitionContext simpleGenericDefinition() {
+	public partial class GenericDefinitionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleGenericDefinitionContext simpleGenericDefinition()
+		{
 			return GetRuleContext<SimpleGenericDefinitionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstrainedGenericDefinitionContext constrainedGenericDefinition() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstrainedGenericDefinitionContext constrainedGenericDefinition()
+		{
 			return GetRuleContext<ConstrainedGenericDefinitionContext>(0);
 		}
 		public GenericDefinitionContext(ParserRuleContext parent, int invokingState)
@@ -4513,63 +5342,77 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_genericDefinition; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterGenericDefinition(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitGenericDefinition(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public GenericDefinitionContext genericDefinition() {
+	public GenericDefinitionContext genericDefinition()
+	{
 		GenericDefinitionContext _localctx = new GenericDefinitionContext(Context, State);
 		EnterRule(_localctx, 120, RULE_genericDefinition);
-		try {
+		try
+		{
 			State = 826;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,73,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 824;
-				simpleGenericDefinition();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 825;
-				constrainedGenericDefinition();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 73, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 824;
+						simpleGenericDefinition();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 825;
+						constrainedGenericDefinition();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SimpleGenericDefinitionContext : ParserRuleContext {
+	public partial class SimpleGenericDefinitionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(DelphiParser.LT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(DelphiParser.GT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public SimpleGenericDefinitionContext(ParserRuleContext parent, int invokingState)
@@ -4578,71 +5421,85 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleGenericDefinition; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSimpleGenericDefinition(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSimpleGenericDefinition(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SimpleGenericDefinitionContext simpleGenericDefinition() {
+	public SimpleGenericDefinitionContext simpleGenericDefinition()
+	{
 		SimpleGenericDefinitionContext _localctx = new SimpleGenericDefinitionContext(Context, State);
 		EnterRule(_localctx, 122, RULE_simpleGenericDefinition);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 828;
-			Match(LT);
-			State = 829;
-			ident();
-			State = 834;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 830;
-				Match(COMMA);
-				State = 831;
+				State = 828;
+				Match(LT);
+				State = 829;
 				ident();
-				}
-				}
-				State = 836;
+				State = 834;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 837;
-			Match(GT);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 830;
+							Match(COMMA);
+							State = 831;
+							ident();
+						}
+					}
+					State = 836;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 837;
+				Match(GT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ConstrainedGenericDefinitionContext : ParserRuleContext {
+	public partial class ConstrainedGenericDefinitionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(DelphiParser.LT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ConstrainedGenericContext[] constrainedGeneric() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstrainedGenericContext[] constrainedGeneric()
+		{
 			return GetRuleContexts<ConstrainedGenericContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstrainedGenericContext constrainedGeneric(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstrainedGenericContext constrainedGeneric(int i)
+		{
 			return GetRuleContext<ConstrainedGenericContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(DelphiParser.GT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] SEMI() { return GetTokens(DelphiParser.SEMI); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode SEMI(int i)
+		{
 			return GetToken(DelphiParser.SEMI, i);
 		}
 		public ConstrainedGenericDefinitionContext(ParserRuleContext parent, int invokingState)
@@ -4651,73 +5508,89 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constrainedGenericDefinition; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterConstrainedGenericDefinition(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitConstrainedGenericDefinition(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ConstrainedGenericDefinitionContext constrainedGenericDefinition() {
+	public ConstrainedGenericDefinitionContext constrainedGenericDefinition()
+	{
 		ConstrainedGenericDefinitionContext _localctx = new ConstrainedGenericDefinitionContext(Context, State);
 		EnterRule(_localctx, 124, RULE_constrainedGenericDefinition);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 839;
-			Match(LT);
-			State = 840;
-			constrainedGeneric();
-			State = 845;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==SEMI) {
-				{
-				{
-				State = 841;
-				Match(SEMI);
-				State = 842;
+				State = 839;
+				Match(LT);
+				State = 840;
 				constrainedGeneric();
-				}
-				}
-				State = 847;
+				State = 845;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 848;
-			Match(GT);
+				while (_la == SEMI)
+				{
+					{
+						{
+							State = 841;
+							Match(SEMI);
+							State = 842;
+							constrainedGeneric();
+						}
+					}
+					State = 847;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 848;
+				Match(GT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ConstrainedGenericContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+	public partial class ConstrainedGenericContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public GenericConstraintContext[] genericConstraint() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericConstraintContext[] genericConstraint()
+		{
 			return GetRuleContexts<GenericConstraintContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GenericConstraintContext genericConstraint(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericConstraintContext genericConstraint(int i)
+		{
 			return GetRuleContext<GenericConstraintContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public ConstrainedGenericContext(ParserRuleContext parent, int invokingState)
@@ -4726,70 +5599,81 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constrainedGeneric; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterConstrainedGeneric(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitConstrainedGeneric(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ConstrainedGenericContext constrainedGeneric() {
+	public ConstrainedGenericContext constrainedGeneric()
+	{
 		ConstrainedGenericContext _localctx = new ConstrainedGenericContext(Context, State);
 		EnterRule(_localctx, 126, RULE_constrainedGeneric);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 850;
-			ident();
-			State = 860;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==COLON) {
-				{
-				State = 851;
-				Match(COLON);
-				State = 852;
-				genericConstraint();
-				State = 857;
+				State = 850;
+				ident();
+				State = 860;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-				while (_la==COMMA) {
+				if (_la == COLON)
+				{
 					{
-					{
-					State = 853;
-					Match(COMMA);
-					State = 854;
-					genericConstraint();
+						State = 851;
+						Match(COLON);
+						State = 852;
+						genericConstraint();
+						State = 857;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == COMMA)
+						{
+							{
+								{
+									State = 853;
+									Match(COMMA);
+									State = 854;
+									genericConstraint();
+								}
+							}
+							State = 859;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
 					}
-					}
-					State = 859;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
 				}
-				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class GenericConstraintContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+	public partial class GenericConstraintContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RECORD() { return GetToken(DelphiParser.RECORD, 0); }
@@ -4801,105 +5685,121 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_genericConstraint; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterGenericConstraint(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitGenericConstraint(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public GenericConstraintContext genericConstraint() {
+	public GenericConstraintContext genericConstraint()
+	{
 		GenericConstraintContext _localctx = new GenericConstraintContext(Context, State);
 		EnterRule(_localctx, 128, RULE_genericConstraint);
 		int _la;
-		try {
+		try
+		{
 			State = 864;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case ADD:
-			case ANSISTRING:
-			case AT:
-			case BREAK:
-			case CONTAINS:
-			case CONTINUE:
-			case DEFAULT:
-			case EXIT:
-			case EXPORT:
-			case FINAL:
-			case IMPLEMENTS:
-			case INDEX:
-			case LOCAL:
-			case MESSAGE:
-			case NAME:
-			case OBJECT:
-			case OPERATOR:
-			case OUT:
-			case POINTER:
-			case READ:
-			case READONLY:
-			case REFERENCE:
-			case REGISTER:
-			case REMOVE:
-			case STORED:
-			case STRICT:
-			case STRING:
-			case VARIANT:
-			case WRITE:
-			case AMBER:
-			case TkIdentifier:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 862;
-				ident();
-				}
-				break;
-			case CLASS:
-			case CONSTRUCTOR:
-			case RECORD:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 863;
-				_la = TokenStream.LA(1);
-				if ( !(_la==CLASS || _la==CONSTRUCTOR || _la==RECORD) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case ADD:
+				case ANSISTRING:
+				case AT:
+				case BREAK:
+				case CONTAINS:
+				case CONTINUE:
+				case DEFAULT:
+				case EXIT:
+				case EXPORT:
+				case FINAL:
+				case IMPLEMENTS:
+				case INDEX:
+				case LOCAL:
+				case MESSAGE:
+				case NAME:
+				case OBJECT:
+				case OPERATOR:
+				case OUT:
+				case POINTER:
+				case READ:
+				case READONLY:
+				case REFERENCE:
+				case REGISTER:
+				case REMOVE:
+				case STORED:
+				case STRICT:
+				case STRING:
+				case VARIANT:
+				case WRITE:
+				case AMBER:
+				case TkIdentifier:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 862;
+						ident();
+					}
+					break;
+				case CLASS:
+				case CONSTRUCTOR:
+				case RECORD:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 863;
+						_la = TokenStream.LA(1);
+						if (!(_la == CLASS || _la == CONSTRUCTOR || _la == RECORD))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class GenericPostfixContext : ParserRuleContext {
+	public partial class GenericPostfixContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(DelphiParser.LT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext[] typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext[] typeDecl()
+		{
 			return GetRuleContexts<TypeDeclContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl(int i)
+		{
 			return GetRuleContext<TypeDeclContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(DelphiParser.GT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public GenericPostfixContext(ParserRuleContext parent, int invokingState)
@@ -4908,80 +5808,102 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_genericPostfix; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterGenericPostfix(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitGenericPostfix(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public GenericPostfixContext genericPostfix() {
+	public GenericPostfixContext genericPostfix()
+	{
 		GenericPostfixContext _localctx = new GenericPostfixContext(Context, State);
 		EnterRule(_localctx, 130, RULE_genericPostfix);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 866;
-			Match(LT);
-			State = 867;
-			typeDecl();
-			State = 872;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 868;
-				Match(COMMA);
-				State = 869;
+				State = 866;
+				Match(LT);
+				State = 867;
 				typeDecl();
-				}
-				}
-				State = 874;
+				State = 872;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 875;
-			Match(GT);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 868;
+							Match(COMMA);
+							State = 869;
+							typeDecl();
+						}
+					}
+					State = 874;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 875;
+				Match(GT);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ClassTypeTypeDeclContext classTypeTypeDecl() {
+	public partial class ClassDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassTypeTypeDeclContext classTypeTypeDecl()
+		{
 			return GetRuleContext<ClassTypeTypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassTypeDeclContext classTypeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassTypeDeclContext classTypeDecl()
+		{
 			return GetRuleContext<ClassTypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassHelperDeclContext classHelperDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassHelperDeclContext classHelperDecl()
+		{
 			return GetRuleContext<ClassHelperDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceTypeDeclContext interfaceTypeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceTypeDeclContext interfaceTypeDecl()
+		{
 			return GetRuleContext<InterfaceTypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ObjectDeclContext objectDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ObjectDeclContext objectDecl()
+		{
 			return GetRuleContext<ObjectDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordDeclContext recordDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordDeclContext recordDecl()
+		{
 			return GetRuleContext<RecordDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordHelperDeclContext recordHelperDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordHelperDeclContext recordHelperDecl()
+		{
 			return GetRuleContext<RecordHelperDeclContext>(0);
 		}
 		public ClassDeclContext(ParserRuleContext parent, int invokingState)
@@ -4990,91 +5912,101 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassDeclContext classDecl() {
+	public ClassDeclContext classDecl()
+	{
 		ClassDeclContext _localctx = new ClassDeclContext(Context, State);
 		EnterRule(_localctx, 132, RULE_classDecl);
-		try {
+		try
+		{
 			State = 884;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,80,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 877;
-				classTypeTypeDecl();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 878;
-				classTypeDecl();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 879;
-				classHelperDecl();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 880;
-				interfaceTypeDecl();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 881;
-				objectDecl();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 882;
-				recordDecl();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 883;
-				recordHelperDecl();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 80, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 877;
+						classTypeTypeDecl();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 878;
+						classTypeDecl();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 879;
+						classHelperDecl();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 880;
+						interfaceTypeDecl();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 881;
+						objectDecl();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 882;
+						recordDecl();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 883;
+						recordHelperDecl();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassTypeTypeDeclContext : ParserRuleContext {
+	public partial class ClassTypeTypeDeclContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		public ClassTypeTypeDeclContext(ParserRuleContext parent, int invokingState)
@@ -5083,56 +6015,71 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classTypeTypeDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassTypeTypeDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassTypeTypeDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassTypeTypeDeclContext classTypeTypeDecl() {
+	public ClassTypeTypeDeclContext classTypeTypeDecl()
+	{
 		ClassTypeTypeDeclContext _localctx = new ClassTypeTypeDeclContext(Context, State);
 		EnterRule(_localctx, 134, RULE_classTypeTypeDecl);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 886;
-			Match(CLASS);
-			State = 887;
-			Match(OF);
-			State = 888;
-			typeId();
+				State = 886;
+				Match(CLASS);
+				State = 887;
+				Match(OF);
+				State = 888;
+				typeId();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassTypeDeclContext : ParserRuleContext {
+	public partial class ClassTypeDeclContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ClassStateContext classState() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassStateContext classState()
+		{
 			return GetRuleContext<ClassStateContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassParentContext classParent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassParentContext classParent()
+		{
 			return GetRuleContext<ClassParentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassItemContext[] classItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassItemContext[] classItem()
+		{
 			return GetRuleContexts<ClassItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassItemContext classItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassItemContext classItem(int i)
+		{
 			return GetRuleContext<ClassItemContext>(i);
 		}
 		public ClassTypeDeclContext(ParserRuleContext parent, int invokingState)
@@ -5141,100 +6088,112 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classTypeDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassTypeDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassTypeDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassTypeDeclContext classTypeDecl() {
+	public ClassTypeDeclContext classTypeDecl()
+	{
 		ClassTypeDeclContext _localctx = new ClassTypeDeclContext(Context, State);
 		EnterRule(_localctx, 136, RULE_classTypeDecl);
 		int _la;
-		try {
+		try
+		{
 			State = 908;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,85,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 890;
-				Match(CLASS);
-				State = 892;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==ABSTRACT || _la==SEALED) {
-					{
-					State = 891;
-					classState();
-					}
-				}
-
-				State = 895;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 894;
-					classParent();
-					}
-				}
-
-				State = 900;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90653221931757650L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2903555721128847627L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
-					{
-					{
-					State = 897;
-					classItem();
-					}
-					}
-					State = 902;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 903;
-				Match(END);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 904;
-				Match(CLASS);
-				State = 906;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,84,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 85, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 905;
-					classParent();
+						State = 890;
+						Match(CLASS);
+						State = 892;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == ABSTRACT || _la == SEALED)
+						{
+							{
+								State = 891;
+								classState();
+							}
+						}
+
+						State = 895;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 894;
+								classParent();
+							}
+						}
+
+						State = 900;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90653221931757650L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2903555721128847627L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+						{
+							{
+								{
+									State = 897;
+									classItem();
+								}
+							}
+							State = 902;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 903;
+						Match(END);
 					}
 					break;
-				}
-				}
-				break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 904;
+						Match(CLASS);
+						State = 906;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 84, Context))
+						{
+							case 1:
+								{
+									State = 905;
+									classParent();
+								}
+								break;
+						}
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassStateContext : ParserRuleContext {
+	public partial class ClassStateContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEALED() { return GetToken(DelphiParser.SEALED, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ABSTRACT() { return GetToken(DelphiParser.ABSTRACT, 0); }
 		public ClassStateContext(ParserRuleContext parent, int invokingState)
@@ -5243,58 +6202,73 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classState; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassState(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassState(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassStateContext classState() {
+	public ClassStateContext classState()
+	{
 		ClassStateContext _localctx = new ClassStateContext(Context, State);
 		EnterRule(_localctx, 138, RULE_classState);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 910;
-			_la = TokenStream.LA(1);
-			if ( !(_la==ABSTRACT || _la==SEALED) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 910;
+				_la = TokenStream.LA(1);
+				if (!(_la == ABSTRACT || _la == SEALED))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassParentContext : ParserRuleContext {
+	public partial class ClassParentContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public GenericTypeIdentContext[] genericTypeIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericTypeIdentContext[] genericTypeIdent()
+		{
 			return GetRuleContexts<GenericTypeIdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GenericTypeIdentContext genericTypeIdent(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericTypeIdentContext genericTypeIdent(int i)
+		{
 			return GetRuleContext<GenericTypeIdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public ClassParentContext(ParserRuleContext parent, int invokingState)
@@ -5303,80 +6277,102 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classParent; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassParent(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassParent(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassParentContext classParent() {
+	public ClassParentContext classParent()
+	{
 		ClassParentContext _localctx = new ClassParentContext(Context, State);
 		EnterRule(_localctx, 140, RULE_classParent);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 912;
-			Match(LPAREN);
-			State = 913;
-			genericTypeIdent();
-			State = 918;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 914;
-				Match(COMMA);
-				State = 915;
+				State = 912;
+				Match(LPAREN);
+				State = 913;
 				genericTypeIdent();
-				}
-				}
-				State = 920;
+				State = 918;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 921;
-			Match(RPAREN);
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 914;
+							Match(COMMA);
+							State = 915;
+							genericTypeIdent();
+						}
+					}
+					State = 920;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 921;
+				Match(RPAREN);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public VisibilityContext visibility() {
+	public partial class ClassItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VisibilityContext visibility()
+		{
 			return GetRuleContext<VisibilityContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassMethodContext classMethod() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassMethodContext classMethod()
+		{
 			return GetRuleContext<ClassMethodContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassFieldContext classField() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassFieldContext classField()
+		{
 			return GetRuleContext<ClassFieldContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyContext classProperty() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyContext classProperty()
+		{
 			return GetRuleContext<ClassPropertyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstSectionContext constSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstSectionContext constSection()
+		{
 			return GetRuleContext<ConstSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeSectionContext typeSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeSectionContext typeSection()
+		{
 			return GetRuleContext<TypeSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarSectionContext varSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarSectionContext varSection()
+		{
 			return GetRuleContext<VarSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
@@ -5386,113 +6382,130 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassItemContext classItem() {
+	public ClassItemContext classItem()
+	{
 		ClassItemContext _localctx = new ClassItemContext(Context, State);
 		EnterRule(_localctx, 142, RULE_classItem);
 		int _la;
-		try {
+		try
+		{
 			State = 933;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,88,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 923;
-				visibility();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 924;
-				classMethod();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 925;
-				classField();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 926;
-				classProperty();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 927;
-				constSection();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 928;
-				typeSection();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 930;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 88, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 929;
-					Match(CLASS);
+						State = 923;
+						visibility();
 					}
-				}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 924;
+						classMethod();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 925;
+						classField();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 926;
+						classProperty();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 927;
+						constSection();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 928;
+						typeSection();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 930;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
+						{
+							{
+								State = 929;
+								Match(CLASS);
+							}
+						}
 
-				State = 932;
-				varSection();
-				}
-				break;
+						State = 932;
+						varSection();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassHelperDeclContext : ParserRuleContext {
+	public partial class ClassHelperDeclContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode HELPER() { return GetToken(DelphiParser.HELPER, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOR() { return GetToken(DelphiParser.FOR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ClassParentContext classParent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassParentContext classParent()
+		{
 			return GetRuleContext<ClassParentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassHelperItemContext[] classHelperItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassHelperItemContext[] classHelperItem()
+		{
 			return GetRuleContexts<ClassHelperItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassHelperItemContext classHelperItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassHelperItemContext classHelperItem(int i)
+		{
 			return GetRuleContext<ClassHelperItemContext>(i);
 		}
 		public ClassHelperDeclContext(ParserRuleContext parent, int invokingState)
@@ -5501,83 +6514,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classHelperDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassHelperDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassHelperDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassHelperDeclContext classHelperDecl() {
+	public ClassHelperDeclContext classHelperDecl()
+	{
 		ClassHelperDeclContext _localctx = new ClassHelperDeclContext(Context, State);
 		EnterRule(_localctx, 144, RULE_classHelperDecl);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 935;
-			Match(CLASS);
-			State = 936;
-			Match(HELPER);
-			State = 938;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LPAREN) {
-				{
-				State = 937;
-				classParent();
-				}
-			}
-
-			State = 940;
-			Match(FOR);
-			State = 941;
-			typeId();
-			State = 945;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562949988294658L) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & 282711927417857L) != 0)) {
-				{
-				{
-				State = 942;
-				classHelperItem();
-				}
-				}
-				State = 947;
+				State = 935;
+				Match(CLASS);
+				State = 936;
+				Match(HELPER);
+				State = 938;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 948;
-			Match(END);
+				if (_la == LPAREN)
+				{
+					{
+						State = 937;
+						classParent();
+					}
+				}
+
+				State = 940;
+				Match(FOR);
+				State = 941;
+				typeId();
+				State = 945;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562949988294658L) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & 282711927417857L) != 0))
+				{
+					{
+						{
+							State = 942;
+							classHelperItem();
+						}
+					}
+					State = 947;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 948;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassHelperItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public VisibilityContext visibility() {
+	public partial class ClassHelperItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VisibilityContext visibility()
+		{
 			return GetRuleContext<VisibilityContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassMethodContext classMethod() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassMethodContext classMethod()
+		{
 			return GetRuleContext<ClassMethodContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyContext classProperty() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyContext classProperty()
+		{
 			return GetRuleContext<ClassPropertyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarSectionContext varSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarSectionContext varSection()
+		{
 			return GetRuleContext<VarSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
@@ -5587,92 +6617,111 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classHelperItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassHelperItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassHelperItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassHelperItemContext classHelperItem() {
+	public ClassHelperItemContext classHelperItem()
+	{
 		ClassHelperItemContext _localctx = new ClassHelperItemContext(Context, State);
 		EnterRule(_localctx, 146, RULE_classHelperItem);
 		int _la;
-		try {
+		try
+		{
 			State = 957;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,92,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 950;
-				visibility();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 951;
-				classMethod();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 952;
-				classProperty();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 954;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 92, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 953;
-					Match(CLASS);
+						State = 950;
+						visibility();
 					}
-				}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 951;
+						classMethod();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 952;
+						classProperty();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 954;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
+						{
+							{
+								State = 953;
+								Match(CLASS);
+							}
+						}
 
-				State = 956;
-				varSection();
-				}
-				break;
+						State = 956;
+						varSection();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class InterfaceTypeDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceKeyContext interfaceKey() {
+	public partial class InterfaceTypeDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceKeyContext interfaceKey()
+		{
 			return GetRuleContext<InterfaceKeyContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ClassParentContext classParent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassParentContext classParent()
+		{
 			return GetRuleContext<ClassParentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceGuidContext interfaceGuid() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceGuidContext interfaceGuid()
+		{
 			return GetRuleContext<InterfaceGuidContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceItemContext[] interfaceItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceItemContext[] interfaceItem()
+		{
 			return GetRuleContexts<InterfaceItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InterfaceItemContext interfaceItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InterfaceItemContext interfaceItem(int i)
+		{
 			return GetRuleContext<InterfaceItemContext>(i);
 		}
 		public InterfaceTypeDeclContext(ParserRuleContext parent, int invokingState)
@@ -5681,100 +6730,112 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_interfaceTypeDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterInterfaceTypeDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitInterfaceTypeDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public InterfaceTypeDeclContext interfaceTypeDecl() {
+	public InterfaceTypeDeclContext interfaceTypeDecl()
+	{
 		InterfaceTypeDeclContext _localctx = new InterfaceTypeDeclContext(Context, State);
 		EnterRule(_localctx, 148, RULE_interfaceTypeDecl);
 		int _la;
-		try {
+		try
+		{
 			State = 978;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,97,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 959;
-				interfaceKey();
-				State = 961;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 960;
-					classParent();
-					}
-				}
-
-				State = 964;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LBRACK) {
-					{
-					State = 963;
-					interfaceGuid();
-					}
-				}
-
-				State = 969;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562949988286466L) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & 10241L) != 0)) {
-					{
-					{
-					State = 966;
-					interfaceItem();
-					}
-					}
-					State = 971;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 972;
-				Match(END);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 974;
-				interfaceKey();
-				State = 976;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,96,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 97, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 975;
-					classParent();
+						State = 959;
+						interfaceKey();
+						State = 961;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 960;
+								classParent();
+							}
+						}
+
+						State = 964;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LBRACK)
+						{
+							{
+								State = 963;
+								interfaceGuid();
+							}
+						}
+
+						State = 969;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562949988286466L) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & 10241L) != 0))
+						{
+							{
+								{
+									State = 966;
+									interfaceItem();
+								}
+							}
+							State = 971;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 972;
+						Match(END);
 					}
 					break;
-				}
-				}
-				break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 974;
+						interfaceKey();
+						State = 976;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 96, Context))
+						{
+							case 1:
+								{
+									State = 975;
+									classParent();
+								}
+								break;
+						}
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class InterfaceKeyContext : ParserRuleContext {
+	public partial class InterfaceKeyContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INTERFACE() { return GetToken(DelphiParser.INTERFACE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DISPINTERFACE() { return GetToken(DelphiParser.DISPINTERFACE, 0); }
 		public InterfaceKeyContext(ParserRuleContext parent, int invokingState)
@@ -5783,48 +6844,57 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_interfaceKey; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterInterfaceKey(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitInterfaceKey(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public InterfaceKeyContext interfaceKey() {
+	public InterfaceKeyContext interfaceKey()
+	{
 		InterfaceKeyContext _localctx = new InterfaceKeyContext(Context, State);
 		EnterRule(_localctx, 150, RULE_interfaceKey);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 980;
-			_la = TokenStream.LA(1);
-			if ( !(_la==DISPINTERFACE || _la==INTERFACE) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 980;
+				_la = TokenStream.LA(1);
+				if (!(_la == DISPINTERFACE || _la == INTERFACE))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class InterfaceGuidContext : ParserRuleContext {
+	public partial class InterfaceGuidContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode QuotedString() { return GetToken(DelphiParser.QuotedString, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
@@ -5834,48 +6904,59 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_interfaceGuid; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterInterfaceGuid(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitInterfaceGuid(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public InterfaceGuidContext interfaceGuid() {
+	public InterfaceGuidContext interfaceGuid()
+	{
 		InterfaceGuidContext _localctx = new InterfaceGuidContext(Context, State);
 		EnterRule(_localctx, 152, RULE_interfaceGuid);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 982;
-			Match(LBRACK);
-			State = 983;
-			Match(QuotedString);
-			State = 984;
-			Match(RBRACK);
+				State = 982;
+				Match(LBRACK);
+				State = 983;
+				Match(QuotedString);
+				State = 984;
+				Match(RBRACK);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class InterfaceItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ClassMethodContext classMethod() {
+	public partial class InterfaceItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassMethodContext classMethod()
+		{
 			return GetRuleContext<ClassMethodContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyContext classProperty() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyContext classProperty()
+		{
 			return GetRuleContext<ClassPropertyContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
@@ -5885,72 +6966,87 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_interfaceItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterInterfaceItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitInterfaceItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public InterfaceItemContext interfaceItem() {
+	public InterfaceItemContext interfaceItem()
+	{
 		InterfaceItemContext _localctx = new InterfaceItemContext(Context, State);
 		EnterRule(_localctx, 154, RULE_interfaceItem);
-		try {
+		try
+		{
 			State = 991;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,99,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 986;
-				classMethod();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 988;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,98,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 99, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 987;
-					Match(CLASS);
+						State = 986;
+						classMethod();
 					}
 					break;
-				}
-				State = 990;
-				classProperty();
-				}
-				break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 988;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 98, Context))
+						{
+							case 1:
+								{
+									State = 987;
+									Match(CLASS);
+								}
+								break;
+						}
+						State = 990;
+						classProperty();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ObjectDeclContext : ParserRuleContext {
+	public partial class ObjectDeclContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OBJECT() { return GetToken(DelphiParser.OBJECT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ClassParentContext classParent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassParentContext classParent()
+		{
 			return GetRuleContext<ClassParentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ObjectItemContext[] objectItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ObjectItemContext[] objectItem()
+		{
 			return GetRuleContexts<ObjectItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ObjectItemContext objectItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ObjectItemContext objectItem(int i)
+		{
 			return GetRuleContext<ObjectItemContext>(i);
 		}
 		public ObjectDeclContext(ParserRuleContext parent, int invokingState)
@@ -5959,74 +7055,89 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_objectDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterObjectDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitObjectDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ObjectDeclContext objectDecl() {
+	public ObjectDeclContext objectDecl()
+	{
 		ObjectDeclContext _localctx = new ObjectDeclContext(Context, State);
 		EnterRule(_localctx, 156, RULE_objectDecl);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 993;
-			Match(OBJECT);
-			State = 995;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LPAREN) {
-				{
-				State = 994;
-				classParent();
-				}
-			}
-
-			State = 1000;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90653221931233362L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220729665803L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
-				{
-				{
-				State = 997;
-				objectItem();
-				}
-				}
-				State = 1002;
+				State = 993;
+				Match(OBJECT);
+				State = 995;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1003;
-			Match(END);
+				if (_la == LPAREN)
+				{
+					{
+						State = 994;
+						classParent();
+					}
+				}
+
+				State = 1000;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90653221931233362L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220729665803L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+				{
+					{
+						{
+							State = 997;
+							objectItem();
+						}
+					}
+					State = 1002;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1003;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ObjectItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public VisibilityContext visibility() {
+	public partial class ObjectItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VisibilityContext visibility()
+		{
 			return GetRuleContext<VisibilityContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassMethodContext classMethod() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassMethodContext classMethod()
+		{
 			return GetRuleContext<ClassMethodContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassFieldContext classField() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassFieldContext classField()
+		{
 			return GetRuleContext<ClassFieldContext>(0);
 		}
 		public ObjectItemContext(ParserRuleContext parent, int invokingState)
@@ -6035,64 +7146,76 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_objectItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterObjectItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitObjectItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ObjectItemContext objectItem() {
+	public ObjectItemContext objectItem()
+	{
 		ObjectItemContext _localctx = new ObjectItemContext(Context, State);
 		EnterRule(_localctx, 158, RULE_objectItem);
-		try {
+		try
+		{
 			State = 1008;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,102,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1005;
-				visibility();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1006;
-				classMethod();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1007;
-				classField();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 102, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1005;
+						visibility();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1006;
+						classMethod();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1007;
+						classField();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleRecordContext simpleRecord() {
+	public partial class RecordDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleRecordContext simpleRecord()
+		{
 			return GetRuleContext<SimpleRecordContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VariantRecordContext variantRecord() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VariantRecordContext variantRecord()
+		{
 			return GetRuleContext<VariantRecordContext>(0);
 		}
 		public RecordDeclContext(ParserRuleContext parent, int invokingState)
@@ -6101,65 +7224,81 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordDeclContext recordDecl() {
+	public RecordDeclContext recordDecl()
+	{
 		RecordDeclContext _localctx = new RecordDeclContext(Context, State);
 		EnterRule(_localctx, 160, RULE_recordDecl);
-		try {
+		try
+		{
 			State = 1012;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,103,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1010;
-				simpleRecord();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1011;
-				variantRecord();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 103, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1010;
+						simpleRecord();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1011;
+						variantRecord();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SimpleRecordContext : ParserRuleContext {
+	public partial class SimpleRecordContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RECORD() { return GetToken(DelphiParser.RECORD, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public RecordFieldContext[] recordField() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordFieldContext[] recordField()
+		{
 			return GetRuleContexts<RecordFieldContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordFieldContext recordField(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordFieldContext recordField(int i)
+		{
 			return GetRuleContext<RecordFieldContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordItemContext[] recordItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordItemContext[] recordItem()
+		{
 			return GetRuleContexts<RecordItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordItemContext recordItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordItemContext recordItem(int i)
+		{
 			return GetRuleContext<RecordItemContext>(i);
 		}
 		public SimpleRecordContext(ParserRuleContext parent, int invokingState)
@@ -6168,83 +7307,99 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleRecord; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSimpleRecord(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSimpleRecord(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SimpleRecordContext simpleRecord() {
+	public SimpleRecordContext simpleRecord()
+	{
 		SimpleRecordContext _localctx = new SimpleRecordContext(Context, State);
 		EnterRule(_localctx, 162, RULE_simpleRecord);
 		int _la;
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1014;
-			Match(RECORD);
-			State = 1018;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,104,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 1015;
-					recordField();
-					}
-					} 
-				}
-				State = 1020;
+				State = 1014;
+				Match(RECORD);
+				State = 1018;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,104,Context);
-			}
-			State = 1024;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90653221931757650L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2903555721128847627L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
+				_alt = Interpreter.AdaptivePredict(TokenStream, 104, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
 				{
-				{
-				State = 1021;
-				recordItem();
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1015;
+								recordField();
+							}
+						}
+					}
+					State = 1020;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 104, Context);
 				}
-				}
-				State = 1026;
+				State = 1024;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1027;
-			Match(END);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90653221931757650L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2903555721128847627L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+				{
+					{
+						{
+							State = 1021;
+							recordItem();
+						}
+					}
+					State = 1026;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1027;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VariantRecordContext : ParserRuleContext {
+	public partial class VariantRecordContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RECORD() { return GetToken(DelphiParser.RECORD, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public RecordVariantSectionContext recordVariantSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordVariantSectionContext recordVariantSection()
+		{
 			return GetRuleContext<RecordVariantSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public RecordFieldContext[] recordField() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordFieldContext[] recordField()
+		{
 			return GetRuleContexts<RecordFieldContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordFieldContext recordField(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordFieldContext recordField(int i)
+		{
 			return GetRuleContext<RecordFieldContext>(i);
 		}
 		public VariantRecordContext(ParserRuleContext parent, int invokingState)
@@ -6253,78 +7408,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_variantRecord; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVariantRecord(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVariantRecord(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VariantRecordContext variantRecord() {
+	public VariantRecordContext variantRecord()
+	{
 		VariantRecordContext _localctx = new VariantRecordContext(Context, State);
 		EnterRule(_localctx, 164, RULE_variantRecord);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1029;
-			Match(RECORD);
-			State = 1033;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271942938704L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220488493323L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
-				{
-				{
-				State = 1030;
-				recordField();
-				}
-				}
-				State = 1035;
+				State = 1029;
+				Match(RECORD);
+				State = 1033;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1036;
-			recordVariantSection();
-			State = 1037;
-			Match(END);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271942938704L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220488493323L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+				{
+					{
+						{
+							State = 1030;
+							recordField();
+						}
+					}
+					State = 1035;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1036;
+				recordVariantSection();
+				State = 1037;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public VisibilityContext visibility() {
+	public partial class RecordItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VisibilityContext visibility()
+		{
 			return GetRuleContext<VisibilityContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassMethodContext classMethod() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassMethodContext classMethod()
+		{
 			return GetRuleContext<ClassMethodContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyContext classProperty() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyContext classProperty()
+		{
 			return GetRuleContext<ClassPropertyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstSectionContext constSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstSectionContext constSection()
+		{
 			return GetRuleContext<ConstSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeSectionContext typeSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeSectionContext typeSection()
+		{
 			return GetRuleContext<TypeSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordFieldContext recordField() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordFieldContext recordField()
+		{
 			return GetRuleContext<RecordFieldContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public VarSectionContext varSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VarSectionContext varSection()
+		{
 			return GetRuleContext<VarSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
@@ -6334,110 +7511,127 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordItemContext recordItem() {
+	public RecordItemContext recordItem()
+	{
 		RecordItemContext _localctx = new RecordItemContext(Context, State);
 		EnterRule(_localctx, 166, RULE_recordItem);
 		int _la;
-		try {
+		try
+		{
 			State = 1049;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,108,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1039;
-				visibility();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1040;
-				classMethod();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1041;
-				classProperty();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1042;
-				constSection();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1043;
-				typeSection();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 1044;
-				recordField();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 1046;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 108, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1045;
-					Match(CLASS);
+						State = 1039;
+						visibility();
 					}
-				}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1040;
+						classMethod();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1041;
+						classProperty();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1042;
+						constSection();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1043;
+						typeSection();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 1044;
+						recordField();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 1046;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
+						{
+							{
+								State = 1045;
+								Match(CLASS);
+							}
+						}
 
-				State = 1048;
-				varSection();
-				}
-				break;
+						State = 1048;
+						varSection();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordFieldContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentListContext identList() {
+	public partial class RecordFieldContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentListContext identList()
+		{
 			return GetRuleContext<IdentListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -6447,80 +7641,97 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordField; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordField(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordField(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordFieldContext recordField() {
+	public RecordFieldContext recordField()
+	{
 		RecordFieldContext _localctx = new RecordFieldContext(Context, State);
 		EnterRule(_localctx, 168, RULE_recordField);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1051;
-			identList();
-			State = 1052;
-			Match(COLON);
-			State = 1053;
-			typeDecl();
-			State = 1057;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 1054;
-				hintingDirective();
-				}
-				}
-				State = 1059;
+				State = 1051;
+				identList();
+				State = 1052;
+				Match(COLON);
+				State = 1053;
+				typeDecl();
+				State = 1057;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1061;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==SEMI) {
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
 				{
-				State = 1060;
-				Match(SEMI);
+					{
+						{
+							State = 1054;
+							hintingDirective();
+						}
+					}
+					State = 1059;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
 				}
-			}
+				State = 1061;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == SEMI)
+				{
+					{
+						State = 1060;
+						Match(SEMI);
+					}
+				}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordVariantFieldContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentListContext identList() {
+	public partial class RecordVariantFieldContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentListContext identList()
+		{
 			return GetRuleContext<IdentListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -6530,85 +7741,104 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordVariantField; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordVariantField(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordVariantField(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordVariantFieldContext recordVariantField() {
+	public RecordVariantFieldContext recordVariantField()
+	{
 		RecordVariantFieldContext _localctx = new RecordVariantFieldContext(Context, State);
 		EnterRule(_localctx, 170, RULE_recordVariantField);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1063;
-			identList();
-			State = 1064;
-			Match(COLON);
-			State = 1065;
-			typeDecl();
-			State = 1069;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 1066;
-				hintingDirective();
-				}
-				}
-				State = 1071;
+				State = 1063;
+				identList();
+				State = 1064;
+				Match(COLON);
+				State = 1065;
+				typeDecl();
+				State = 1069;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1073;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==SEMI) {
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
 				{
-				State = 1072;
-				Match(SEMI);
+					{
+						{
+							State = 1066;
+							hintingDirective();
+						}
+					}
+					State = 1071;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
 				}
-			}
+				State = 1073;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == SEMI)
+				{
+					{
+						State = 1072;
+						Match(SEMI);
+					}
+				}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordVariantSectionContext : ParserRuleContext {
+	public partial class RecordVariantSectionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CASE() { return GetToken(DelphiParser.CASE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public RecordVariantContext[] recordVariant() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordVariantContext[] recordVariant()
+		{
 			return GetRuleContexts<RecordVariantContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordVariantContext recordVariant(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordVariantContext recordVariant(int i)
+		{
 			return GetRuleContext<RecordVariantContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] SEMI() { return GetTokens(DelphiParser.SEMI); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode SEMI(int i)
+		{
 			return GetToken(DelphiParser.SEMI, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
@@ -6618,262 +7848,283 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordVariantSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordVariantSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordVariantSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordVariantSectionContext recordVariantSection() {
+	public RecordVariantSectionContext recordVariantSection()
+	{
 		RecordVariantSectionContext _localctx = new RecordVariantSectionContext(Context, State);
 		EnterRule(_localctx, 172, RULE_recordVariantSection);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1075;
-			Match(CASE);
-			State = 1079;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,113,Context) ) {
-			case 1:
-				{
-				State = 1076;
-				ident();
-				State = 1077;
-				Match(COLON);
-				}
-				break;
-			}
-			State = 1081;
-			typeDecl();
-			State = 1082;
-			Match(OF);
-			State = 1085;
-			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case ADD:
-			case AND:
-			case ANSISTRING:
-			case AS:
-			case AT:
-			case BREAK:
-			case CONTAINS:
-			case CONTINUE:
-			case DEFAULT:
-			case DIV:
-			case EXIT:
-			case EXPORT:
-			case FINAL:
-			case FUNCTION:
-			case IMPLEMENTS:
-			case IN:
-			case INDEX:
-			case INHERITED:
-			case IS:
-			case LOCAL:
-			case MESSAGE:
-			case MOD:
-			case NAME:
-			case NIL:
-			case NOT:
-			case OBJECT:
-			case OPERATOR:
-			case OR:
-			case OUT:
-			case POINTER:
-			case PROCEDURE:
-			case READ:
-			case READONLY:
-			case REFERENCE:
-			case REGISTER:
-			case REMOVE:
-			case SHL:
-			case SHR:
-			case STORED:
-			case STRICT:
-			case STRING:
-			case VARIANT:
-			case WRITE:
-			case XOR:
-			case FALSE:
-			case TRUE:
-			case PLUS:
-			case MINUS:
-			case STAR:
-			case SLASH:
-			case COMMA:
-			case COLON:
-			case EQUAL:
-			case NOT_EQUAL:
-			case LT:
-			case LE:
-			case GE:
-			case GT:
-			case LPAREN:
-			case LBRACK:
-			case POINTER2:
-			case AT2:
-			case DOT:
-			case AMBER:
-			case DOUBLEAT:
-			case TkIdentifier:
-			case TkIntNum:
-			case TkRealNum:
-			case TkHexNum:
-			case TkAsmHexNum:
-			case QuotedString:
-			case ControlString:
-				{
-				State = 1083;
-				recordVariant();
-				}
-				break;
-			case SEMI:
-				{
-				State = 1084;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
-			}
-			State = 1091;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874294959613L) != 0)) {
-				{
-				State = 1089;
+				State = 1075;
+				Match(CASE);
+				State = 1079;
 				ErrorHandler.Sync(this);
-				switch (TokenStream.LA(1)) {
-				case ADD:
-				case AND:
-				case ANSISTRING:
-				case AS:
-				case AT:
-				case BREAK:
-				case CONTAINS:
-				case CONTINUE:
-				case DEFAULT:
-				case DIV:
-				case EXIT:
-				case EXPORT:
-				case FINAL:
-				case FUNCTION:
-				case IMPLEMENTS:
-				case IN:
-				case INDEX:
-				case INHERITED:
-				case IS:
-				case LOCAL:
-				case MESSAGE:
-				case MOD:
-				case NAME:
-				case NIL:
-				case NOT:
-				case OBJECT:
-				case OPERATOR:
-				case OR:
-				case OUT:
-				case POINTER:
-				case PROCEDURE:
-				case READ:
-				case READONLY:
-				case REFERENCE:
-				case REGISTER:
-				case REMOVE:
-				case SHL:
-				case SHR:
-				case STORED:
-				case STRICT:
-				case STRING:
-				case VARIANT:
-				case WRITE:
-				case XOR:
-				case FALSE:
-				case TRUE:
-				case PLUS:
-				case MINUS:
-				case STAR:
-				case SLASH:
-				case COMMA:
-				case COLON:
-				case EQUAL:
-				case NOT_EQUAL:
-				case LT:
-				case LE:
-				case GE:
-				case GT:
-				case LPAREN:
-				case LBRACK:
-				case POINTER2:
-				case AT2:
-				case DOT:
-				case AMBER:
-				case DOUBLEAT:
-				case TkIdentifier:
-				case TkIntNum:
-				case TkRealNum:
-				case TkHexNum:
-				case TkAsmHexNum:
-				case QuotedString:
-				case ControlString:
-					{
-					State = 1087;
-					recordVariant();
-					}
-					break;
-				case SEMI:
-					{
-					State = 1088;
-					Match(SEMI);
-					}
-					break;
-				default:
-					throw new NoViableAltException(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 113, Context))
+				{
+					case 1:
+						{
+							State = 1076;
+							ident();
+							State = 1077;
+							Match(COLON);
+						}
+						break;
 				}
+				State = 1081;
+				typeDecl();
+				State = 1082;
+				Match(OF);
+				State = 1085;
+				ErrorHandler.Sync(this);
+				switch (TokenStream.LA(1))
+				{
+					case ADD:
+					case AND:
+					case ANSISTRING:
+					case AS:
+					case AT:
+					case BREAK:
+					case CONTAINS:
+					case CONTINUE:
+					case DEFAULT:
+					case DIV:
+					case EXIT:
+					case EXPORT:
+					case FINAL:
+					case FUNCTION:
+					case IMPLEMENTS:
+					case IN:
+					case INDEX:
+					case INHERITED:
+					case IS:
+					case LOCAL:
+					case MESSAGE:
+					case MOD:
+					case NAME:
+					case NIL:
+					case NOT:
+					case OBJECT:
+					case OPERATOR:
+					case OR:
+					case OUT:
+					case POINTER:
+					case PROCEDURE:
+					case READ:
+					case READONLY:
+					case REFERENCE:
+					case REGISTER:
+					case REMOVE:
+					case SHL:
+					case SHR:
+					case STORED:
+					case STRICT:
+					case STRING:
+					case VARIANT:
+					case WRITE:
+					case XOR:
+					case FALSE:
+					case TRUE:
+					case PLUS:
+					case MINUS:
+					case STAR:
+					case SLASH:
+					case COMMA:
+					case COLON:
+					case EQUAL:
+					case NOT_EQUAL:
+					case LT:
+					case LE:
+					case GE:
+					case GT:
+					case LPAREN:
+					case LBRACK:
+					case POINTER2:
+					case AT2:
+					case DOT:
+					case AMBER:
+					case DOUBLEAT:
+					case TkIdentifier:
+					case TkIntNum:
+					case TkRealNum:
+					case TkHexNum:
+					case TkAsmHexNum:
+					case QuotedString:
+					case ControlString:
+						{
+							State = 1083;
+							recordVariant();
+						}
+						break;
+					case SEMI:
+						{
+							State = 1084;
+							Match(SEMI);
+						}
+						break;
+					default:
+						throw new NoViableAltException(this);
 				}
-				State = 1093;
+				State = 1091;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874294959613L) != 0))
+				{
+					{
+						State = 1089;
+						ErrorHandler.Sync(this);
+						switch (TokenStream.LA(1))
+						{
+							case ADD:
+							case AND:
+							case ANSISTRING:
+							case AS:
+							case AT:
+							case BREAK:
+							case CONTAINS:
+							case CONTINUE:
+							case DEFAULT:
+							case DIV:
+							case EXIT:
+							case EXPORT:
+							case FINAL:
+							case FUNCTION:
+							case IMPLEMENTS:
+							case IN:
+							case INDEX:
+							case INHERITED:
+							case IS:
+							case LOCAL:
+							case MESSAGE:
+							case MOD:
+							case NAME:
+							case NIL:
+							case NOT:
+							case OBJECT:
+							case OPERATOR:
+							case OR:
+							case OUT:
+							case POINTER:
+							case PROCEDURE:
+							case READ:
+							case READONLY:
+							case REFERENCE:
+							case REGISTER:
+							case REMOVE:
+							case SHL:
+							case SHR:
+							case STORED:
+							case STRICT:
+							case STRING:
+							case VARIANT:
+							case WRITE:
+							case XOR:
+							case FALSE:
+							case TRUE:
+							case PLUS:
+							case MINUS:
+							case STAR:
+							case SLASH:
+							case COMMA:
+							case COLON:
+							case EQUAL:
+							case NOT_EQUAL:
+							case LT:
+							case LE:
+							case GE:
+							case GT:
+							case LPAREN:
+							case LBRACK:
+							case POINTER2:
+							case AT2:
+							case DOT:
+							case AMBER:
+							case DOUBLEAT:
+							case TkIdentifier:
+							case TkIntNum:
+							case TkRealNum:
+							case TkHexNum:
+							case TkAsmHexNum:
+							case QuotedString:
+							case ControlString:
+								{
+									State = 1087;
+									recordVariant();
+								}
+								break;
+							case SEMI:
+								{
+									State = 1088;
+									Match(SEMI);
+								}
+								break;
+							default:
+								throw new NoViableAltException(this);
+						}
+					}
+					State = 1093;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordVariantContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext[] constExpression() {
+	public partial class RecordVariantContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext[] constExpression()
+		{
 			return GetRuleContexts<ConstExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression(int i)
+		{
 			return GetRuleContext<ConstExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordVariantFieldContext[] recordVariantField() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordVariantFieldContext[] recordVariantField()
+		{
 			return GetRuleContexts<RecordVariantFieldContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordVariantFieldContext recordVariantField(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordVariantFieldContext recordVariantField(int i)
+		{
 			return GetRuleContext<RecordVariantFieldContext>(i);
 		}
 		public RecordVariantContext(ParserRuleContext parent, int invokingState)
@@ -6882,88 +8133,103 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordVariant; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordVariant(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordVariant(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordVariantContext recordVariant() {
+	public RecordVariantContext recordVariant()
+	{
 		RecordVariantContext _localctx = new RecordVariantContext(Context, State);
 		EnterRule(_localctx, 174, RULE_recordVariant);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1094;
-			constExpression();
-			State = 1099;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 1095;
-				Match(COMMA);
-				State = 1096;
+				State = 1094;
 				constExpression();
-				}
-				}
-				State = 1101;
+				State = 1099;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1102;
-			Match(COLON);
-			State = 1103;
-			Match(LPAREN);
-			State = 1107;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271942938704L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220488493323L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
+				while (_la == COMMA)
 				{
-				{
-				State = 1104;
-				recordVariantField();
+					{
+						{
+							State = 1095;
+							Match(COMMA);
+							State = 1096;
+							constExpression();
+						}
+					}
+					State = 1101;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
 				}
-				}
-				State = 1109;
+				State = 1102;
+				Match(COLON);
+				State = 1103;
+				Match(LPAREN);
+				State = 1107;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1110;
-			Match(RPAREN);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271942938704L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306828220488493323L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
+				{
+					{
+						{
+							State = 1104;
+							recordVariantField();
+						}
+					}
+					State = 1109;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1110;
+				Match(RPAREN);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordHelperDeclContext : ParserRuleContext {
+	public partial class RecordHelperDeclContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RECORD() { return GetToken(DelphiParser.RECORD, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode HELPER() { return GetToken(DelphiParser.HELPER, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOR() { return GetToken(DelphiParser.FOR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public RecordHelperItemContext[] recordHelperItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordHelperItemContext[] recordHelperItem()
+		{
 			return GetRuleContexts<RecordHelperItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordHelperItemContext recordHelperItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordHelperItemContext recordHelperItem(int i)
+		{
 			return GetRuleContext<RecordHelperItemContext>(i);
 		}
 		public RecordHelperDeclContext(ParserRuleContext parent, int invokingState)
@@ -6972,70 +8238,84 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordHelperDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordHelperDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordHelperDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordHelperDeclContext recordHelperDecl() {
+	public RecordHelperDeclContext recordHelperDecl()
+	{
 		RecordHelperDeclContext _localctx = new RecordHelperDeclContext(Context, State);
 		EnterRule(_localctx, 176, RULE_recordHelperDecl);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1112;
-			Match(RECORD);
-			State = 1113;
-			Match(HELPER);
-			State = 1114;
-			Match(FOR);
-			State = 1115;
-			typeId();
-			State = 1119;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562949988294658L) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & 137439079425L) != 0)) {
-				{
-				{
-				State = 1116;
-				recordHelperItem();
-				}
-				}
-				State = 1121;
+				State = 1112;
+				Match(RECORD);
+				State = 1113;
+				Match(HELPER);
+				State = 1114;
+				Match(FOR);
+				State = 1115;
+				typeId();
+				State = 1119;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1122;
-			Match(END);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562949988294658L) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & 137439079425L) != 0))
+				{
+					{
+						{
+							State = 1116;
+							recordHelperItem();
+						}
+					}
+					State = 1121;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1122;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordHelperItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public VisibilityContext visibility() {
+	public partial class RecordHelperItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public VisibilityContext visibility()
+		{
 			return GetRuleContext<VisibilityContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassMethodContext classMethod() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassMethodContext classMethod()
+		{
 			return GetRuleContext<ClassMethodContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyContext classProperty() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyContext classProperty()
+		{
 			return GetRuleContext<ClassPropertyContext>(0);
 		}
 		public RecordHelperItemContext(ParserRuleContext parent, int invokingState)
@@ -7044,89 +8324,115 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordHelperItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordHelperItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordHelperItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordHelperItemContext recordHelperItem() {
+	public RecordHelperItemContext recordHelperItem()
+	{
 		RecordHelperItemContext _localctx = new RecordHelperItemContext(Context, State);
 		EnterRule(_localctx, 178, RULE_recordHelperItem);
-		try {
+		try
+		{
 			State = 1127;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,120,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1124;
-				visibility();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1125;
-				classMethod();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1126;
-				classProperty();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 120, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1124;
+						visibility();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1125;
+						classMethod();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1126;
+						classProperty();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassMethodContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public MethodKeyContext methodKey() {
+	public partial class ClassMethodContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodKeyContext methodKey()
+		{
 			return GetRuleContext<MethodKeyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext[] customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext[] customAttribute()
+		{
 			return GetRuleContexts<CustomAttributeContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute(int i)
+		{
 			return GetRuleContext<CustomAttributeContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public GenericDefinitionContext genericDefinition() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericDefinitionContext genericDefinition()
+		{
 			return GetRuleContext<GenericDefinitionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterSectionContext formalParameterSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterSectionContext formalParameterSection()
+		{
 			return GetRuleContext<FormalParameterSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDirectiveContext[] methodDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDirectiveContext[] methodDirective()
+		{
 			return GetRuleContexts<MethodDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDirectiveContext methodDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDirectiveContext methodDirective(int i)
+		{
 			return GetRuleContext<MethodDirectiveContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DelphiParser.FUNCTION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OPERATOR() { return GetToken(DelphiParser.OPERATOR, 0); }
@@ -7136,269 +8442,305 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classMethod; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassMethod(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassMethod(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassMethodContext classMethod() {
+	public ClassMethodContext classMethod()
+	{
 		ClassMethodContext _localctx = new ClassMethodContext(Context, State);
 		EnterRule(_localctx, 180, RULE_classMethod);
 		int _la;
-		try {
+		try
+		{
 			int _alt;
 			State = 1197;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,137,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1130;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 137, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1129;
-					customAttribute();
-					}
-				}
-
-				State = 1133;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
-					{
-					State = 1132;
-					Match(CLASS);
-					}
-				}
-
-				State = 1135;
-				methodKey();
-				State = 1136;
-				ident();
-				State = 1138;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LT) {
-					{
-					State = 1137;
-					genericDefinition();
-					}
-				}
-
-				State = 1141;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1140;
-					formalParameterSection();
-					}
-				}
-
-				State = 1143;
-				Match(SEMI);
-				State = 1147;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,125,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
+						State = 1130;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
 						{
-						{
-						State = 1144;
-						methodDirective();
+							{
+								State = 1129;
+								customAttribute();
+							}
 						}
-						} 
-					}
-					State = 1149;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,125,Context);
-				}
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1151;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1150;
-					customAttribute();
-					}
-				}
 
-				State = 1154;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
-					{
-					State = 1153;
-					Match(CLASS);
-					}
-				}
-
-				State = 1156;
-				Match(FUNCTION);
-				State = 1157;
-				ident();
-				State = 1159;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LT) {
-					{
-					State = 1158;
-					genericDefinition();
-					}
-				}
-
-				State = 1162;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1161;
-					formalParameterSection();
-					}
-				}
-
-				State = 1164;
-				Match(COLON);
-				State = 1166;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1165;
-					customAttribute();
-					}
-				}
-
-				State = 1168;
-				typeDecl();
-				State = 1169;
-				Match(SEMI);
-				State = 1173;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,131,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
+						State = 1133;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
 						{
-						{
-						State = 1170;
-						methodDirective();
+							{
+								State = 1132;
+								Match(CLASS);
+							}
 						}
-						} 
-					}
-					State = 1175;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,131,Context);
-				}
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1177;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1176;
-					customAttribute();
-					}
-				}
 
-				State = 1180;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
-					{
-					State = 1179;
-					Match(CLASS);
-					}
-				}
+						State = 1135;
+						methodKey();
+						State = 1136;
+						ident();
+						State = 1138;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LT)
+						{
+							{
+								State = 1137;
+								genericDefinition();
+							}
+						}
 
-				State = 1182;
-				Match(OPERATOR);
-				State = 1183;
-				ident();
-				State = 1185;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LT) {
-					{
-					State = 1184;
-					genericDefinition();
-					}
-				}
+						State = 1141;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1140;
+								formalParameterSection();
+							}
+						}
 
-				State = 1188;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1187;
-					formalParameterSection();
+						State = 1143;
+						Match(SEMI);
+						State = 1147;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 125, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1144;
+										methodDirective();
+									}
+								}
+							}
+							State = 1149;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 125, Context);
+						}
 					}
-				}
-
-				State = 1190;
-				Match(COLON);
-				State = 1192;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1191;
-					customAttribute();
-					}
-				}
+						State = 1151;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1150;
+								customAttribute();
+							}
+						}
 
-				State = 1194;
-				typeDecl();
-				State = 1195;
-				Match(SEMI);
-				}
-				break;
+						State = 1154;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
+						{
+							{
+								State = 1153;
+								Match(CLASS);
+							}
+						}
+
+						State = 1156;
+						Match(FUNCTION);
+						State = 1157;
+						ident();
+						State = 1159;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LT)
+						{
+							{
+								State = 1158;
+								genericDefinition();
+							}
+						}
+
+						State = 1162;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1161;
+								formalParameterSection();
+							}
+						}
+
+						State = 1164;
+						Match(COLON);
+						State = 1166;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1165;
+								customAttribute();
+							}
+						}
+
+						State = 1168;
+						typeDecl();
+						State = 1169;
+						Match(SEMI);
+						State = 1173;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 131, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1170;
+										methodDirective();
+									}
+								}
+							}
+							State = 1175;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 131, Context);
+						}
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1177;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1176;
+								customAttribute();
+							}
+						}
+
+						State = 1180;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
+						{
+							{
+								State = 1179;
+								Match(CLASS);
+							}
+						}
+
+						State = 1182;
+						Match(OPERATOR);
+						State = 1183;
+						ident();
+						State = 1185;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LT)
+						{
+							{
+								State = 1184;
+								genericDefinition();
+							}
+						}
+
+						State = 1188;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1187;
+								formalParameterSection();
+							}
+						}
+
+						State = 1190;
+						Match(COLON);
+						State = 1192;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1191;
+								customAttribute();
+							}
+						}
+
+						State = 1194;
+						typeDecl();
+						State = 1195;
+						Match(SEMI);
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassFieldContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentListContext identList() {
+	public partial class ClassFieldContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentListContext identList()
+		{
 			return GetRuleContext<IdentListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext[] hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext[] hintingDirective()
+		{
 			return GetRuleContexts<HintingDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective(int i)
+		{
 			return GetRuleContext<HintingDirectiveContext>(i);
 		}
 		public ClassFieldContext(ParserRuleContext parent, int invokingState)
@@ -7407,100 +8749,127 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classField; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassField(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassField(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassFieldContext classField() {
+	public ClassFieldContext classField()
+	{
 		ClassFieldContext _localctx = new ClassFieldContext(Context, State);
 		EnterRule(_localctx, 182, RULE_classField);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1200;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==T__0) {
-				{
-				State = 1199;
-				customAttribute();
-				}
-			}
-
-			State = 1202;
-			identList();
-			State = 1203;
-			Match(COLON);
-			State = 1204;
-			typeDecl();
-			State = 1205;
-			Match(SEMI);
-			State = 1209;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0)) {
-				{
-				{
-				State = 1206;
-				hintingDirective();
-				}
-				}
-				State = 1211;
+				State = 1200;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				if (_la == T__0)
+				{
+					{
+						State = 1199;
+						customAttribute();
+					}
+				}
+
+				State = 1202;
+				identList();
+				State = 1203;
+				Match(COLON);
+				State = 1204;
+				typeDecl();
+				State = 1205;
+				Match(SEMI);
+				State = 1209;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while (((((_la - 24)) & ~0x3f) == 0 && ((1L << (_la - 24)) & 576461302059253761L) != 0))
+				{
+					{
+						{
+							State = 1206;
+							hintingDirective();
+						}
+					}
+					State = 1211;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertyContext : ParserRuleContext {
+	public partial class ClassPropertyContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROPERTY() { return GetToken(DelphiParser.PROPERTY, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyArrayContext classPropertyArray() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyArrayContext classPropertyArray()
+		{
 			return GetRuleContext<ClassPropertyArrayContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public GenericTypeIdentContext genericTypeIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericTypeIdentContext genericTypeIdent()
+		{
 			return GetRuleContext<GenericTypeIdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyIndexContext classPropertyIndex() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyIndexContext classPropertyIndex()
+		{
 			return GetRuleContext<ClassPropertyIndexContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertySpecifierContext[] classPropertySpecifier() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertySpecifierContext[] classPropertySpecifier()
+		{
 			return GetRuleContexts<ClassPropertySpecifierContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertySpecifierContext classPropertySpecifier(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertySpecifierContext classPropertySpecifier(int i)
+		{
 			return GetRuleContext<ClassPropertySpecifierContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyEndSpecifierContext[] classPropertyEndSpecifier() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyEndSpecifierContext[] classPropertyEndSpecifier()
+		{
 			return GetRuleContexts<ClassPropertyEndSpecifierContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyEndSpecifierContext classPropertyEndSpecifier(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyEndSpecifierContext classPropertyEndSpecifier(int i)
+		{
 			return GetRuleContext<ClassPropertyEndSpecifierContext>(i);
 		}
 		public ClassPropertyContext(ParserRuleContext parent, int invokingState)
@@ -7509,130 +8878,147 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classProperty; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassProperty(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassProperty(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertyContext classProperty() {
+	public ClassPropertyContext classProperty()
+	{
 		ClassPropertyContext _localctx = new ClassPropertyContext(Context, State);
 		EnterRule(_localctx, 184, RULE_classProperty);
 		int _la;
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1213;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==T__0) {
-				{
-				State = 1212;
-				customAttribute();
-				}
-			}
-
-			State = 1216;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==CLASS) {
-				{
-				State = 1215;
-				Match(CLASS);
-				}
-			}
-
-			State = 1218;
-			Match(PROPERTY);
-			State = 1219;
-			ident();
-			State = 1221;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LBRACK) {
-				{
-				State = 1220;
-				classPropertyArray();
-				}
-			}
-
-			State = 1225;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==COLON) {
-				{
-				State = 1223;
-				Match(COLON);
-				State = 1224;
-				genericTypeIdent();
-				}
-			}
-
-			State = 1228;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==INDEX) {
-				{
-				State = 1227;
-				classPropertyIndex();
-				}
-			}
-
-			State = 1233;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 18014398584979456L) != 0) || ((((_la - 70)) & ~0x3f) == 0 && ((1L << (_la - 70)) & 1729384455958691841L) != 0)) {
-				{
-				{
-				State = 1230;
-				classPropertySpecifier();
-				}
-				}
-				State = 1235;
+				State = 1213;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1236;
-			Match(SEMI);
-			State = 1240;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,146,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
+				if (_la == T__0)
+				{
 					{
-					{
-					State = 1237;
-					classPropertyEndSpecifier();
+						State = 1212;
+						customAttribute();
 					}
-					} 
 				}
-				State = 1242;
+
+				State = 1216;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,146,Context);
-			}
+				_la = TokenStream.LA(1);
+				if (_la == CLASS)
+				{
+					{
+						State = 1215;
+						Match(CLASS);
+					}
+				}
+
+				State = 1218;
+				Match(PROPERTY);
+				State = 1219;
+				ident();
+				State = 1221;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == LBRACK)
+				{
+					{
+						State = 1220;
+						classPropertyArray();
+					}
+				}
+
+				State = 1225;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == COLON)
+				{
+					{
+						State = 1223;
+						Match(COLON);
+						State = 1224;
+						genericTypeIdent();
+					}
+				}
+
+				State = 1228;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == INDEX)
+				{
+					{
+						State = 1227;
+						classPropertyIndex();
+					}
+				}
+
+				State = 1233;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 18014398584979456L) != 0) || ((((_la - 70)) & ~0x3f) == 0 && ((1L << (_la - 70)) & 1729384455958691841L) != 0))
+				{
+					{
+						{
+							State = 1230;
+							classPropertySpecifier();
+						}
+					}
+					State = 1235;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1236;
+				Match(SEMI);
+				State = 1240;
+				ErrorHandler.Sync(this);
+				_alt = Interpreter.AdaptivePredict(TokenStream, 146, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1237;
+								classPropertyEndSpecifier();
+							}
+						}
+					}
+					State = 1242;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 146, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertyArrayContext : ParserRuleContext {
+	public partial class ClassPropertyArrayContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterListContext formalParameterList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterListContext formalParameterList()
+		{
 			return GetRuleContext<FormalParameterListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
@@ -7642,46 +9028,55 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classPropertyArray; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassPropertyArray(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassPropertyArray(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertyArrayContext classPropertyArray() {
+	public ClassPropertyArrayContext classPropertyArray()
+	{
 		ClassPropertyArrayContext _localctx = new ClassPropertyArrayContext(Context, State);
 		EnterRule(_localctx, 186, RULE_classPropertyArray);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1243;
-			Match(LBRACK);
-			State = 1244;
-			formalParameterList();
-			State = 1245;
-			Match(RBRACK);
+				State = 1243;
+				Match(LBRACK);
+				State = 1244;
+				formalParameterList();
+				State = 1245;
+				Match(RBRACK);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertyIndexContext : ParserRuleContext {
+	public partial class ClassPropertyIndexContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INDEX() { return GetToken(DelphiParser.INDEX, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -7691,66 +9086,82 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classPropertyIndex; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassPropertyIndex(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassPropertyIndex(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertyIndexContext classPropertyIndex() {
+	public ClassPropertyIndexContext classPropertyIndex()
+	{
 		ClassPropertyIndexContext _localctx = new ClassPropertyIndexContext(Context, State);
 		EnterRule(_localctx, 188, RULE_classPropertyIndex);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1247;
-			Match(INDEX);
-			State = 1248;
-			expression();
-			State = 1250;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,147,Context) ) {
-			case 1:
+				State = 1247;
+				Match(INDEX);
+				State = 1248;
+				expression();
+				State = 1250;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 147, Context))
 				{
-				State = 1249;
-				Match(SEMI);
+					case 1:
+						{
+							State = 1249;
+							Match(SEMI);
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertySpecifierContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyReadWriteContext classPropertyReadWrite() {
+	public partial class ClassPropertySpecifierContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyReadWriteContext classPropertyReadWrite()
+		{
 			return GetRuleContext<ClassPropertyReadWriteContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ClassPropertyDispInterfaceContext classPropertyDispInterface() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ClassPropertyDispInterfaceContext classPropertyDispInterface()
+		{
 			return GetRuleContext<ClassPropertyDispInterfaceContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STORED() { return GetToken(DelphiParser.STORED, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DEFAULT() { return GetToken(DelphiParser.DEFAULT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NODEFAULT() { return GetToken(DelphiParser.NODEFAULT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IMPLEMENTS() { return GetToken(DelphiParser.IMPLEMENTS, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		public ClassPropertySpecifierContext(ParserRuleContext parent, int invokingState)
@@ -7759,97 +9170,109 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classPropertySpecifier; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassPropertySpecifier(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassPropertySpecifier(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertySpecifierContext classPropertySpecifier() {
+	public ClassPropertySpecifierContext classPropertySpecifier()
+	{
 		ClassPropertySpecifierContext _localctx = new ClassPropertySpecifierContext(Context, State);
 		EnterRule(_localctx, 190, RULE_classPropertySpecifier);
 		int _la;
-		try {
+		try
+		{
 			State = 1261;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,148,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1252;
-				classPropertyReadWrite();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1253;
-				classPropertyDispInterface();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1254;
-				Match(STORED);
-				State = 1255;
-				expression();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1256;
-				Match(DEFAULT);
-				State = 1257;
-				expression();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1258;
-				_la = TokenStream.LA(1);
-				if ( !(_la==DEFAULT || _la==NODEFAULT) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 1259;
-				Match(IMPLEMENTS);
-				State = 1260;
-				typeId();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 148, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1252;
+						classPropertyReadWrite();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1253;
+						classPropertyDispInterface();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1254;
+						Match(STORED);
+						State = 1255;
+						expression();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1256;
+						Match(DEFAULT);
+						State = 1257;
+						expression();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1258;
+						_la = TokenStream.LA(1);
+						if (!(_la == DEFAULT || _la == NODEFAULT))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 1259;
+						Match(IMPLEMENTS);
+						State = 1260;
+						typeId();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertyEndSpecifierContext : ParserRuleContext {
+	public partial class ClassPropertyEndSpecifierContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STORED() { return GetToken(DelphiParser.STORED, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -7861,85 +9284,97 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classPropertyEndSpecifier; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassPropertyEndSpecifier(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassPropertyEndSpecifier(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertyEndSpecifierContext classPropertyEndSpecifier() {
+	public ClassPropertyEndSpecifierContext classPropertyEndSpecifier()
+	{
 		ClassPropertyEndSpecifierContext _localctx = new ClassPropertyEndSpecifierContext(Context, State);
 		EnterRule(_localctx, 192, RULE_classPropertyEndSpecifier);
-		try {
+		try
+		{
 			State = 1275;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,149,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1263;
-				Match(STORED);
-				State = 1264;
-				expression();
-				State = 1265;
-				Match(SEMI);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1267;
-				Match(DEFAULT);
-				State = 1268;
-				expression();
-				State = 1269;
-				Match(SEMI);
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1271;
-				Match(DEFAULT);
-				State = 1272;
-				Match(SEMI);
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1273;
-				Match(NODEFAULT);
-				State = 1274;
-				Match(SEMI);
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 149, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1263;
+						Match(STORED);
+						State = 1264;
+						expression();
+						State = 1265;
+						Match(SEMI);
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1267;
+						Match(DEFAULT);
+						State = 1268;
+						expression();
+						State = 1269;
+						Match(SEMI);
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1271;
+						Match(DEFAULT);
+						State = 1272;
+						Match(SEMI);
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1273;
+						Match(NODEFAULT);
+						State = 1274;
+						Match(SEMI);
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertyReadWriteContext : ParserRuleContext {
+	public partial class ClassPropertyReadWriteContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode READ() { return GetToken(DelphiParser.READ, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public QualifiedIdentContext qualifiedIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public QualifiedIdentContext qualifiedIdent()
+		{
 			return GetRuleContext<QualifiedIdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
@@ -7950,92 +9385,104 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classPropertyReadWrite; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassPropertyReadWrite(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassPropertyReadWrite(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertyReadWriteContext classPropertyReadWrite() {
+	public ClassPropertyReadWriteContext classPropertyReadWrite()
+	{
 		ClassPropertyReadWriteContext _localctx = new ClassPropertyReadWriteContext(Context, State);
 		EnterRule(_localctx, 194, RULE_classPropertyReadWrite);
 		int _la;
-		try {
+		try
+		{
 			State = 1293;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case READ:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1277;
-				Match(READ);
-				State = 1278;
-				qualifiedIdent();
-				State = 1283;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LBRACK) {
+			switch (TokenStream.LA(1))
+			{
+				case READ:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1279;
-					Match(LBRACK);
-					State = 1280;
-					expression();
-					State = 1281;
-					Match(RBRACK);
-					}
-				}
+						State = 1277;
+						Match(READ);
+						State = 1278;
+						qualifiedIdent();
+						State = 1283;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LBRACK)
+						{
+							{
+								State = 1279;
+								Match(LBRACK);
+								State = 1280;
+								expression();
+								State = 1281;
+								Match(RBRACK);
+							}
+						}
 
-				}
-				break;
-			case WRITE:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1285;
-				Match(WRITE);
-				State = 1286;
-				qualifiedIdent();
-				State = 1291;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LBRACK) {
+					}
+					break;
+				case WRITE:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1287;
-					Match(LBRACK);
-					State = 1288;
-					expression();
-					State = 1289;
-					Match(RBRACK);
-					}
-				}
+						State = 1285;
+						Match(WRITE);
+						State = 1286;
+						qualifiedIdent();
+						State = 1291;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LBRACK)
+						{
+							{
+								State = 1287;
+								Match(LBRACK);
+								State = 1288;
+								expression();
+								State = 1289;
+								Match(RBRACK);
+							}
+						}
 
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ClassPropertyDispInterfaceContext : ParserRuleContext {
+	public partial class ClassPropertyDispInterfaceContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode READONLY() { return GetToken(DelphiParser.READONLY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITEONLY() { return GetToken(DelphiParser.WRITEONLY, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public DispIDDirectiveContext dispIDDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DispIDDirectiveContext dispIDDirective()
+		{
 			return GetRuleContext<DispIDDirectiveContext>(0);
 		}
 		public ClassPropertyDispInterfaceContext(ParserRuleContext parent, int invokingState)
@@ -8044,66 +9491,74 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_classPropertyDispInterface; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterClassPropertyDispInterface(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitClassPropertyDispInterface(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ClassPropertyDispInterfaceContext classPropertyDispInterface() {
+	public ClassPropertyDispInterfaceContext classPropertyDispInterface()
+	{
 		ClassPropertyDispInterfaceContext _localctx = new ClassPropertyDispInterfaceContext(Context, State);
 		EnterRule(_localctx, 196, RULE_classPropertyDispInterface);
-		try {
+		try
+		{
 			State = 1300;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case READONLY:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1295;
-				Match(READONLY);
-				State = 1296;
-				Match(SEMI);
-				}
-				break;
-			case WRITEONLY:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1297;
-				Match(WRITEONLY);
-				State = 1298;
-				Match(SEMI);
-				}
-				break;
-			case DISPID:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1299;
-				dispIDDirective();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case READONLY:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1295;
+						Match(READONLY);
+						State = 1296;
+						Match(SEMI);
+					}
+					break;
+				case WRITEONLY:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1297;
+						Match(WRITEONLY);
+						State = 1298;
+						Match(SEMI);
+					}
+					break;
+				case DISPID:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1299;
+						dispIDDirective();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class VisibilityContext : ParserRuleContext {
+	public partial class VisibilityContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROTECTED() { return GetToken(DelphiParser.PROTECTED, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STRICT() { return GetToken(DelphiParser.STRICT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PRIVATE() { return GetToken(DelphiParser.PRIVATE, 0); }
@@ -8116,107 +9571,131 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_visibility; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterVisibility(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitVisibility(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public VisibilityContext visibility() {
+	public VisibilityContext visibility()
+	{
 		VisibilityContext _localctx = new VisibilityContext(Context, State);
 		EnterRule(_localctx, 198, RULE_visibility);
 		int _la;
-		try {
+		try
+		{
 			State = 1311;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,156,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1303;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==STRICT) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 156, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1302;
-					Match(STRICT);
-					}
-				}
+						State = 1303;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == STRICT)
+						{
+							{
+								State = 1302;
+								Match(STRICT);
+							}
+						}
 
-				State = 1305;
-				Match(PROTECTED);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1307;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==STRICT) {
+						State = 1305;
+						Match(PROTECTED);
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1306;
-					Match(STRICT);
-					}
-				}
+						State = 1307;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == STRICT)
+						{
+							{
+								State = 1306;
+								Match(STRICT);
+							}
+						}
 
-				State = 1309;
-				Match(PRIVATE);
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1310;
-				_la = TokenStream.LA(1);
-				if ( !(_la==AUTOMATED || _la==PUBLIC || _la==PUBLISHED) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
+						State = 1309;
+						Match(PRIVATE);
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1310;
+						_la = TokenStream.LA(1);
+						if (!(_la == AUTOMATED || _la == PUBLIC || _la == PUBLISHED))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExportedProcHeadingContext : ParserRuleContext {
+	public partial class ExportedProcHeadingContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(DelphiParser.PROCEDURE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterSectionContext formalParameterSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterSectionContext formalParameterSection()
+		{
 			return GetRuleContext<FormalParameterSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FunctionDirectiveContext[] functionDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FunctionDirectiveContext[] functionDirective()
+		{
 			return GetRuleContexts<FunctionDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FunctionDirectiveContext functionDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FunctionDirectiveContext functionDirective(int i)
+		{
 			return GetRuleContext<FunctionDirectiveContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DelphiParser.FUNCTION, 0); }
@@ -8226,142 +9705,165 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_exportedProcHeading; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExportedProcHeading(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExportedProcHeading(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExportedProcHeadingContext exportedProcHeading() {
+	public ExportedProcHeadingContext exportedProcHeading()
+	{
 		ExportedProcHeadingContext _localctx = new ExportedProcHeadingContext(Context, State);
 		EnterRule(_localctx, 200, RULE_exportedProcHeading);
 		int _la;
-		try {
+		try
+		{
 			int _alt;
 			State = 1342;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case PROCEDURE:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1313;
-				Match(PROCEDURE);
-				State = 1314;
-				ident();
-				State = 1316;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
+			switch (TokenStream.LA(1))
+			{
+				case PROCEDURE:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1315;
-					formalParameterSection();
-					}
-				}
-
-				State = 1318;
-				Match(COLON);
-				State = 1320;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1319;
-					customAttribute();
-					}
-				}
-
-				State = 1322;
-				typeDecl();
-				State = 1323;
-				Match(SEMI);
-				State = 1327;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,159,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
+						State = 1313;
+						Match(PROCEDURE);
+						State = 1314;
+						ident();
+						State = 1316;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
 						{
-						{
-						State = 1324;
-						functionDirective();
+							{
+								State = 1315;
+								formalParameterSection();
+							}
 						}
-						} 
-					}
-					State = 1329;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,159,Context);
-				}
-				}
-				break;
-			case FUNCTION:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1330;
-				Match(FUNCTION);
-				State = 1331;
-				ident();
-				State = 1333;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1332;
-					formalParameterSection();
-					}
-				}
 
-				State = 1335;
-				Match(SEMI);
-				State = 1339;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,161,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
+						State = 1318;
+						Match(COLON);
+						State = 1320;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
 						{
-						{
-						State = 1336;
-						functionDirective();
+							{
+								State = 1319;
+								customAttribute();
+							}
 						}
-						} 
+
+						State = 1322;
+						typeDecl();
+						State = 1323;
+						Match(SEMI);
+						State = 1327;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 159, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1324;
+										functionDirective();
+									}
+								}
+							}
+							State = 1329;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 159, Context);
+						}
 					}
-					State = 1341;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,161,Context);
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+					break;
+				case FUNCTION:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1330;
+						Match(FUNCTION);
+						State = 1331;
+						ident();
+						State = 1333;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1332;
+								formalParameterSection();
+							}
+						}
+
+						State = 1335;
+						Match(SEMI);
+						State = 1339;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 161, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1336;
+										functionDirective();
+									}
+								}
+							}
+							State = 1341;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 161, Context);
+						}
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDeclHeadingContext methodDeclHeading() {
+	public partial class MethodDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDeclHeadingContext methodDeclHeading()
+		{
 			return GetRuleContext<MethodDeclHeadingContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDirectiveContext[] methodDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDirectiveContext[] methodDirective()
+		{
 			return GetRuleContexts<MethodDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodDirectiveContext methodDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodDirectiveContext methodDirective(int i)
+		{
 			return GetRuleContext<MethodDirectiveContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodBodyContext methodBody() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodBodyContext methodBody()
+		{
 			return GetRuleContext<MethodBodyContext>(0);
 		}
 		public MethodDeclContext(ParserRuleContext parent, int invokingState)
@@ -8370,88 +9872,110 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodDeclContext methodDecl() {
+	public MethodDeclContext methodDecl()
+	{
 		MethodDeclContext _localctx = new MethodDeclContext(Context, State);
 		EnterRule(_localctx, 202, RULE_methodDecl);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1344;
-			methodDeclHeading();
-			State = 1345;
-			Match(SEMI);
-			State = 1349;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,163,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 1346;
-					methodDirective();
-					}
-					} 
-				}
-				State = 1351;
+				State = 1344;
+				methodDeclHeading();
+				State = 1345;
+				Match(SEMI);
+				State = 1349;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,163,Context);
-			}
-			State = 1353;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,164,Context) ) {
-			case 1:
+				_alt = Interpreter.AdaptivePredict(TokenStream, 163, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
 				{
-				State = 1352;
-				methodBody();
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1346;
+								methodDirective();
+							}
+						}
+					}
+					State = 1351;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 163, Context);
 				}
-				break;
-			}
+				State = 1353;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 164, Context))
+				{
+					case 1:
+						{
+							State = 1352;
+							methodBody();
+						}
+						break;
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodDeclHeadingContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public MethodKeyContext methodKey() {
+	public partial class MethodDeclHeadingContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodKeyContext methodKey()
+		{
 			return GetRuleContext<MethodKeyContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public MethodNameContext methodName() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public MethodNameContext methodName()
+		{
 			return GetRuleContext<MethodNameContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext[] customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext[] customAttribute()
+		{
 			return GetRuleContexts<CustomAttributeContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute(int i)
+		{
 			return GetRuleContext<CustomAttributeContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CLASS() { return GetToken(DelphiParser.CLASS, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterSectionContext formalParameterSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterSectionContext formalParameterSection()
+		{
 			return GetRuleContext<FormalParameterSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DelphiParser.FUNCTION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OPERATOR() { return GetToken(DelphiParser.OPERATOR, 0); }
@@ -8461,193 +9985,213 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodDeclHeading; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodDeclHeading(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodDeclHeading(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodDeclHeadingContext methodDeclHeading() {
+	public MethodDeclHeadingContext methodDeclHeading()
+	{
 		MethodDeclHeadingContext _localctx = new MethodDeclHeadingContext(Context, State);
 		EnterRule(_localctx, 204, RULE_methodDeclHeading);
 		int _la;
-		try {
+		try
+		{
 			State = 1400;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,177,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1356;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 177, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1355;
-					customAttribute();
-					}
-				}
-
-				State = 1359;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
-					{
-					State = 1358;
-					Match(CLASS);
-					}
-				}
-
-				State = 1361;
-				methodKey();
-				State = 1362;
-				methodName();
-				State = 1364;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1363;
-					formalParameterSection();
-					}
-				}
-
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1367;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1366;
-					customAttribute();
-					}
-				}
-
-				State = 1370;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CLASS) {
-					{
-					State = 1369;
-					Match(CLASS);
-					}
-				}
-
-				State = 1372;
-				Match(FUNCTION);
-				State = 1373;
-				methodName();
-				State = 1375;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1374;
-					formalParameterSection();
-					}
-				}
-
-				State = 1382;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==COLON) {
-					{
-					State = 1377;
-					Match(COLON);
-					State = 1379;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-					if (_la==T__0) {
+						State = 1356;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
 						{
-						State = 1378;
-						customAttribute();
+							{
+								State = 1355;
+								customAttribute();
+							}
 						}
-					}
 
-					State = 1381;
-					typeDecl();
-					}
-				}
-
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1385;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1384;
-					customAttribute();
-					}
-				}
-
-				State = 1387;
-				Match(CLASS);
-				State = 1388;
-				Match(OPERATOR);
-				State = 1389;
-				methodName();
-				State = 1391;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1390;
-					formalParameterSection();
-					}
-				}
-
-				State = 1398;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==COLON) {
-					{
-					State = 1393;
-					Match(COLON);
-					State = 1395;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-					if (_la==T__0) {
+						State = 1359;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
 						{
-						State = 1394;
-						customAttribute();
+							{
+								State = 1358;
+								Match(CLASS);
+							}
 						}
-					}
 
-					State = 1397;
-					typeDecl();
-					}
-				}
+						State = 1361;
+						methodKey();
+						State = 1362;
+						methodName();
+						State = 1364;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1363;
+								formalParameterSection();
+							}
+						}
 
-				}
-				break;
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1367;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1366;
+								customAttribute();
+							}
+						}
+
+						State = 1370;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CLASS)
+						{
+							{
+								State = 1369;
+								Match(CLASS);
+							}
+						}
+
+						State = 1372;
+						Match(FUNCTION);
+						State = 1373;
+						methodName();
+						State = 1375;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1374;
+								formalParameterSection();
+							}
+						}
+
+						State = 1382;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == COLON)
+						{
+							{
+								State = 1377;
+								Match(COLON);
+								State = 1379;
+								ErrorHandler.Sync(this);
+								_la = TokenStream.LA(1);
+								if (_la == T__0)
+								{
+									{
+										State = 1378;
+										customAttribute();
+									}
+								}
+
+								State = 1381;
+								typeDecl();
+							}
+						}
+
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1385;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1384;
+								customAttribute();
+							}
+						}
+
+						State = 1387;
+						Match(CLASS);
+						State = 1388;
+						Match(OPERATOR);
+						State = 1389;
+						methodName();
+						State = 1391;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1390;
+								formalParameterSection();
+							}
+						}
+
+						State = 1398;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == COLON)
+						{
+							{
+								State = 1393;
+								Match(COLON);
+								State = 1395;
+								ErrorHandler.Sync(this);
+								_la = TokenStream.LA(1);
+								if (_la == T__0)
+								{
+									{
+										State = 1394;
+										customAttribute();
+									}
+								}
+
+								State = 1397;
+								typeDecl();
+							}
+						}
+
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodKeyContext : ParserRuleContext {
+	public partial class MethodKeyContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(DelphiParser.PROCEDURE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CONSTRUCTOR() { return GetToken(DelphiParser.CONSTRUCTOR, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DESTRUCTOR() { return GetToken(DelphiParser.DESTRUCTOR, 0); }
@@ -8657,62 +10201,81 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodKey; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodKey(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodKey(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodKeyContext methodKey() {
+	public MethodKeyContext methodKey()
+	{
 		MethodKeyContext _localctx = new MethodKeyContext(Context, State);
 		EnterRule(_localctx, 206, RULE_methodKey);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1402;
-			_la = TokenStream.LA(1);
-			if ( !(_la==CONSTRUCTOR || _la==DESTRUCTOR || _la==PROCEDURE) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 1402;
+				_la = TokenStream.LA(1);
+				if (!(_la == CONSTRUCTOR || _la == DESTRUCTOR || _la == PROCEDURE))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodNameContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+	public partial class MethodNameContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] DOT() { return GetTokens(DelphiParser.DOT); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode DOT(int i)
+		{
 			return GetToken(DelphiParser.DOT, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GenericDefinitionContext[] genericDefinition() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericDefinitionContext[] genericDefinition()
+		{
 			return GetRuleContexts<GenericDefinitionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GenericDefinitionContext genericDefinition(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericDefinitionContext genericDefinition(int i)
+		{
 			return GetRuleContext<GenericDefinitionContext>(i);
 		}
 		public MethodNameContext(ParserRuleContext parent, int invokingState)
@@ -8721,98 +10284,117 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodName(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodName(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodNameContext methodName() {
+	public MethodNameContext methodName()
+	{
 		MethodNameContext _localctx = new MethodNameContext(Context, State);
 		EnterRule(_localctx, 208, RULE_methodName);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1404;
-			ident();
-			State = 1406;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LT) {
-				{
-				State = 1405;
-				genericDefinition();
-				}
-			}
-
-			State = 1413;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,180,Context) ) {
-			case 1:
-				{
-				State = 1408;
-				Match(DOT);
-				State = 1409;
+				State = 1404;
 				ident();
-				State = 1411;
+				State = 1406;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-				if (_la==LT) {
+				if (_la == LT)
+				{
 					{
-					State = 1410;
-					genericDefinition();
+						State = 1405;
+						genericDefinition();
 					}
 				}
 
-				}
-				break;
-			}
-			State = 1415;
-			Match(DOT);
-			State = 1416;
-			ident();
-			State = 1418;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LT) {
+				State = 1413;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 180, Context))
 				{
-				State = 1417;
-				genericDefinition();
+					case 1:
+						{
+							State = 1408;
+							Match(DOT);
+							State = 1409;
+							ident();
+							State = 1411;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+							if (_la == LT)
+							{
+								{
+									State = 1410;
+									genericDefinition();
+								}
+							}
+
+						}
+						break;
 				}
-			}
+				State = 1415;
+				Match(DOT);
+				State = 1416;
+				ident();
+				State = 1418;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == LT)
+				{
+					{
+						State = 1417;
+						genericDefinition();
+					}
+				}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProcDeclContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ProcDeclHeadingContext procDeclHeading() {
+	public partial class ProcDeclContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcDeclHeadingContext procDeclHeading()
+		{
 			return GetRuleContext<ProcDeclHeadingContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FunctionDirectiveContext[] functionDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FunctionDirectiveContext[] functionDirective()
+		{
 			return GetRuleContexts<FunctionDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FunctionDirectiveContext functionDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FunctionDirectiveContext functionDirective(int i)
+		{
 			return GetRuleContext<FunctionDirectiveContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ProcBodyContext procBody() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ProcBodyContext procBody()
+		{
 			return GetRuleContext<ProcBodyContext>(0);
 		}
 		public ProcDeclContext(ParserRuleContext parent, int invokingState)
@@ -8821,82 +10403,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProcDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProcDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProcDeclContext procDecl() {
+	public ProcDeclContext procDecl()
+	{
 		ProcDeclContext _localctx = new ProcDeclContext(Context, State);
 		EnterRule(_localctx, 210, RULE_procDecl);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1420;
-			procDeclHeading();
-			State = 1421;
-			Match(SEMI);
-			State = 1425;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,182,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 1422;
-					functionDirective();
-					}
-					} 
-				}
-				State = 1427;
+				State = 1420;
+				procDeclHeading();
+				State = 1421;
+				Match(SEMI);
+				State = 1425;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,182,Context);
-			}
-			State = 1429;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,183,Context) ) {
-			case 1:
+				_alt = Interpreter.AdaptivePredict(TokenStream, 182, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
 				{
-				State = 1428;
-				procBody();
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1422;
+								functionDirective();
+							}
+						}
+					}
+					State = 1427;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 182, Context);
 				}
-				break;
-			}
+				State = 1429;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 183, Context))
+				{
+					case 1:
+						{
+							State = 1428;
+							procBody();
+						}
+						break;
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProcDeclHeadingContext : ParserRuleContext {
+	public partial class ProcDeclHeadingContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(DelphiParser.PROCEDURE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeContext customAttribute() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeContext customAttribute()
+		{
 			return GetRuleContext<CustomAttributeContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterSectionContext formalParameterSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterSectionContext formalParameterSection()
+		{
 			return GetRuleContext<FormalParameterSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DelphiParser.FUNCTION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		public ProcDeclHeadingContext(ParserRuleContext parent, int invokingState)
@@ -8905,105 +10505,119 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procDeclHeading; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProcDeclHeading(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProcDeclHeading(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProcDeclHeadingContext procDeclHeading() {
+	public ProcDeclHeadingContext procDeclHeading()
+	{
 		ProcDeclHeadingContext _localctx = new ProcDeclHeadingContext(Context, State);
 		EnterRule(_localctx, 212, RULE_procDeclHeading);
 		int _la;
-		try {
+		try
+		{
 			State = 1450;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,188,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1432;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 188, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1431;
-					customAttribute();
-					}
-				}
+						State = 1432;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1431;
+								customAttribute();
+							}
+						}
 
-				State = 1434;
-				Match(PROCEDURE);
-				State = 1435;
-				ident();
-				State = 1437;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
+						State = 1434;
+						Match(PROCEDURE);
+						State = 1435;
+						ident();
+						State = 1437;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1436;
+								formalParameterSection();
+							}
+						}
+
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1436;
-					formalParameterSection();
-					}
-				}
+						State = 1440;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == T__0)
+						{
+							{
+								State = 1439;
+								customAttribute();
+							}
+						}
 
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1440;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==T__0) {
-					{
-					State = 1439;
-					customAttribute();
-					}
-				}
+						State = 1442;
+						Match(FUNCTION);
+						State = 1443;
+						ident();
+						State = 1445;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1444;
+								formalParameterSection();
+							}
+						}
 
-				State = 1442;
-				Match(FUNCTION);
-				State = 1443;
-				ident();
-				State = 1445;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
-					{
-					State = 1444;
-					formalParameterSection();
+						State = 1447;
+						Match(COLON);
+						State = 1448;
+						typeDecl();
 					}
-				}
-
-				State = 1447;
-				Match(COLON);
-				State = 1448;
-				typeDecl();
-				}
-				break;
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class FormalParameterSectionContext : ParserRuleContext {
+	public partial class FormalParameterSectionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterListContext formalParameterList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterListContext formalParameterList()
+		{
 			return GetRuleContext<FormalParameterListContext>(0);
 		}
 		public FormalParameterSectionContext(ParserRuleContext parent, int invokingState)
@@ -9012,61 +10626,75 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_formalParameterSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFormalParameterSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFormalParameterSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FormalParameterSectionContext formalParameterSection() {
+	public FormalParameterSectionContext formalParameterSection()
+	{
 		FormalParameterSectionContext _localctx = new FormalParameterSectionContext(Context, State);
 		EnterRule(_localctx, 214, RULE_formalParameterSection);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1452;
-			Match(LPAREN);
-			State = 1454;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271943462992L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2883288972791916811L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0)) {
+				State = 1452;
+				Match(LPAREN);
+				State = 1454;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 90090271943462992L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2883288972791916811L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 18014400656965633L) != 0))
 				{
-				State = 1453;
-				formalParameterList();
+					{
+						State = 1453;
+						formalParameterList();
+					}
 				}
-			}
 
-			State = 1456;
-			Match(RPAREN);
+				State = 1456;
+				Match(RPAREN);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class FormalParameterListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterContext[] formalParameter() {
+	public partial class FormalParameterListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterContext[] formalParameter()
+		{
 			return GetRuleContexts<FormalParameterContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterContext formalParameter(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterContext formalParameter(int i)
+		{
 			return GetRuleContext<FormalParameterContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] SEMI() { return GetTokens(DelphiParser.SEMI); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode SEMI(int i)
+		{
 			return GetToken(DelphiParser.SEMI, i);
 		}
 		public FormalParameterListContext(ParserRuleContext parent, int invokingState)
@@ -9075,69 +10703,85 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_formalParameterList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFormalParameterList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFormalParameterList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FormalParameterListContext formalParameterList() {
+	public FormalParameterListContext formalParameterList()
+	{
 		FormalParameterListContext _localctx = new FormalParameterListContext(Context, State);
 		EnterRule(_localctx, 216, RULE_formalParameterList);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1458;
-			formalParameter();
-			State = 1463;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==SEMI) {
-				{
-				{
-				State = 1459;
-				Match(SEMI);
-				State = 1460;
+				State = 1458;
 				formalParameter();
-				}
-				}
-				State = 1465;
+				State = 1463;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				while (_la == SEMI)
+				{
+					{
+						{
+							State = 1459;
+							Match(SEMI);
+							State = 1460;
+							formalParameter();
+						}
+					}
+					State = 1465;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class FormalParameterContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentListFlatContext identListFlat() {
+	public partial class FormalParameterContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentListFlatContext identListFlat()
+		{
 			return GetRuleContext<IdentListFlatContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ParmTypeContext parmType() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ParmTypeContext parmType()
+		{
 			return GetRuleContext<ParmTypeContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL() { return GetToken(DelphiParser.EQUAL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		public FormalParameterContext(ParserRuleContext parent, int invokingState)
@@ -9146,75 +10790,85 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_formalParameter; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFormalParameter(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFormalParameter(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FormalParameterContext formalParameter() {
+	public FormalParameterContext formalParameter()
+	{
 		FormalParameterContext _localctx = new FormalParameterContext(Context, State);
 		EnterRule(_localctx, 218, RULE_formalParameter);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1467;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,191,Context) ) {
-			case 1:
+				State = 1467;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 191, Context))
 				{
-				State = 1466;
-				parmType();
+					case 1:
+						{
+							State = 1466;
+							parmType();
+						}
+						break;
 				}
-				break;
-			}
-			State = 1469;
-			identListFlat();
-			State = 1472;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==COLON) {
+				State = 1469;
+				identListFlat();
+				State = 1472;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == COLON)
 				{
-				State = 1470;
-				Match(COLON);
-				State = 1471;
-				typeDecl();
+					{
+						State = 1470;
+						Match(COLON);
+						State = 1471;
+						typeDecl();
+					}
 				}
-			}
 
-			State = 1476;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==EQUAL) {
+				State = 1476;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == EQUAL)
 				{
-				State = 1474;
-				Match(EQUAL);
-				State = 1475;
-				expression();
+					{
+						State = 1474;
+						Match(EQUAL);
+						State = 1475;
+						expression();
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ParmTypeContext : ParserRuleContext {
+	public partial class ParmTypeContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CONST() { return GetToken(DelphiParser.CONST, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DelphiParser.VAR, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OUT() { return GetToken(DelphiParser.OUT, 0); }
@@ -9224,49 +10878,60 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_parmType; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterParmType(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitParmType(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ParmTypeContext parmType() {
+	public ParmTypeContext parmType()
+	{
 		ParmTypeContext _localctx = new ParmTypeContext(Context, State);
 		EnterRule(_localctx, 220, RULE_parmType);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1478;
-			_la = TokenStream.LA(1);
-			if ( !(_la==CONST || _la==OUT || _la==VAR) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 1478;
+				_la = TokenStream.LA(1);
+				if (!(_la == CONST || _la == OUT || _la == VAR))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodBodyContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
+	public partial class MethodBodyContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BlockContext block()
+		{
 			return GetRuleContext<BlockContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -9276,66 +10941,87 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodBody; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodBody(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodBody(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodBodyContext methodBody() {
+	public MethodBodyContext methodBody()
+	{
 		MethodBodyContext _localctx = new MethodBodyContext(Context, State);
 		EnterRule(_localctx, 222, RULE_methodBody);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1480;
-			block();
-			State = 1481;
-			Match(SEMI);
+				State = 1480;
+				block();
+				State = 1481;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ProcBodyContext : ParserRuleContext {
+	public partial class ProcBodyContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FORWARD() { return GetToken(DelphiParser.FORWARD, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FunctionDirectiveContext[] functionDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FunctionDirectiveContext[] functionDirective()
+		{
 			return GetRuleContexts<FunctionDirectiveContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FunctionDirectiveContext functionDirective(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FunctionDirectiveContext functionDirective(int i)
+		{
 			return GetRuleContext<FunctionDirectiveContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXTERNAL() { return GetToken(DelphiParser.EXTERNAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] NAME() { return GetTokens(DelphiParser.NAME); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NAME(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode NAME(int i)
+		{
 			return GetToken(DelphiParser.NAME, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] INDEX() { return GetTokens(DelphiParser.INDEX); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INDEX(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode INDEX(int i)
+		{
 			return GetToken(DelphiParser.INDEX, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BlockContext block()
+		{
 			return GetRuleContext<BlockContext>(0);
 		}
 		public ProcBodyContext(ParserRuleContext parent, int invokingState)
@@ -9344,192 +11030,218 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_procBody; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterProcBody(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitProcBody(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ProcBodyContext procBody() {
+	public ProcBodyContext procBody()
+	{
 		ProcBodyContext _localctx = new ProcBodyContext(Context, State);
 		EnterRule(_localctx, 224, RULE_procBody);
-		try {
+		try
+		{
 			int _alt;
 			State = 1510;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case FORWARD:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1483;
-				Match(FORWARD);
-				State = 1484;
-				Match(SEMI);
-				State = 1488;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,194,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						{
-						State = 1485;
-						functionDirective();
-						}
-						} 
-					}
-					State = 1490;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,194,Context);
-				}
-				}
-				break;
-			case EXTERNAL:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1491;
-				Match(EXTERNAL);
-				State = 1498;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,196,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						State = 1496;
+			switch (TokenStream.LA(1))
+			{
+				case FORWARD:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1483;
+						Match(FORWARD);
+						State = 1484;
+						Match(SEMI);
+						State = 1488;
 						ErrorHandler.Sync(this);
-						switch (TokenStream.LA(1)) {
-						case NAME:
-							{
-							State = 1492;
-							Match(NAME);
-							State = 1493;
-							expression();
-							}
-							break;
-						case INDEX:
-							{
-							State = 1494;
-							Match(INDEX);
-							State = 1495;
-							expression();
-							}
-							break;
-						default:
-							throw new NoViableAltException(this);
-						}
-						} 
-					}
-					State = 1500;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,196,Context);
-				}
-				State = 1504;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,197,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
+						_alt = Interpreter.AdaptivePredict(TokenStream, 194, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
 						{
-						{
-						State = 1501;
-						functionDirective();
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1485;
+										functionDirective();
+									}
+								}
+							}
+							State = 1490;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 194, Context);
 						}
-						} 
 					}
-					State = 1506;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,197,Context);
-				}
-				}
-				break;
-			case T__0:
-			case ASM:
-			case BEGIN:
-			case CLASS:
-			case CONST:
-			case CONSTRUCTOR:
-			case DESTRUCTOR:
-			case EXPORTS:
-			case FUNCTION:
-			case LABEL:
-			case PROCEDURE:
-			case RESOURCESTRING:
-			case THREADVAR:
-			case TYPE:
-			case VAR:
-			case SEMI:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1507;
-				block();
-				State = 1508;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+					break;
+				case EXTERNAL:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1491;
+						Match(EXTERNAL);
+						State = 1498;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 196, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									State = 1496;
+									ErrorHandler.Sync(this);
+									switch (TokenStream.LA(1))
+									{
+										case NAME:
+											{
+												State = 1492;
+												Match(NAME);
+												State = 1493;
+												expression();
+											}
+											break;
+										case INDEX:
+											{
+												State = 1494;
+												Match(INDEX);
+												State = 1495;
+												expression();
+											}
+											break;
+										default:
+											throw new NoViableAltException(this);
+									}
+								}
+							}
+							State = 1500;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 196, Context);
+						}
+						State = 1504;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 197, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1501;
+										functionDirective();
+									}
+								}
+							}
+							State = 1506;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 197, Context);
+						}
+					}
+					break;
+				case T__0:
+				case ASM:
+				case BEGIN:
+				case CLASS:
+				case CONST:
+				case CONSTRUCTOR:
+				case DESTRUCTOR:
+				case EXPORTS:
+				case FUNCTION:
+				case LABEL:
+				case PROCEDURE:
+				case RESOURCESTRING:
+				case THREADVAR:
+				case TYPE:
+				case VAR:
+				case SEMI:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1507;
+						block();
+						State = 1508;
+						Match(SEMI);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CustomAttributeContext : ParserRuleContext {
+	public partial class CustomAttributeContext : ParserRuleContext
+	{
 		public CustomAttributeContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_customAttribute; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCustomAttribute(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCustomAttribute(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CustomAttributeContext customAttribute() {
+	public CustomAttributeContext customAttribute()
+	{
 		CustomAttributeContext _localctx = new CustomAttributeContext(Context, State);
 		EnterRule(_localctx, 226, RULE_customAttribute);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1512;
-			Match(T__0);
+				State = 1512;
+				Match(T__0);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CustomAttributeListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeDeclContext[] customAttributeDecl() {
+	public partial class CustomAttributeListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeDeclContext[] customAttributeDecl()
+		{
 			return GetRuleContexts<CustomAttributeDeclContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CustomAttributeDeclContext customAttributeDecl(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CustomAttributeDeclContext customAttributeDecl(int i)
+		{
 			return GetRuleContext<CustomAttributeDeclContext>(i);
 		}
 		public CustomAttributeListContext(ParserRuleContext parent, int invokingState)
@@ -9538,61 +11250,73 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_customAttributeList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCustomAttributeList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCustomAttributeList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CustomAttributeListContext customAttributeList() {
+	public CustomAttributeListContext customAttributeList()
+	{
 		CustomAttributeListContext _localctx = new CustomAttributeListContext(Context, State);
 		EnterRule(_localctx, 228, RULE_customAttributeList);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1517;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==LBRACK) {
-				{
-				{
-				State = 1514;
-				customAttributeDecl();
-				}
-				}
-				State = 1519;
+				State = 1517;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				while (_la == LBRACK)
+				{
+					{
+						{
+							State = 1514;
+							customAttributeDecl();
+						}
+					}
+					State = 1519;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CustomAttributeDeclContext : ParserRuleContext {
+	public partial class CustomAttributeDeclContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public NamespacedQualifiedIdentContext namespacedQualifiedIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespacedQualifiedIdentContext namespacedQualifiedIdent()
+		{
 			return GetRuleContext<NamespacedQualifiedIdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionListContext expressionList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionListContext expressionList()
+		{
 			return GetRuleContext<ExpressionListContext>(0);
 		}
 		public CustomAttributeDeclContext(ParserRuleContext parent, int invokingState)
@@ -9601,81 +11325,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_customAttributeDecl; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCustomAttributeDecl(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCustomAttributeDecl(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CustomAttributeDeclContext customAttributeDecl() {
+	public CustomAttributeDeclContext customAttributeDecl()
+	{
 		CustomAttributeDeclContext _localctx = new CustomAttributeDeclContext(Context, State);
 		EnterRule(_localctx, 230, RULE_customAttributeDecl);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1520;
-			Match(LBRACK);
-			State = 1521;
-			namespacedQualifiedIdent();
-			State = 1527;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==LPAREN) {
-				{
-				State = 1522;
-				Match(LPAREN);
-				State = 1524;
+				State = 1520;
+				Match(LBRACK);
+				State = 1521;
+				namespacedQualifiedIdent();
+				State = 1527;
 				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,200,Context) ) {
-				case 1:
+				_la = TokenStream.LA(1);
+				if (_la == LPAREN)
+				{
 					{
-					State = 1523;
-					expressionList();
+						State = 1522;
+						Match(LPAREN);
+						State = 1524;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 200, Context))
+						{
+							case 1:
+								{
+									State = 1523;
+									expressionList();
+								}
+								break;
+						}
+						State = 1526;
+						Match(RPAREN);
 					}
-					break;
 				}
-				State = 1526;
-				Match(RPAREN);
-				}
-			}
 
-			State = 1529;
-			Match(RBRACK);
+				State = 1529;
+				Match(RBRACK);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExpressionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public AnonymousExpressionContext anonymousExpression() {
+	public partial class ExpressionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public AnonymousExpressionContext anonymousExpression()
+		{
 			return GetRuleContext<AnonymousExpressionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleExpressionContext[] simpleExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleExpressionContext[] simpleExpression()
+		{
 			return GetRuleContexts<SimpleExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleExpressionContext simpleExpression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleExpressionContext simpleExpression(int i)
+		{
 			return GetRuleContext<SimpleExpressionContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RelOpContext relOp() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RelOpContext relOp()
+		{
 			return GetRuleContext<RelOpContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQUAL() { return GetToken(DelphiParser.EQUAL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		public ExpressionContext(ParserRuleContext parent, int invokingState)
@@ -9684,87 +11427,103 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_expression; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExpression(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExpression(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExpressionContext expression() {
+	public ExpressionContext expression()
+	{
 		ExpressionContext _localctx = new ExpressionContext(Context, State);
 		EnterRule(_localctx, 232, RULE_expression);
-		try {
+		try
+		{
 			State = 1542;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,204,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1531;
-				anonymousExpression();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1532;
-				simpleExpression();
-				State = 1536;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,202,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 204, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1533;
-					relOp();
-					State = 1534;
-					simpleExpression();
+						State = 1531;
+						anonymousExpression();
 					}
 					break;
-				}
-				State = 1540;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,203,Context) ) {
-				case 1:
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1538;
-					Match(EQUAL);
-					State = 1539;
-					expression();
+						State = 1532;
+						simpleExpression();
+						State = 1536;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 202, Context))
+						{
+							case 1:
+								{
+									State = 1533;
+									relOp();
+									State = 1534;
+									simpleExpression();
+								}
+								break;
+						}
+						State = 1540;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 203, Context))
+						{
+							case 1:
+								{
+									State = 1538;
+									Match(EQUAL);
+									State = 1539;
+									expression();
+								}
+								break;
+						}
 					}
 					break;
-				}
-				}
-				break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class AnonymousExpressionContext : ParserRuleContext {
+	public partial class AnonymousExpressionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PROCEDURE() { return GetToken(DelphiParser.PROCEDURE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BlockContext block()
+		{
 			return GetRuleContext<BlockContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FormalParameterSectionContext formalParameterSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FormalParameterSectionContext formalParameterSection()
+		{
 			return GetRuleContext<FormalParameterSectionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DelphiParser.FUNCTION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeDeclContext typeDecl() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeDeclContext typeDecl()
+		{
 			return GetRuleContext<TypeDeclContext>(0);
 		}
 		public AnonymousExpressionContext(ParserRuleContext parent, int invokingState)
@@ -9773,94 +11532,112 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_anonymousExpression; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterAnonymousExpression(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitAnonymousExpression(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public AnonymousExpressionContext anonymousExpression() {
+	public AnonymousExpressionContext anonymousExpression()
+	{
 		AnonymousExpressionContext _localctx = new AnonymousExpressionContext(Context, State);
 		EnterRule(_localctx, 234, RULE_anonymousExpression);
 		int _la;
-		try {
+		try
+		{
 			State = 1557;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case PROCEDURE:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1544;
-				Match(PROCEDURE);
-				State = 1546;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,205,Context) ) {
-				case 1:
+			switch (TokenStream.LA(1))
+			{
+				case PROCEDURE:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1545;
-					formalParameterSection();
+						State = 1544;
+						Match(PROCEDURE);
+						State = 1546;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 205, Context))
+						{
+							case 1:
+								{
+									State = 1545;
+									formalParameterSection();
+								}
+								break;
+						}
+						State = 1548;
+						block();
 					}
 					break;
-				}
-				State = 1548;
-				block();
-				}
-				break;
-			case FUNCTION:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1549;
-				Match(FUNCTION);
-				State = 1551;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==LPAREN) {
+				case FUNCTION:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1550;
-					formalParameterSection();
-					}
-				}
+						State = 1549;
+						Match(FUNCTION);
+						State = 1551;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == LPAREN)
+						{
+							{
+								State = 1550;
+								formalParameterSection();
+							}
+						}
 
-				State = 1553;
-				Match(COLON);
-				State = 1554;
-				typeDecl();
-				State = 1555;
-				block();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+						State = 1553;
+						Match(COLON);
+						State = 1554;
+						typeDecl();
+						State = 1555;
+						block();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SimpleExpressionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public FactorContext[] factor() {
+	public partial class SimpleExpressionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FactorContext[] factor()
+		{
 			return GetRuleContexts<FactorContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public FactorContext factor(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FactorContext factor(int i)
+		{
 			return GetRuleContext<FactorContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public OperatorContext[] @operator() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public OperatorContext[] @operator()
+		{
 			return GetRuleContexts<OperatorContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public OperatorContext @operator(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public OperatorContext @operator(int i)
+		{
 			return GetRuleContext<OperatorContext>(i);
 		}
 		public SimpleExpressionContext(ParserRuleContext parent, int invokingState)
@@ -9869,61 +11646,72 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleExpression; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSimpleExpression(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSimpleExpression(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SimpleExpressionContext simpleExpression() {
+	public SimpleExpressionContext simpleExpression()
+	{
 		SimpleExpressionContext _localctx = new SimpleExpressionContext(Context, State);
 		EnterRule(_localctx, 236, RULE_simpleExpression);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1559;
-			factor();
-			State = 1565;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,208,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 1560;
-					@operator();
-					State = 1561;
-					factor();
-					}
-					} 
-				}
-				State = 1567;
+				State = 1559;
+				factor();
+				State = 1565;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,208,Context);
-			}
+				_alt = Interpreter.AdaptivePredict(TokenStream, 208, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1560;
+								@operator();
+								State = 1561;
+								factor();
+							}
+						}
+					}
+					State = 1567;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 208, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class FactorContext : ParserRuleContext {
+	public partial class FactorContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT2() { return GetToken(DelphiParser.AT2, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public FactorContext factor() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public FactorContext factor()
+		{
 			return GetRuleContext<FactorContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOUBLEAT() { return GetToken(DelphiParser.DOUBLEAT, 0); }
@@ -9931,13 +11719,19 @@ public partial class DelphiParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PLUS() { return GetToken(DelphiParser.PLUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MINUS() { return GetToken(DelphiParser.MINUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode POINTER2() { return GetToken(DelphiParser.POINTER2, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IntNumContext intNum() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IntNumContext intNum()
+		{
 			return GetRuleContext<IntNumContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RealNumContext realNum() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RealNumContext realNum()
+		{
 			return GetRuleContext<RealNumContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkAsmHexNum() { return GetToken(DelphiParser.TkAsmHexNum, 0); }
@@ -9945,24 +11739,36 @@ public partial class DelphiParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FALSE() { return GetToken(DelphiParser.FALSE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NIL() { return GetToken(DelphiParser.NIL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StringFactorContext stringFactor() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StringFactorContext stringFactor()
+		{
 			return GetRuleContext<StringFactorContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SetSectionContext setSection() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SetSectionContext setSection()
+		{
 			return GetRuleContext<SetSectionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext designator() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext designator()
+		{
 			return GetRuleContext<DesignatorContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		public FactorContext(ParserRuleContext parent, int invokingState)
@@ -9971,195 +11777,211 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_factor; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFactor(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFactor(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FactorContext factor() {
+	public FactorContext factor()
+	{
 		FactorContext _localctx = new FactorContext(Context, State);
 		EnterRule(_localctx, 238, RULE_factor);
 		int _la;
-		try {
+		try
+		{
 			State = 1601;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,211,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1568;
-				Match(AT2);
-				State = 1569;
-				factor();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1570;
-				Match(DOUBLEAT);
-				State = 1571;
-				factor();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1572;
-				Match(NOT);
-				State = 1573;
-				factor();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1574;
-				Match(PLUS);
-				State = 1575;
-				factor();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1576;
-				Match(MINUS);
-				State = 1577;
-				factor();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 1578;
-				Match(POINTER2);
-				State = 1579;
-				ident();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 1580;
-				intNum();
-				}
-				break;
-			case 8:
-				EnterOuterAlt(_localctx, 8);
-				{
-				State = 1581;
-				realNum();
-				}
-				break;
-			case 9:
-				EnterOuterAlt(_localctx, 9);
-				{
-				State = 1582;
-				_la = TokenStream.LA(1);
-				if ( !(_la==NIL || _la==FALSE || _la==TRUE || _la==TkAsmHexNum) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			case 10:
-				EnterOuterAlt(_localctx, 10);
-				{
-				State = 1583;
-				Match(LPAREN);
-				State = 1584;
-				expression();
-				State = 1585;
-				Match(RPAREN);
-				State = 1587;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,209,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 211, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1586;
-					Match(POINTER2);
+						State = 1568;
+						Match(AT2);
+						State = 1569;
+						factor();
 					}
 					break;
-				}
-				State = 1591;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,210,Context) ) {
-				case 1:
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1589;
-					Match(DOT);
-					State = 1590;
-					expression();
+						State = 1570;
+						Match(DOUBLEAT);
+						State = 1571;
+						factor();
 					}
 					break;
-				}
-				}
-				break;
-			case 11:
-				EnterOuterAlt(_localctx, 11);
-				{
-				State = 1593;
-				stringFactor();
-				}
-				break;
-			case 12:
-				EnterOuterAlt(_localctx, 12);
-				{
-				State = 1594;
-				setSection();
-				}
-				break;
-			case 13:
-				EnterOuterAlt(_localctx, 13);
-				{
-				State = 1595;
-				designator();
-				}
-				break;
-			case 14:
-				EnterOuterAlt(_localctx, 14);
-				{
-				State = 1596;
-				typeId();
-				State = 1597;
-				Match(LPAREN);
-				State = 1598;
-				expression();
-				State = 1599;
-				Match(RPAREN);
-				}
-				break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1572;
+						Match(NOT);
+						State = 1573;
+						factor();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1574;
+						Match(PLUS);
+						State = 1575;
+						factor();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1576;
+						Match(MINUS);
+						State = 1577;
+						factor();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 1578;
+						Match(POINTER2);
+						State = 1579;
+						ident();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 1580;
+						intNum();
+					}
+					break;
+				case 8:
+					EnterOuterAlt(_localctx, 8);
+					{
+						State = 1581;
+						realNum();
+					}
+					break;
+				case 9:
+					EnterOuterAlt(_localctx, 9);
+					{
+						State = 1582;
+						_la = TokenStream.LA(1);
+						if (!(_la == NIL || _la == FALSE || _la == TRUE || _la == TkAsmHexNum))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				case 10:
+					EnterOuterAlt(_localctx, 10);
+					{
+						State = 1583;
+						Match(LPAREN);
+						State = 1584;
+						expression();
+						State = 1585;
+						Match(RPAREN);
+						State = 1587;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 209, Context))
+						{
+							case 1:
+								{
+									State = 1586;
+									Match(POINTER2);
+								}
+								break;
+						}
+						State = 1591;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 210, Context))
+						{
+							case 1:
+								{
+									State = 1589;
+									Match(DOT);
+									State = 1590;
+									expression();
+								}
+								break;
+						}
+					}
+					break;
+				case 11:
+					EnterOuterAlt(_localctx, 11);
+					{
+						State = 1593;
+						stringFactor();
+					}
+					break;
+				case 12:
+					EnterOuterAlt(_localctx, 12);
+					{
+						State = 1594;
+						setSection();
+					}
+					break;
+				case 13:
+					EnterOuterAlt(_localctx, 13);
+					{
+						State = 1595;
+						designator();
+					}
+					break;
+				case 14:
+					EnterOuterAlt(_localctx, 14);
+					{
+						State = 1596;
+						typeId();
+						State = 1597;
+						Match(LPAREN);
+						State = 1598;
+						expression();
+						State = 1599;
+						Match(RPAREN);
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class StringFactorContext : ParserRuleContext {
+	public partial class StringFactorContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] ControlString() { return GetTokens(DelphiParser.ControlString); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ControlString(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode ControlString(int i)
+		{
 			return GetToken(DelphiParser.ControlString, i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] QuotedString() { return GetTokens(DelphiParser.QuotedString); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode QuotedString(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode QuotedString(int i)
+		{
 			return GetToken(DelphiParser.QuotedString, i);
 		}
 		public StringFactorContext(ParserRuleContext parent, int invokingState)
@@ -10168,126 +11990,148 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_stringFactor; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterStringFactor(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitStringFactor(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public StringFactorContext stringFactor() {
+	public StringFactorContext stringFactor()
+	{
 		StringFactorContext _localctx = new StringFactorContext(Context, State);
 		EnterRule(_localctx, 240, RULE_stringFactor);
-		try {
+		try
+		{
 			int _alt;
 			State = 1625;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case ControlString:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1603;
-				Match(ControlString);
-				State = 1608;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,212,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						{
-						State = 1604;
-						Match(QuotedString);
-						State = 1605;
-						Match(ControlString);
-						}
-						} 
-					}
-					State = 1610;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,212,Context);
-				}
-				State = 1612;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,213,Context) ) {
-				case 1:
+			switch (TokenStream.LA(1))
+			{
+				case ControlString:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1611;
-					Match(QuotedString);
+						State = 1603;
+						Match(ControlString);
+						State = 1608;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 212, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1604;
+										Match(QuotedString);
+										State = 1605;
+										Match(ControlString);
+									}
+								}
+							}
+							State = 1610;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 212, Context);
+						}
+						State = 1612;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 213, Context))
+						{
+							case 1:
+								{
+									State = 1611;
+									Match(QuotedString);
+								}
+								break;
+						}
 					}
 					break;
-				}
-				}
-				break;
-			case QuotedString:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1614;
-				Match(QuotedString);
-				State = 1619;
-				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,214,Context);
-				while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						{
-						State = 1615;
-						Match(ControlString);
-						State = 1616;
-						Match(QuotedString);
-						}
-						} 
-					}
-					State = 1621;
-					ErrorHandler.Sync(this);
-					_alt = Interpreter.AdaptivePredict(TokenStream,214,Context);
-				}
-				State = 1623;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,215,Context) ) {
-				case 1:
+				case QuotedString:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1622;
-					Match(ControlString);
+						State = 1614;
+						Match(QuotedString);
+						State = 1619;
+						ErrorHandler.Sync(this);
+						_alt = Interpreter.AdaptivePredict(TokenStream, 214, Context);
+						while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+						{
+							if (_alt == 1)
+							{
+								{
+									{
+										State = 1615;
+										Match(ControlString);
+										State = 1616;
+										Match(QuotedString);
+									}
+								}
+							}
+							State = 1621;
+							ErrorHandler.Sync(this);
+							_alt = Interpreter.AdaptivePredict(TokenStream, 214, Context);
+						}
+						State = 1623;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 215, Context))
+						{
+							case 1:
+								{
+									State = 1622;
+									Match(ControlString);
+								}
+								break;
+						}
 					}
 					break;
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SetSectionContext : ParserRuleContext {
+	public partial class SetSectionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] DOTDOT() { return GetTokens(DelphiParser.DOTDOT); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOTDOT(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode DOTDOT(int i)
+		{
 			return GetToken(DelphiParser.DOTDOT, i);
 		}
 		public SetSectionContext(ParserRuleContext parent, int invokingState)
@@ -10296,87 +12140,106 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_setSection; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSetSection(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSetSection(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SetSectionContext setSection() {
+	public SetSectionContext setSection()
+	{
 		SetSectionContext _localctx = new SetSectionContext(Context, State);
 		EnterRule(_localctx, 242, RULE_setSection);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1627;
-			Match(LBRACK);
-			State = 1636;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,218,Context) ) {
-			case 1:
-				{
-				State = 1628;
-				expression();
-				State = 1633;
+				State = 1627;
+				Match(LBRACK);
+				State = 1636;
 				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==COMMA || _la==DOTDOT) {
-					{
-					{
-					State = 1629;
-					_la = TokenStream.LA(1);
-					if ( !(_la==COMMA || _la==DOTDOT) ) {
-					ErrorHandler.RecoverInline(this);
-					}
-					else {
-						ErrorHandler.ReportMatch(this);
-					    Consume();
-					}
-					State = 1630;
-					expression();
-					}
-					}
-					State = 1635;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
+				switch (Interpreter.AdaptivePredict(TokenStream, 218, Context))
+				{
+					case 1:
+						{
+							State = 1628;
+							expression();
+							State = 1633;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+							while (_la == COMMA || _la == DOTDOT)
+							{
+								{
+									{
+										State = 1629;
+										_la = TokenStream.LA(1);
+										if (!(_la == COMMA || _la == DOTDOT))
+										{
+											ErrorHandler.RecoverInline(this);
+										}
+										else
+										{
+											ErrorHandler.ReportMatch(this);
+											Consume();
+										}
+										State = 1630;
+										expression();
+									}
+								}
+								State = 1635;
+								ErrorHandler.Sync(this);
+								_la = TokenStream.LA(1);
+							}
+						}
+						break;
 				}
-				}
-				break;
-			}
-			State = 1638;
-			Match(RBRACK);
+				State = 1638;
+				Match(RBRACK);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class DesignatorContext : ParserRuleContext {
+	public partial class DesignatorContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INHERITED() { return GetToken(DelphiParser.INHERITED, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorItemContext[] designatorItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorItemContext[] designatorItem()
+		{
 			return GetRuleContexts<DesignatorItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorItemContext designatorItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorItemContext designatorItem(int i)
+		{
 			return GetRuleContext<DesignatorItemContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public NamespacedQualifiedIdentContext namespacedQualifiedIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespacedQualifiedIdentContext namespacedQualifiedIdent()
+		{
 			return GetRuleContext<NamespacedQualifiedIdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		public DesignatorContext(ParserRuleContext parent, int invokingState)
@@ -10385,124 +12248,154 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_designator; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterDesignator(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitDesignator(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public DesignatorContext designator() {
+	public DesignatorContext designator()
+	{
 		DesignatorContext _localctx = new DesignatorContext(Context, State);
 		EnterRule(_localctx, 244, RULE_designator);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1641;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,219,Context) ) {
-			case 1:
-				{
-				State = 1640;
-				Match(INHERITED);
-				}
-				break;
-			}
-			State = 1647;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,221,Context) ) {
-			case 1:
-				{
-				State = 1645;
+				State = 1641;
 				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,220,Context) ) {
-				case 1:
-					{
-					State = 1643;
-					namespacedQualifiedIdent();
-					}
-					break;
-				case 2:
-					{
-					State = 1644;
-					typeId();
-					}
-					break;
+				switch (Interpreter.AdaptivePredict(TokenStream, 219, Context))
+				{
+					case 1:
+						{
+							State = 1640;
+							Match(INHERITED);
+						}
+						break;
 				}
-				}
-				break;
-			}
-			State = 1652;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,222,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 1649;
-					designatorItem();
-					}
-					} 
-				}
-				State = 1654;
+				State = 1647;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,222,Context);
-			}
+				switch (Interpreter.AdaptivePredict(TokenStream, 221, Context))
+				{
+					case 1:
+						{
+							State = 1645;
+							ErrorHandler.Sync(this);
+							switch (Interpreter.AdaptivePredict(TokenStream, 220, Context))
+							{
+								case 1:
+									{
+										State = 1643;
+										namespacedQualifiedIdent();
+									}
+									break;
+								case 2:
+									{
+										State = 1644;
+										typeId();
+									}
+									break;
+							}
+						}
+						break;
+				}
+				State = 1652;
+				ErrorHandler.Sync(this);
+				_alt = Interpreter.AdaptivePredict(TokenStream, 222, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1649;
+								designatorItem();
+							}
+						}
+					}
+					State = 1654;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 222, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class DesignatorItemContext : ParserRuleContext {
+	public partial class DesignatorItemContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode POINTER2() { return GetToken(DelphiParser.POINTER2, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT2() { return GetToken(DelphiParser.AT2, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(DelphiParser.LT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public GenericTypeIdentContext[] genericTypeIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericTypeIdentContext[] genericTypeIdent()
+		{
 			return GetRuleContexts<GenericTypeIdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GenericTypeIdentContext genericTypeIdent(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GenericTypeIdentContext genericTypeIdent(int i)
+		{
 			return GetRuleContext<GenericTypeIdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(DelphiParser.GT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LBRACK() { return GetToken(DelphiParser.LBRACK, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionListContext expressionList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionListContext expressionList()
+		{
 			return GetRuleContext<ExpressionListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RBRACK() { return GetToken(DelphiParser.RBRACK, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ColonConstructContext[] colonConstruct() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ColonConstructContext[] colonConstruct()
+		{
 			return GetRuleContexts<ColonConstructContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ColonConstructContext colonConstruct(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ColonConstructContext colonConstruct(int i)
+		{
 			return GetRuleContext<ColonConstructContext>(i);
 		}
 		public DesignatorItemContext(ParserRuleContext parent, int invokingState)
@@ -10511,169 +12404,190 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_designatorItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterDesignatorItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitDesignatorItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public DesignatorItemContext designatorItem() {
+	public DesignatorItemContext designatorItem()
+	{
 		DesignatorItemContext _localctx = new DesignatorItemContext(Context, State);
 		EnterRule(_localctx, 246, RULE_designatorItem);
 		int _la;
-		try {
+		try
+		{
 			State = 1691;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case POINTER2:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1655;
-				Match(POINTER2);
-				}
-				break;
-			case AT2:
-			case DOT:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1656;
-				_la = TokenStream.LA(1);
-				if ( !(_la==AT2 || _la==DOT) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				State = 1657;
-				ident();
-				}
-				break;
-			case LT:
-				EnterOuterAlt(_localctx, 3);
-				{
-				{
-				State = 1658;
-				Match(LT);
-				State = 1659;
-				genericTypeIdent();
-				State = 1664;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==COMMA) {
+			switch (TokenStream.LA(1))
+			{
+				case POINTER2:
+					EnterOuterAlt(_localctx, 1);
 					{
-					{
-					State = 1660;
-					Match(COMMA);
-					State = 1661;
-					genericTypeIdent();
-					}
-					}
-					State = 1666;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 1667;
-				Match(GT);
-				}
-				}
-				break;
-			case LBRACK:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1669;
-				Match(LBRACK);
-				State = 1670;
-				expressionList();
-				State = 1671;
-				Match(RBRACK);
-				}
-				break;
-			case LPAREN:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1673;
-				Match(LPAREN);
-				State = 1688;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,227,Context) ) {
-				case 1:
-					{
-					State = 1674;
-					expression();
-					State = 1676;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-					if (_la==COLON) {
-						{
-						State = 1675;
-						colonConstruct();
-						}
-					}
-
-					State = 1685;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-					while (_la==COMMA) {
-						{
-						{
-						State = 1678;
-						Match(COMMA);
-						State = 1679;
-						expression();
-						State = 1681;
-						ErrorHandler.Sync(this);
-						_la = TokenStream.LA(1);
-						if (_la==COLON) {
-							{
-							State = 1680;
-							colonConstruct();
-							}
-						}
-
-						}
-						}
-						State = 1687;
-						ErrorHandler.Sync(this);
-						_la = TokenStream.LA(1);
-					}
+						State = 1655;
+						Match(POINTER2);
 					}
 					break;
-				}
-				State = 1690;
-				Match(RPAREN);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+				case AT2:
+				case DOT:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1656;
+						_la = TokenStream.LA(1);
+						if (!(_la == AT2 || _la == DOT))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+						State = 1657;
+						ident();
+					}
+					break;
+				case LT:
+					EnterOuterAlt(_localctx, 3);
+					{
+						{
+							State = 1658;
+							Match(LT);
+							State = 1659;
+							genericTypeIdent();
+							State = 1664;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+							while (_la == COMMA)
+							{
+								{
+									{
+										State = 1660;
+										Match(COMMA);
+										State = 1661;
+										genericTypeIdent();
+									}
+								}
+								State = 1666;
+								ErrorHandler.Sync(this);
+								_la = TokenStream.LA(1);
+							}
+							State = 1667;
+							Match(GT);
+						}
+					}
+					break;
+				case LBRACK:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1669;
+						Match(LBRACK);
+						State = 1670;
+						expressionList();
+						State = 1671;
+						Match(RBRACK);
+					}
+					break;
+				case LPAREN:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1673;
+						Match(LPAREN);
+						State = 1688;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 227, Context))
+						{
+							case 1:
+								{
+									State = 1674;
+									expression();
+									State = 1676;
+									ErrorHandler.Sync(this);
+									_la = TokenStream.LA(1);
+									if (_la == COLON)
+									{
+										{
+											State = 1675;
+											colonConstruct();
+										}
+									}
+
+									State = 1685;
+									ErrorHandler.Sync(this);
+									_la = TokenStream.LA(1);
+									while (_la == COMMA)
+									{
+										{
+											{
+												State = 1678;
+												Match(COMMA);
+												State = 1679;
+												expression();
+												State = 1681;
+												ErrorHandler.Sync(this);
+												_la = TokenStream.LA(1);
+												if (_la == COLON)
+												{
+													{
+														State = 1680;
+														colonConstruct();
+													}
+												}
+
+											}
+										}
+										State = 1687;
+										ErrorHandler.Sync(this);
+										_la = TokenStream.LA(1);
+									}
+								}
+								break;
+						}
+						State = 1690;
+						Match(RPAREN);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExpressionListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+	public partial class ExpressionListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public ExpressionListContext(ParserRuleContext parent, int invokingState)
@@ -10682,65 +12596,79 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_expressionList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExpressionList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExpressionList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExpressionListContext expressionList() {
+	public ExpressionListContext expressionList()
+	{
 		ExpressionListContext _localctx = new ExpressionListContext(Context, State);
 		EnterRule(_localctx, 248, RULE_expressionList);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1693;
-			expression();
-			State = 1698;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 1694;
-				Match(COMMA);
-				State = 1695;
+				State = 1693;
 				expression();
-				}
-				}
-				State = 1700;
+				State = 1698;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 1694;
+							Match(COMMA);
+							State = 1695;
+							expression();
+						}
+					}
+					State = 1700;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ColonConstructContext : ParserRuleContext {
+	public partial class ColonConstructContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COLON() { return GetTokens(DelphiParser.COLON); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COLON(int i)
+		{
 			return GetToken(DelphiParser.COLON, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		public ColonConstructContext(ParserRuleContext parent, int invokingState)
@@ -10749,55 +12677,63 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_colonConstruct; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterColonConstruct(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitColonConstruct(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ColonConstructContext colonConstruct() {
+	public ColonConstructContext colonConstruct()
+	{
 		ColonConstructContext _localctx = new ColonConstructContext(Context, State);
 		EnterRule(_localctx, 250, RULE_colonConstruct);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1701;
-			Match(COLON);
-			State = 1702;
-			expression();
-			State = 1705;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==COLON) {
-				{
-				State = 1703;
+				State = 1701;
 				Match(COLON);
-				State = 1704;
+				State = 1702;
 				expression();
+				State = 1705;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == COLON)
+				{
+					{
+						State = 1703;
+						Match(COLON);
+						State = 1704;
+						expression();
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class OperatorContext : ParserRuleContext {
+	public partial class OperatorContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PLUS() { return GetToken(DelphiParser.PLUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MINUS() { return GetToken(DelphiParser.MINUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OR() { return GetToken(DelphiParser.OR, 0); }
@@ -10816,48 +12752,57 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_operator; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterOperator(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitOperator(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public OperatorContext @operator() {
+	public OperatorContext @operator()
+	{
 		OperatorContext _localctx = new OperatorContext(Context, State);
 		EnterRule(_localctx, 252, RULE_operator);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1707;
-			_la = TokenStream.LA(1);
-			if ( !(((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & 2305843009222082569L) != 0) || ((((_la - 76)) & ~0x3f) == 0 && ((1L << (_la - 76)) & 4359484445737091073L) != 0)) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 1707;
+				_la = TokenStream.LA(1);
+				if (!(((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & 2305843009222082569L) != 0) || ((((_la - 76)) & ~0x3f) == 0 && ((1L << (_la - 76)) & 4359484445737091073L) != 0)))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RelOpContext : ParserRuleContext {
+	public partial class RelOpContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(DelphiParser.LT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(DelphiParser.GT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LE() { return GetToken(DelphiParser.LE, 0); }
@@ -10872,86 +12817,121 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_relOp; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRelOp(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRelOp(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RelOpContext relOp() {
+	public RelOpContext relOp()
+	{
 		RelOpContext _localctx = new RelOpContext(Context, State);
 		EnterRule(_localctx, 254, RULE_relOp);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1709;
-			_la = TokenStream.LA(1);
-			if ( !(_la==IN || _la==IS || ((((_la - 142)) & ~0x3f) == 0 && ((1L << (_la - 142)) & 63L) != 0)) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 1709;
+				_la = TokenStream.LA(1);
+				if (!(_la == IN || _la == IS || ((((_la - 142)) & ~0x3f) == 0 && ((1L << (_la - 142)) & 63L) != 0)))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class StatementContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IfStatementContext ifStatement() {
+	public partial class StatementContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IfStatementContext ifStatement()
+		{
 			return GetRuleContext<IfStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CaseStatementContext caseStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CaseStatementContext caseStatement()
+		{
 			return GetRuleContext<CaseStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RepeatStatementContext repeatStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RepeatStatementContext repeatStatement()
+		{
 			return GetRuleContext<RepeatStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public WhileStatementContext whileStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public WhileStatementContext whileStatement()
+		{
 			return GetRuleContext<WhileStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ForStatementContext forStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ForStatementContext forStatement()
+		{
 			return GetRuleContext<ForStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public WithStatementContext withStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public WithStatementContext withStatement()
+		{
 			return GetRuleContext<WithStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public TryStatementContext tryStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TryStatementContext tryStatement()
+		{
 			return GetRuleContext<TryStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RaiseStatementContext raiseStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RaiseStatementContext raiseStatement()
+		{
 			return GetRuleContext<RaiseStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public AssemblerStatementContext assemblerStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public AssemblerStatementContext assemblerStatement()
+		{
 			return GetRuleContext<AssemblerStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CompoundStatementContext compoundStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CompoundStatementContext compoundStatement()
+		{
 			return GetRuleContext<CompoundStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public LabelContext label() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LabelContext label()
+		{
 			return GetRuleContext<LabelContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement()
+		{
 			return GetRuleContext<StatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public SimpleStatementContext simpleStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public SimpleStatementContext simpleStatement()
+		{
 			return GetRuleContext<SimpleStatementContext>(0);
 		}
 		public StatementContext(ParserRuleContext parent, int invokingState)
@@ -10960,136 +12940,150 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_statement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public StatementContext statement() {
+	public StatementContext statement()
+	{
 		StatementContext _localctx = new StatementContext(Context, State);
 		EnterRule(_localctx, 256, RULE_statement);
-		try {
+		try
+		{
 			State = 1726;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,231,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1711;
-				ifStatement();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1712;
-				caseStatement();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1713;
-				repeatStatement();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1714;
-				whileStatement();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1715;
-				forStatement();
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 1716;
-				withStatement();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 1717;
-				tryStatement();
-				}
-				break;
-			case 8:
-				EnterOuterAlt(_localctx, 8);
-				{
-				State = 1718;
-				raiseStatement();
-				}
-				break;
-			case 9:
-				EnterOuterAlt(_localctx, 9);
-				{
-				State = 1719;
-				assemblerStatement();
-				}
-				break;
-			case 10:
-				EnterOuterAlt(_localctx, 10);
-				{
-				State = 1720;
-				compoundStatement();
-				}
-				break;
-			case 11:
-				EnterOuterAlt(_localctx, 11);
-				{
-				State = 1721;
-				label();
-				State = 1722;
-				Match(COLON);
-				State = 1723;
-				statement();
-				}
-				break;
-			case 12:
-				EnterOuterAlt(_localctx, 12);
-				{
-				State = 1725;
-				simpleStatement();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 231, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1711;
+						ifStatement();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1712;
+						caseStatement();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1713;
+						repeatStatement();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1714;
+						whileStatement();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1715;
+						forStatement();
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 1716;
+						withStatement();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 1717;
+						tryStatement();
+					}
+					break;
+				case 8:
+					EnterOuterAlt(_localctx, 8);
+					{
+						State = 1718;
+						raiseStatement();
+					}
+					break;
+				case 9:
+					EnterOuterAlt(_localctx, 9);
+					{
+						State = 1719;
+						assemblerStatement();
+					}
+					break;
+				case 10:
+					EnterOuterAlt(_localctx, 10);
+					{
+						State = 1720;
+						compoundStatement();
+					}
+					break;
+				case 11:
+					EnterOuterAlt(_localctx, 11);
+					{
+						State = 1721;
+						label();
+						State = 1722;
+						Match(COLON);
+						State = 1723;
+						statement();
+					}
+					break;
+				case 12:
+					EnterOuterAlt(_localctx, 12);
+					{
+						State = 1725;
+						simpleStatement();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class IfStatementContext : ParserRuleContext {
+	public partial class IfStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IF() { return GetToken(DelphiParser.IF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode THEN() { return GetToken(DelphiParser.THEN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext[] statement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext[] statement()
+		{
 			return GetRuleContexts<StatementContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement(int i)
+		{
 			return GetRuleContext<StatementContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ELSE() { return GetToken(DelphiParser.ELSE, 0); }
@@ -11099,72 +13093,88 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_ifStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterIfStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitIfStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public IfStatementContext ifStatement() {
+	public IfStatementContext ifStatement()
+	{
 		IfStatementContext _localctx = new IfStatementContext(Context, State);
 		EnterRule(_localctx, 258, RULE_ifStatement);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1728;
-			Match(IF);
-			State = 1729;
-			expression();
-			State = 1730;
-			Match(THEN);
-			State = 1731;
-			statement();
-			State = 1734;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,232,Context) ) {
-			case 1:
-				{
-				State = 1732;
-				Match(ELSE);
-				State = 1733;
+				State = 1728;
+				Match(IF);
+				State = 1729;
+				expression();
+				State = 1730;
+				Match(THEN);
+				State = 1731;
 				statement();
+				State = 1734;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 232, Context))
+				{
+					case 1:
+						{
+							State = 1732;
+							Match(ELSE);
+							State = 1733;
+							statement();
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CaseStatementContext : ParserRuleContext {
+	public partial class CaseStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CASE() { return GetToken(DelphiParser.CASE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OF() { return GetToken(DelphiParser.OF, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public CaseItemContext[] caseItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CaseItemContext[] caseItem()
+		{
 			return GetRuleContexts<CaseItemContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CaseItemContext caseItem(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CaseItemContext caseItem(int i)
+		{
 			return GetRuleContext<CaseItemContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ELSE() { return GetToken(DelphiParser.ELSE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList()
+		{
 			return GetRuleContext<StatementListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -11174,95 +13184,113 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_caseStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCaseStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCaseStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CaseStatementContext caseStatement() {
+	public CaseStatementContext caseStatement()
+	{
 		CaseStatementContext _localctx = new CaseStatementContext(Context, State);
 		EnterRule(_localctx, 260, RULE_caseStatement);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1736;
-			Match(CASE);
-			State = 1737;
-			expression();
-			State = 1738;
-			Match(OF);
-			State = 1742;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874563393021L) != 0)) {
-				{
-				{
-				State = 1739;
-				caseItem();
-				}
-				}
-				State = 1744;
+				State = 1736;
+				Match(CASE);
+				State = 1737;
+				expression();
+				State = 1738;
+				Match(OF);
+				State = 1742;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1750;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==ELSE) {
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2576640216473309552L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & 2306854608771758511L) != 0) || ((((_la - 129)) & ~0x3f) == 0 && ((1L << (_la - 129)) & 4017210874563393021L) != 0))
 				{
-				State = 1745;
-				Match(ELSE);
-				State = 1746;
-				statementList();
-				State = 1748;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==SEMI) {
 					{
-					State = 1747;
-					Match(SEMI);
+						{
+							State = 1739;
+							caseItem();
+						}
+					}
+					State = 1744;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1750;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == ELSE)
+				{
+					{
+						State = 1745;
+						Match(ELSE);
+						State = 1746;
+						statementList();
+						State = 1748;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == SEMI)
+						{
+							{
+								State = 1747;
+								Match(SEMI);
+							}
+						}
+
 					}
 				}
 
-				}
-			}
-
-			State = 1752;
-			Match(END);
+				State = 1752;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CaseItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public CaseLabelContext[] caseLabel() {
+	public partial class CaseItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CaseLabelContext[] caseLabel()
+		{
 			return GetRuleContexts<CaseLabelContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CaseLabelContext caseLabel(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CaseLabelContext caseLabel(int i)
+		{
 			return GetRuleContext<CaseLabelContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement()
+		{
 			return GetRuleContext<StatementContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -11272,75 +13300,88 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_caseItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCaseItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCaseItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CaseItemContext caseItem() {
+	public CaseItemContext caseItem()
+	{
 		CaseItemContext _localctx = new CaseItemContext(Context, State);
 		EnterRule(_localctx, 262, RULE_caseItem);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1754;
-			caseLabel();
-			State = 1759;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 1755;
-				Match(COMMA);
-				State = 1756;
+				State = 1754;
 				caseLabel();
-				}
-				}
-				State = 1761;
+				State = 1759;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1762;
-			Match(COLON);
-			State = 1763;
-			statement();
-			State = 1765;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==SEMI) {
+				while (_la == COMMA)
 				{
-				State = 1764;
-				Match(SEMI);
+					{
+						{
+							State = 1755;
+							Match(COMMA);
+							State = 1756;
+							caseLabel();
+						}
+					}
+					State = 1761;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
 				}
-			}
+				State = 1762;
+				Match(COLON);
+				State = 1763;
+				statement();
+				State = 1765;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == SEMI)
+				{
+					{
+						State = 1764;
+						Match(SEMI);
+					}
+				}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CaseLabelContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+	public partial class CaseLabelContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOTDOT() { return GetToken(DelphiParser.DOTDOT, 0); }
@@ -11350,59 +13391,71 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_caseLabel; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCaseLabel(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCaseLabel(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CaseLabelContext caseLabel() {
+	public CaseLabelContext caseLabel()
+	{
 		CaseLabelContext _localctx = new CaseLabelContext(Context, State);
 		EnterRule(_localctx, 264, RULE_caseLabel);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1767;
-			expression();
-			State = 1770;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			if (_la==DOTDOT) {
-				{
-				State = 1768;
-				Match(DOTDOT);
-				State = 1769;
+				State = 1767;
 				expression();
+				State = 1770;
+				ErrorHandler.Sync(this);
+				_la = TokenStream.LA(1);
+				if (_la == DOTDOT)
+				{
+					{
+						State = 1768;
+						Match(DOTDOT);
+						State = 1769;
+						expression();
+					}
 				}
-			}
 
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RepeatStatementContext : ParserRuleContext {
+	public partial class RepeatStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REPEAT() { return GetToken(DelphiParser.REPEAT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode UNTIL() { return GetToken(DelphiParser.UNTIL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList()
+		{
 			return GetRuleContext<StatementListContext>(0);
 		}
 		public RepeatStatementContext(ParserRuleContext parent, int invokingState)
@@ -11411,60 +13464,72 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_repeatStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRepeatStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRepeatStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RepeatStatementContext repeatStatement() {
+	public RepeatStatementContext repeatStatement()
+	{
 		RepeatStatementContext _localctx = new RepeatStatementContext(Context, State);
 		EnterRule(_localctx, 266, RULE_repeatStatement);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1772;
-			Match(REPEAT);
-			State = 1774;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,239,Context) ) {
-			case 1:
+				State = 1772;
+				Match(REPEAT);
+				State = 1774;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 239, Context))
 				{
-				State = 1773;
-				statementList();
+					case 1:
+						{
+							State = 1773;
+							statementList();
+						}
+						break;
 				}
-				break;
-			}
-			State = 1776;
-			Match(UNTIL);
-			State = 1777;
-			expression();
+				State = 1776;
+				Match(UNTIL);
+				State = 1777;
+				expression();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class WhileStatementContext : ParserRuleContext {
+	public partial class WhileStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHILE() { return GetToken(DelphiParser.WHILE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DO() { return GetToken(DelphiParser.DO, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement()
+		{
 			return GetRuleContext<StatementContext>(0);
 		}
 		public WhileStatementContext(ParserRuleContext parent, int invokingState)
@@ -11473,60 +13538,75 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_whileStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterWhileStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitWhileStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public WhileStatementContext whileStatement() {
+	public WhileStatementContext whileStatement()
+	{
 		WhileStatementContext _localctx = new WhileStatementContext(Context, State);
 		EnterRule(_localctx, 268, RULE_whileStatement);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1779;
-			Match(WHILE);
-			State = 1780;
-			expression();
-			State = 1781;
-			Match(DO);
-			State = 1782;
-			statement();
+				State = 1779;
+				Match(WHILE);
+				State = 1780;
+				expression();
+				State = 1781;
+				Match(DO);
+				State = 1782;
+				statement();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ForStatementContext : ParserRuleContext {
+	public partial class ForStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOR() { return GetToken(DelphiParser.FOR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext designator() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext designator()
+		{
 			return GetRuleContext<DesignatorContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ASSIGN() { return GetToken(DelphiParser.ASSIGN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext[] expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext[] expression()
+		{
 			return GetRuleContexts<ExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression(int i)
+		{
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TO() { return GetToken(DelphiParser.TO, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DO() { return GetToken(DelphiParser.DO, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement()
+		{
 			return GetRuleContext<StatementContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOWNTO() { return GetToken(DelphiParser.DOWNTO, 0); }
@@ -11537,104 +13617,116 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_forStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterForStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitForStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ForStatementContext forStatement() {
+	public ForStatementContext forStatement()
+	{
 		ForStatementContext _localctx = new ForStatementContext(Context, State);
 		EnterRule(_localctx, 270, RULE_forStatement);
-		try {
+		try
+		{
 			State = 1809;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,240,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1784;
-				Match(FOR);
-				State = 1785;
-				designator();
-				State = 1786;
-				Match(ASSIGN);
-				State = 1787;
-				expression();
-				State = 1788;
-				Match(TO);
-				State = 1789;
-				expression();
-				State = 1790;
-				Match(DO);
-				State = 1791;
-				statement();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1793;
-				Match(FOR);
-				State = 1794;
-				designator();
-				State = 1795;
-				Match(ASSIGN);
-				State = 1796;
-				expression();
-				State = 1797;
-				Match(DOWNTO);
-				State = 1798;
-				expression();
-				State = 1799;
-				Match(DO);
-				State = 1800;
-				statement();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1802;
-				Match(FOR);
-				State = 1803;
-				designator();
-				State = 1804;
-				Match(IN);
-				State = 1805;
-				expression();
-				State = 1806;
-				Match(DO);
-				State = 1807;
-				statement();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 240, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1784;
+						Match(FOR);
+						State = 1785;
+						designator();
+						State = 1786;
+						Match(ASSIGN);
+						State = 1787;
+						expression();
+						State = 1788;
+						Match(TO);
+						State = 1789;
+						expression();
+						State = 1790;
+						Match(DO);
+						State = 1791;
+						statement();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1793;
+						Match(FOR);
+						State = 1794;
+						designator();
+						State = 1795;
+						Match(ASSIGN);
+						State = 1796;
+						expression();
+						State = 1797;
+						Match(DOWNTO);
+						State = 1798;
+						expression();
+						State = 1799;
+						Match(DO);
+						State = 1800;
+						statement();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1802;
+						Match(FOR);
+						State = 1803;
+						designator();
+						State = 1804;
+						Match(IN);
+						State = 1805;
+						expression();
+						State = 1806;
+						Match(DO);
+						State = 1807;
+						statement();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class WithStatementContext : ParserRuleContext {
+	public partial class WithStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WITH() { return GetToken(DelphiParser.WITH, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public WithItemContext withItem() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public WithItemContext withItem()
+		{
 			return GetRuleContext<WithItemContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DO() { return GetToken(DelphiParser.DO, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement()
+		{
 			return GetRuleContext<StatementContext>(0);
 		}
 		public WithStatementContext(ParserRuleContext parent, int invokingState)
@@ -11643,55 +13735,68 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_withStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterWithStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitWithStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public WithStatementContext withStatement() {
+	public WithStatementContext withStatement()
+	{
 		WithStatementContext _localctx = new WithStatementContext(Context, State);
 		EnterRule(_localctx, 272, RULE_withStatement);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1811;
-			Match(WITH);
-			State = 1812;
-			withItem();
-			State = 1813;
-			Match(DO);
-			State = 1814;
-			statement();
+				State = 1811;
+				Match(WITH);
+				State = 1812;
+				withItem();
+				State = 1813;
+				Match(DO);
+				State = 1814;
+				statement();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class WithItemContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext[] designator() {
+	public partial class WithItemContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext[] designator()
+		{
 			return GetRuleContexts<DesignatorContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext designator(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext designator(int i)
+		{
 			return GetRuleContext<DesignatorContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AS() { return GetToken(DelphiParser.AS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public WithItemContext(ParserRuleContext parent, int invokingState)
@@ -11700,77 +13805,88 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_withItem; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterWithItem(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitWithItem(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public WithItemContext withItem() {
+	public WithItemContext withItem()
+	{
 		WithItemContext _localctx = new WithItemContext(Context, State);
 		EnterRule(_localctx, 274, RULE_withItem);
 		int _la;
-		try {
+		try
+		{
 			State = 1828;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,242,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1816;
-				designator();
-				State = 1817;
-				Match(AS);
-				State = 1818;
-				designator();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1820;
-				designator();
-				State = 1825;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==COMMA) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 242, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
+						State = 1816;
+						designator();
+						State = 1817;
+						Match(AS);
+						State = 1818;
+						designator();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1821;
-					Match(COMMA);
-					State = 1822;
-					designator();
+						State = 1820;
+						designator();
+						State = 1825;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == COMMA)
+						{
+							{
+								{
+									State = 1821;
+									Match(COMMA);
+									State = 1822;
+									designator();
+								}
+							}
+							State = 1827;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
 					}
-					}
-					State = 1827;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				}
-				break;
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CompoundStatementContext : ParserRuleContext {
+	public partial class CompoundStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BEGIN() { return GetToken(DelphiParser.BEGIN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList()
+		{
 			return GetRuleContext<StatementListContext>(0);
 		}
 		public CompoundStatementContext(ParserRuleContext parent, int invokingState)
@@ -11779,60 +13895,74 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_compoundStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCompoundStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCompoundStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CompoundStatementContext compoundStatement() {
+	public CompoundStatementContext compoundStatement()
+	{
 		CompoundStatementContext _localctx = new CompoundStatementContext(Context, State);
 		EnterRule(_localctx, 276, RULE_compoundStatement);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1830;
-			Match(BEGIN);
-			State = 1832;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,243,Context) ) {
-			case 1:
+				State = 1830;
+				Match(BEGIN);
+				State = 1832;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 243, Context))
 				{
-				State = 1831;
-				statementList();
+					case 1:
+						{
+							State = 1831;
+							statementList();
+						}
+						break;
 				}
-				break;
-			}
-			State = 1834;
-			Match(END);
+				State = 1834;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class StatementListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext[] statement() {
+	public partial class StatementListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext[] statement()
+		{
 			return GetRuleContexts<StatementContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement(int i)
+		{
 			return GetRuleContext<StatementContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] SEMI() { return GetTokens(DelphiParser.SEMI); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode SEMI(int i)
+		{
 			return GetToken(DelphiParser.SEMI, i);
 		}
 		public StatementListContext(ParserRuleContext parent, int invokingState)
@@ -11841,83 +13971,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_statementList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterStatementList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitStatementList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public StatementListContext statementList() {
+	public StatementListContext statementList()
+	{
 		StatementListContext _localctx = new StatementListContext(Context, State);
 		EnterRule(_localctx, 278, RULE_statementList);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1837;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,244,Context) ) {
-			case 1:
+				State = 1837;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 244, Context))
 				{
-				State = 1836;
-				statement();
-				}
-				break;
-			}
-			State = 1845;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,246,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 1839;
-					Match(SEMI);
-					State = 1841;
-					ErrorHandler.Sync(this);
-					switch ( Interpreter.AdaptivePredict(TokenStream,245,Context) ) {
 					case 1:
 						{
-						State = 1840;
-						statement();
+							State = 1836;
+							statement();
 						}
 						break;
-					}
-					}
-					} 
 				}
-				State = 1847;
+				State = 1845;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,246,Context);
-			}
+				_alt = Interpreter.AdaptivePredict(TokenStream, 246, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 1839;
+								Match(SEMI);
+								State = 1841;
+								ErrorHandler.Sync(this);
+								switch (Interpreter.AdaptivePredict(TokenStream, 245, Context))
+								{
+									case 1:
+										{
+											State = 1840;
+											statement();
+										}
+										break;
+								}
+							}
+						}
+					}
+					State = 1847;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 246, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class SimpleStatementContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext designator() {
+	public partial class SimpleStatementContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext designator()
+		{
 			return GetRuleContext<DesignatorContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ASSIGN() { return GetToken(DelphiParser.ASSIGN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public GotoStatementContext gotoStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public GotoStatementContext gotoStatement()
+		{
 			return GetRuleContext<GotoStatementContext>(0);
 		}
 		public SimpleStatementContext(ParserRuleContext parent, int invokingState)
@@ -11926,71 +14073,83 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_simpleStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterSimpleStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitSimpleStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public SimpleStatementContext simpleStatement() {
+	public SimpleStatementContext simpleStatement()
+	{
 		SimpleStatementContext _localctx = new SimpleStatementContext(Context, State);
 		EnterRule(_localctx, 280, RULE_simpleStatement);
-		try {
+		try
+		{
 			State = 1854;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,247,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1848;
-				designator();
-				State = 1849;
-				Match(ASSIGN);
-				State = 1850;
-				expression();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1852;
-				designator();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1853;
-				gotoStatement();
-				}
-				break;
+			switch (Interpreter.AdaptivePredict(TokenStream, 247, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1848;
+						designator();
+						State = 1849;
+						Match(ASSIGN);
+						State = 1850;
+						expression();
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1852;
+						designator();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1853;
+						gotoStatement();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class GotoStatementContext : ParserRuleContext {
+	public partial class GotoStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GOTO() { return GetToken(DelphiParser.GOTO, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public LabelContext label() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public LabelContext label()
+		{
 			return GetRuleContext<LabelContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXIT() { return GetToken(DelphiParser.EXIT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
@@ -12002,110 +14161,135 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_gotoStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterGotoStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitGotoStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public GotoStatementContext gotoStatement() {
+	public GotoStatementContext gotoStatement()
+	{
 		GotoStatementContext _localctx = new GotoStatementContext(Context, State);
 		EnterRule(_localctx, 282, RULE_gotoStatement);
 		int _la;
-		try {
+		try
+		{
 			State = 1866;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case GOTO:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1856;
-				Match(GOTO);
-				State = 1857;
-				label();
-				}
-				break;
-			case EXIT:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1858;
-				Match(EXIT);
-				State = 1863;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,248,Context) ) {
-				case 1:
+			switch (TokenStream.LA(1))
+			{
+				case GOTO:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1859;
-					Match(LPAREN);
-					State = 1860;
-					expression();
-					State = 1861;
-					Match(RPAREN);
+						State = 1856;
+						Match(GOTO);
+						State = 1857;
+						label();
 					}
 					break;
-				}
-				}
-				break;
-			case BREAK:
-			case CONTINUE:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1865;
-				_la = TokenStream.LA(1);
-				if ( !(_la==BREAK || _la==CONTINUE) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+				case EXIT:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1858;
+						Match(EXIT);
+						State = 1863;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 248, Context))
+						{
+							case 1:
+								{
+									State = 1859;
+									Match(LPAREN);
+									State = 1860;
+									expression();
+									State = 1861;
+									Match(RPAREN);
+								}
+								break;
+						}
+					}
+					break;
+				case BREAK:
+				case CONTINUE:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1865;
+						_la = TokenStream.LA(1);
+						if (!(_la == BREAK || _la == CONTINUE))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ConstExpressionContext : ParserRuleContext {
+	public partial class ConstExpressionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LPAREN() { return GetToken(DelphiParser.LPAREN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public RecordConstExpressionContext[] recordConstExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordConstExpressionContext[] recordConstExpression()
+		{
 			return GetRuleContexts<RecordConstExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public RecordConstExpressionContext recordConstExpression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public RecordConstExpressionContext recordConstExpression(int i)
+		{
 			return GetRuleContext<RecordConstExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RPAREN() { return GetToken(DelphiParser.RPAREN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] SEMI() { return GetTokens(DelphiParser.SEMI); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode SEMI(int i)
+		{
 			return GetToken(DelphiParser.SEMI, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext[] constExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext[] constExpression()
+		{
 			return GetRuleContexts<ConstExpressionContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression(int i)
+		{
 			return GetRuleContext<ConstExpressionContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		public ConstExpressionContext(ParserRuleContext parent, int invokingState)
@@ -12114,106 +14298,120 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_constExpression; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterConstExpression(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitConstExpression(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ConstExpressionContext constExpression() {
+	public ConstExpressionContext constExpression()
+	{
 		ConstExpressionContext _localctx = new ConstExpressionContext(Context, State);
 		EnterRule(_localctx, 284, RULE_constExpression);
 		int _la;
-		try {
+		try
+		{
 			State = 1891;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,252,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1868;
-				Match(LPAREN);
-				State = 1869;
-				recordConstExpression();
-				State = 1874;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==SEMI) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 252, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
+						State = 1868;
+						Match(LPAREN);
+						State = 1869;
+						recordConstExpression();
+						State = 1874;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == SEMI)
+						{
+							{
+								{
+									State = 1870;
+									Match(SEMI);
+									State = 1871;
+									recordConstExpression();
+								}
+							}
+							State = 1876;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 1877;
+						Match(RPAREN);
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1870;
-					Match(SEMI);
-					State = 1871;
-					recordConstExpression();
+						State = 1879;
+						Match(LPAREN);
+						State = 1880;
+						constExpression();
+						State = 1885;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == COMMA)
+						{
+							{
+								{
+									State = 1881;
+									Match(COMMA);
+									State = 1882;
+									constExpression();
+								}
+							}
+							State = 1887;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 1888;
+						Match(RPAREN);
 					}
-					}
-					State = 1876;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 1877;
-				Match(RPAREN);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1879;
-				Match(LPAREN);
-				State = 1880;
-				constExpression();
-				State = 1885;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==COMMA) {
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
 					{
-					{
-					State = 1881;
-					Match(COMMA);
-					State = 1882;
-					constExpression();
+						State = 1890;
+						expression();
 					}
-					}
-					State = 1887;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 1888;
-				Match(RPAREN);
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1890;
-				expression();
-				}
-				break;
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RecordConstExpressionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+	public partial class RecordConstExpressionContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression()
+		{
 			return GetRuleContext<ConstExpressionContext>(0);
 		}
 		public RecordConstExpressionContext(ParserRuleContext parent, int invokingState)
@@ -12222,54 +14420,67 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_recordConstExpression; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRecordConstExpression(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRecordConstExpression(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RecordConstExpressionContext recordConstExpression() {
+	public RecordConstExpressionContext recordConstExpression()
+	{
 		RecordConstExpressionContext _localctx = new RecordConstExpressionContext(Context, State);
 		EnterRule(_localctx, 286, RULE_recordConstExpression);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1893;
-			ident();
-			State = 1894;
-			Match(COLON);
-			State = 1895;
-			constExpression();
+				State = 1893;
+				ident();
+				State = 1894;
+				Match(COLON);
+				State = 1895;
+				constExpression();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class TryStatementContext : ParserRuleContext {
+	public partial class TryStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TRY() { return GetToken(DelphiParser.TRY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXCEPT() { return GetToken(DelphiParser.EXCEPT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public HandlerListContext handlerList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HandlerListContext handlerList()
+		{
 			return GetRuleContext<HandlerListContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END() { return GetToken(DelphiParser.END, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext[] statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext[] statementList()
+		{
 			return GetRuleContexts<StatementListContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList(int i)
+		{
 			return GetRuleContext<StatementListContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FINALLY() { return GetToken(DelphiParser.FINALLY, 0); }
@@ -12279,101 +14490,118 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_tryStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterTryStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitTryStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public TryStatementContext tryStatement() {
+	public TryStatementContext tryStatement()
+	{
 		TryStatementContext _localctx = new TryStatementContext(Context, State);
 		EnterRule(_localctx, 288, RULE_tryStatement);
-		try {
+		try
+		{
 			State = 1914;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,256,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1897;
-				Match(TRY);
-				State = 1899;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,253,Context) ) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 256, Context))
+			{
 				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1898;
-					statementList();
+						State = 1897;
+						Match(TRY);
+						State = 1899;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 253, Context))
+						{
+							case 1:
+								{
+									State = 1898;
+									statementList();
+								}
+								break;
+						}
+						State = 1901;
+						Match(EXCEPT);
+						State = 1902;
+						handlerList();
+						State = 1903;
+						Match(END);
 					}
 					break;
-				}
-				State = 1901;
-				Match(EXCEPT);
-				State = 1902;
-				handlerList();
-				State = 1903;
-				Match(END);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1905;
-				Match(TRY);
-				State = 1907;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,254,Context) ) {
-				case 1:
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 1906;
-					statementList();
+						State = 1905;
+						Match(TRY);
+						State = 1907;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 254, Context))
+						{
+							case 1:
+								{
+									State = 1906;
+									statementList();
+								}
+								break;
+						}
+						State = 1909;
+						Match(FINALLY);
+						State = 1911;
+						ErrorHandler.Sync(this);
+						switch (Interpreter.AdaptivePredict(TokenStream, 255, Context))
+						{
+							case 1:
+								{
+									State = 1910;
+									statementList();
+								}
+								break;
+						}
+						State = 1913;
+						Match(END);
 					}
 					break;
-				}
-				State = 1909;
-				Match(FINALLY);
-				State = 1911;
-				ErrorHandler.Sync(this);
-				switch ( Interpreter.AdaptivePredict(TokenStream,255,Context) ) {
-				case 1:
-					{
-					State = 1910;
-					statementList();
-					}
-					break;
-				}
-				State = 1913;
-				Match(END);
-				}
-				break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class HandlerListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public HandlerContext[] handler() {
+	public partial class HandlerListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HandlerContext[] handler()
+		{
 			return GetRuleContexts<HandlerContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HandlerContext handler(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HandlerContext handler(int i)
+		{
 			return GetRuleContext<HandlerContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ELSE() { return GetToken(DelphiParser.ELSE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StatementListContext statementList() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementListContext statementList()
+		{
 			return GetRuleContext<StatementListContext>(0);
 		}
 		public HandlerListContext(ParserRuleContext parent, int invokingState)
@@ -12382,87 +14610,103 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handlerList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterHandlerList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitHandlerList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public HandlerListContext handlerList() {
+	public HandlerListContext handlerList()
+	{
 		HandlerListContext _localctx = new HandlerListContext(Context, State);
 		EnterRule(_localctx, 290, RULE_handlerList);
 		int _la;
-		try {
+		try
+		{
 			State = 1927;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,259,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1919;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==ON) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 259, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					{
-					State = 1916;
-					handler();
-					}
-					}
-					State = 1921;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 1924;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==ELSE) {
-					{
-					State = 1922;
-					Match(ELSE);
-					State = 1923;
-					statementList();
-					}
-				}
+						State = 1919;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == ON)
+						{
+							{
+								{
+									State = 1916;
+									handler();
+								}
+							}
+							State = 1921;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 1924;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == ELSE)
+						{
+							{
+								State = 1922;
+								Match(ELSE);
+								State = 1923;
+								statementList();
+							}
+						}
 
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1926;
-				statementList();
-				}
-				break;
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1926;
+						statementList();
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class HandlerContext : ParserRuleContext {
+	public partial class HandlerContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ON() { return GetToken(DelphiParser.ON, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public TypeIdContext typeId() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public TypeIdContext typeId()
+		{
 			return GetRuleContext<TypeIdContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DO() { return GetToken(DelphiParser.DO, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public HandlerStatementContext handlerStatement() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HandlerStatementContext handlerStatement()
+		{
 			return GetRuleContext<HandlerStatementContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HandlerIdentContext handlerIdent() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HandlerIdentContext handlerIdent()
+		{
 			return GetRuleContext<HandlerIdentContext>(0);
 		}
 		public HandlerContext(ParserRuleContext parent, int invokingState)
@@ -12471,57 +14715,67 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handler; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterHandler(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitHandler(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public HandlerContext handler() {
+	public HandlerContext handler()
+	{
 		HandlerContext _localctx = new HandlerContext(Context, State);
 		EnterRule(_localctx, 292, RULE_handler);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1929;
-			Match(ON);
-			State = 1931;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,260,Context) ) {
-			case 1:
+				State = 1929;
+				Match(ON);
+				State = 1931;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 260, Context))
 				{
-				State = 1930;
-				handlerIdent();
+					case 1:
+						{
+							State = 1930;
+							handlerIdent();
+						}
+						break;
 				}
-				break;
-			}
-			State = 1933;
-			typeId();
-			State = 1934;
-			Match(DO);
-			State = 1935;
-			handlerStatement();
+				State = 1933;
+				typeId();
+				State = 1934;
+				Match(DO);
+				State = 1935;
+				handlerStatement();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class HandlerIdentContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident() {
+	public partial class HandlerIdentContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident()
+		{
 			return GetRuleContext<IdentContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COLON() { return GetToken(DelphiParser.COLON, 0); }
@@ -12531,43 +14785,52 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handlerIdent; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterHandlerIdent(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitHandlerIdent(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public HandlerIdentContext handlerIdent() {
+	public HandlerIdentContext handlerIdent()
+	{
 		HandlerIdentContext _localctx = new HandlerIdentContext(Context, State);
 		EnterRule(_localctx, 294, RULE_handlerIdent);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1937;
-			ident();
-			State = 1938;
-			Match(COLON);
+				State = 1937;
+				ident();
+				State = 1938;
+				Match(COLON);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class HandlerStatementContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public StatementContext statement() {
+	public partial class HandlerStatementContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StatementContext statement()
+		{
 			return GetRuleContext<StatementContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -12577,69 +14840,82 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_handlerStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterHandlerStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitHandlerStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public HandlerStatementContext handlerStatement() {
+	public HandlerStatementContext handlerStatement()
+	{
 		HandlerStatementContext _localctx = new HandlerStatementContext(Context, State);
 		EnterRule(_localctx, 296, RULE_handlerStatement);
 		int _la;
-		try {
+		try
+		{
 			State = 1945;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,262,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1940;
-				statement();
-				State = 1942;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==SEMI) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 262, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1941;
-					Match(SEMI);
-					}
-				}
+						State = 1940;
+						statement();
+						State = 1942;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == SEMI)
+						{
+							{
+								State = 1941;
+								Match(SEMI);
+							}
+						}
 
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1944;
-				Match(SEMI);
-				}
-				break;
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1944;
+						Match(SEMI);
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RaiseStatementContext : ParserRuleContext {
+	public partial class RaiseStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RAISE() { return GetToken(DelphiParser.RAISE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext[] designator() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext[] designator()
+		{
 			return GetRuleContexts<DesignatorContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DesignatorContext designator(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DesignatorContext designator(int i)
+		{
 			return GetRuleContext<DesignatorContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT() { return GetToken(DelphiParser.AT, 0); }
@@ -12649,65 +14925,76 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_raiseStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRaiseStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRaiseStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RaiseStatementContext raiseStatement() {
+	public RaiseStatementContext raiseStatement()
+	{
 		RaiseStatementContext _localctx = new RaiseStatementContext(Context, State);
 		EnterRule(_localctx, 298, RULE_raiseStatement);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1947;
-			Match(RAISE);
-			State = 1949;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,263,Context) ) {
-			case 1:
+				State = 1947;
+				Match(RAISE);
+				State = 1949;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 263, Context))
 				{
-				State = 1948;
-				designator();
+					case 1:
+						{
+							State = 1948;
+							designator();
+						}
+						break;
 				}
-				break;
-			}
-			State = 1953;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,264,Context) ) {
-			case 1:
+				State = 1953;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 264, Context))
 				{
-				State = 1951;
-				Match(AT);
-				State = 1952;
-				designator();
+					case 1:
+						{
+							State = 1951;
+							Match(AT);
+							State = 1952;
+							designator();
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class AssemblerStatementContext : ParserRuleContext {
+	public partial class AssemblerStatementContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ASM() { return GetToken(DelphiParser.ASM, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] END() { return GetTokens(DelphiParser.END); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode END(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode END(int i)
+		{
 			return GetToken(DelphiParser.END, i);
 		}
 		public AssemblerStatementContext(ParserRuleContext parent, int invokingState)
@@ -12716,90 +15003,118 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_assemblerStatement; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterAssemblerStatement(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitAssemblerStatement(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public AssemblerStatementContext assemblerStatement() {
+	public AssemblerStatementContext assemblerStatement()
+	{
 		AssemblerStatementContext _localctx = new AssemblerStatementContext(Context, State);
 		EnterRule(_localctx, 300, RULE_assemblerStatement);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1955;
-			Match(ASM);
-			State = 1959;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & -34359738370L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -1L) != 0) || ((((_la - 128)) & ~0x3f) == 0 && ((1L << (_la - 128)) & -1L) != 0) || ((((_la - 192)) & ~0x3f) == 0 && ((1L << (_la - 192)) & 7L) != 0)) {
-				{
-				{
-				State = 1956;
-				_la = TokenStream.LA(1);
-				if ( _la <= 0 || (_la==END) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				}
-				State = 1961;
+				State = 1955;
+				Match(ASM);
+				State = 1959;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
-			State = 1962;
-			Match(END);
+				while ((((_la) & ~0x3f) == 0 && ((1L << _la) & -34359738370L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -1L) != 0) || ((((_la - 128)) & ~0x3f) == 0 && ((1L << (_la - 128)) & -1L) != 0) || ((((_la - 192)) & ~0x3f) == 0 && ((1L << (_la - 192)) & 7L) != 0))
+				{
+					{
+						{
+							State = 1956;
+							_la = TokenStream.LA(1);
+							if (_la <= 0 || (_la == END))
+							{
+								ErrorHandler.RecoverInline(this);
+							}
+							else
+							{
+								ErrorHandler.ReportMatch(this);
+								Consume();
+							}
+						}
+					}
+					State = 1961;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
+				State = 1962;
+				Match(END);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class MethodDirectiveContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ReintroduceDirectiveContext reintroduceDirective() {
+	public partial class MethodDirectiveContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ReintroduceDirectiveContext reintroduceDirective()
+		{
 			return GetRuleContext<ReintroduceDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public OverloadDirectiveContext overloadDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public OverloadDirectiveContext overloadDirective()
+		{
 			return GetRuleContext<OverloadDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public BindingDirectiveContext bindingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public BindingDirectiveContext bindingDirective()
+		{
 			return GetRuleContext<BindingDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public AbstractDirectiveContext abstractDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public AbstractDirectiveContext abstractDirective()
+		{
 			return GetRuleContext<AbstractDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InlineDirectiveContext inlineDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InlineDirectiveContext inlineDirective()
+		{
 			return GetRuleContext<InlineDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CallConventionContext callConvention() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CallConventionContext callConvention()
+		{
 			return GetRuleContext<CallConventionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective()
+		{
 			return GetRuleContext<HintingDirectiveContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public OldCallConventionDirectiveContext oldCallConventionDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public OldCallConventionDirectiveContext oldCallConventionDirective()
+		{
 			return GetRuleContext<OldCallConventionDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public DispIDDirectiveContext dispIDDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public DispIDDirectiveContext dispIDDirective()
+		{
 			return GetRuleContext<DispIDDirectiveContext>(0);
 		}
 		public MethodDirectiveContext(ParserRuleContext parent, int invokingState)
@@ -12808,142 +15123,164 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_methodDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterMethodDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitMethodDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public MethodDirectiveContext methodDirective() {
+	public MethodDirectiveContext methodDirective()
+	{
 		MethodDirectiveContext _localctx = new MethodDirectiveContext(Context, State);
 		EnterRule(_localctx, 302, RULE_methodDirective);
-		try {
+		try
+		{
 			State = 1975;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case REINTRODUCE:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1964;
-				reintroduceDirective();
-				}
-				break;
-			case OVERLOAD:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1965;
-				overloadDirective();
-				}
-				break;
-			case DYNAMIC:
-			case MESSAGE:
-			case OVERRIDE:
-			case STATIC:
-			case VIRTUAL:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1966;
-				bindingDirective();
-				}
-				break;
-			case ABSTRACT:
-			case FINAL:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1967;
-				abstractDirective();
-				}
-				break;
-			case ASSEMBLER:
-			case INLINE:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1968;
-				inlineDirective();
-				}
-				break;
-			case CDECL:
-			case EXPORT:
-			case PASCAL:
-			case REGISTER:
-			case SAFECALL:
-			case STDCALL:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 1969;
-				callConvention();
-				}
-				break;
-			case DEPRECATED:
-			case EXPERIMENTAL:
-			case LIBRARY:
-			case PLATFORM:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 1970;
-				hintingDirective();
-				State = 1971;
-				Match(SEMI);
-				}
-				break;
-			case FAR:
-			case LOCAL:
-			case NEAR:
-				EnterOuterAlt(_localctx, 8);
-				{
-				State = 1973;
-				oldCallConventionDirective();
-				}
-				break;
-			case DISPID:
-				EnterOuterAlt(_localctx, 9);
-				{
-				State = 1974;
-				dispIDDirective();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case REINTRODUCE:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1964;
+						reintroduceDirective();
+					}
+					break;
+				case OVERLOAD:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1965;
+						overloadDirective();
+					}
+					break;
+				case DYNAMIC:
+				case MESSAGE:
+				case OVERRIDE:
+				case STATIC:
+				case VIRTUAL:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1966;
+						bindingDirective();
+					}
+					break;
+				case ABSTRACT:
+				case FINAL:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1967;
+						abstractDirective();
+					}
+					break;
+				case ASSEMBLER:
+				case INLINE:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1968;
+						inlineDirective();
+					}
+					break;
+				case CDECL:
+				case EXPORT:
+				case PASCAL:
+				case REGISTER:
+				case SAFECALL:
+				case STDCALL:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 1969;
+						callConvention();
+					}
+					break;
+				case DEPRECATED:
+				case EXPERIMENTAL:
+				case LIBRARY:
+				case PLATFORM:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 1970;
+						hintingDirective();
+						State = 1971;
+						Match(SEMI);
+					}
+					break;
+				case FAR:
+				case LOCAL:
+				case NEAR:
+					EnterOuterAlt(_localctx, 8);
+					{
+						State = 1973;
+						oldCallConventionDirective();
+					}
+					break;
+				case DISPID:
+					EnterOuterAlt(_localctx, 9);
+					{
+						State = 1974;
+						dispIDDirective();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class FunctionDirectiveContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public OverloadDirectiveContext overloadDirective() {
+	public partial class FunctionDirectiveContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public OverloadDirectiveContext overloadDirective()
+		{
 			return GetRuleContext<OverloadDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public InlineDirectiveContext inlineDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public InlineDirectiveContext inlineDirective()
+		{
 			return GetRuleContext<InlineDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CallConventionContext callConvention() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CallConventionContext callConvention()
+		{
 			return GetRuleContext<CallConventionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public OldCallConventionDirectiveContext oldCallConventionDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public OldCallConventionDirectiveContext oldCallConventionDirective()
+		{
 			return GetRuleContext<OldCallConventionDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public HintingDirectiveContext hintingDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public HintingDirectiveContext hintingDirective()
+		{
 			return GetRuleContext<HintingDirectiveContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExternalDirectiveContext externalDirective() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExternalDirectiveContext externalDirective()
+		{
 			return GetRuleContext<ExternalDirectiveContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public CallConventionNoSemiContext callConventionNoSemi() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public CallConventionNoSemiContext callConventionNoSemi()
+		{
 			return GetRuleContext<CallConventionNoSemiContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode UNSAFE() { return GetToken(DelphiParser.UNSAFE, 0); }
@@ -12953,103 +15290,112 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_functionDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterFunctionDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitFunctionDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public FunctionDirectiveContext functionDirective() {
+	public FunctionDirectiveContext functionDirective()
+	{
 		FunctionDirectiveContext _localctx = new FunctionDirectiveContext(Context, State);
 		EnterRule(_localctx, 304, RULE_functionDirective);
 		int _la;
-		try {
+		try
+		{
 			State = 1990;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,268,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1977;
-				overloadDirective();
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 1978;
-				inlineDirective();
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 1979;
-				callConvention();
-				}
-				break;
-			case 4:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 1980;
-				oldCallConventionDirective();
-				}
-				break;
-			case 5:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 1981;
-				hintingDirective();
-				State = 1982;
-				Match(SEMI);
-				}
-				break;
-			case 6:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 1985;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==CDECL || _la==EXPORT || ((((_la - 82)) & ~0x3f) == 0 && ((1L << (_la - 82)) & 272662529L) != 0)) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 268, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 1984;
-					callConventionNoSemi();
+						State = 1977;
+						overloadDirective();
 					}
-				}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 1978;
+						inlineDirective();
+					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 1979;
+						callConvention();
+					}
+					break;
+				case 4:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 1980;
+						oldCallConventionDirective();
+					}
+					break;
+				case 5:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 1981;
+						hintingDirective();
+						State = 1982;
+						Match(SEMI);
+					}
+					break;
+				case 6:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 1985;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == CDECL || _la == EXPORT || ((((_la - 82)) & ~0x3f) == 0 && ((1L << (_la - 82)) & 272662529L) != 0))
+						{
+							{
+								State = 1984;
+								callConventionNoSemi();
+							}
+						}
 
-				State = 1987;
-				externalDirective();
-				}
-				break;
-			case 7:
-				EnterOuterAlt(_localctx, 7);
-				{
-				State = 1988;
-				Match(UNSAFE);
-				State = 1989;
-				Match(SEMI);
-				}
-				break;
+						State = 1987;
+						externalDirective();
+					}
+					break;
+				case 7:
+					EnterOuterAlt(_localctx, 7);
+					{
+						State = 1988;
+						Match(UNSAFE);
+						State = 1989;
+						Match(SEMI);
+					}
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ReintroduceDirectiveContext : ParserRuleContext {
+	public partial class ReintroduceDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REINTRODUCE() { return GetToken(DelphiParser.REINTRODUCE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		public ReintroduceDirectiveContext(ParserRuleContext parent, int invokingState)
@@ -13058,42 +15404,49 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_reintroduceDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterReintroduceDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitReintroduceDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ReintroduceDirectiveContext reintroduceDirective() {
+	public ReintroduceDirectiveContext reintroduceDirective()
+	{
 		ReintroduceDirectiveContext _localctx = new ReintroduceDirectiveContext(Context, State);
 		EnterRule(_localctx, 306, RULE_reintroduceDirective);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1992;
-			Match(REINTRODUCE);
-			State = 1993;
-			Match(SEMI);
+				State = 1992;
+				Match(REINTRODUCE);
+				State = 1993;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class OverloadDirectiveContext : ParserRuleContext {
+	public partial class OverloadDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OVERLOAD() { return GetToken(DelphiParser.OVERLOAD, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		public OverloadDirectiveContext(ParserRuleContext parent, int invokingState)
@@ -13102,52 +15455,62 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_overloadDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterOverloadDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitOverloadDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public OverloadDirectiveContext overloadDirective() {
+	public OverloadDirectiveContext overloadDirective()
+	{
 		OverloadDirectiveContext _localctx = new OverloadDirectiveContext(Context, State);
 		EnterRule(_localctx, 308, RULE_overloadDirective);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1995;
-			Match(OVERLOAD);
-			State = 1997;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,269,Context) ) {
-			case 1:
+				State = 1995;
+				Match(OVERLOAD);
+				State = 1997;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 269, Context))
 				{
-				State = 1996;
-				Match(SEMI);
+					case 1:
+						{
+							State = 1996;
+							Match(SEMI);
+						}
+						break;
 				}
-				break;
-			}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class BindingDirectiveContext : ParserRuleContext {
+	public partial class BindingDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MESSAGE() { return GetToken(DelphiParser.MESSAGE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -13161,88 +15524,96 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_bindingDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterBindingDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitBindingDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public BindingDirectiveContext bindingDirective() {
+	public BindingDirectiveContext bindingDirective()
+	{
 		BindingDirectiveContext _localctx = new BindingDirectiveContext(Context, State);
 		EnterRule(_localctx, 310, RULE_bindingDirective);
-		try {
+		try
+		{
 			State = 2011;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case MESSAGE:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 1999;
-				Match(MESSAGE);
-				State = 2000;
-				expression();
-				State = 2001;
-				Match(SEMI);
-				}
-				break;
-			case STATIC:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2003;
-				Match(STATIC);
-				State = 2004;
-				Match(SEMI);
-				}
-				break;
-			case DYNAMIC:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 2005;
-				Match(DYNAMIC);
-				State = 2006;
-				Match(SEMI);
-				}
-				break;
-			case OVERRIDE:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 2007;
-				Match(OVERRIDE);
-				State = 2008;
-				Match(SEMI);
-				}
-				break;
-			case VIRTUAL:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 2009;
-				Match(VIRTUAL);
-				State = 2010;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case MESSAGE:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 1999;
+						Match(MESSAGE);
+						State = 2000;
+						expression();
+						State = 2001;
+						Match(SEMI);
+					}
+					break;
+				case STATIC:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2003;
+						Match(STATIC);
+						State = 2004;
+						Match(SEMI);
+					}
+					break;
+				case DYNAMIC:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 2005;
+						Match(DYNAMIC);
+						State = 2006;
+						Match(SEMI);
+					}
+					break;
+				case OVERRIDE:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 2007;
+						Match(OVERRIDE);
+						State = 2008;
+						Match(SEMI);
+					}
+					break;
+				case VIRTUAL:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 2009;
+						Match(VIRTUAL);
+						State = 2010;
+						Match(SEMI);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class AbstractDirectiveContext : ParserRuleContext {
+	public partial class AbstractDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ABSTRACT() { return GetToken(DelphiParser.ABSTRACT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FINAL() { return GetToken(DelphiParser.FINAL, 0); }
@@ -13252,59 +15623,67 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_abstractDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterAbstractDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitAbstractDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public AbstractDirectiveContext abstractDirective() {
+	public AbstractDirectiveContext abstractDirective()
+	{
 		AbstractDirectiveContext _localctx = new AbstractDirectiveContext(Context, State);
 		EnterRule(_localctx, 312, RULE_abstractDirective);
-		try {
+		try
+		{
 			State = 2017;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case ABSTRACT:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2013;
-				Match(ABSTRACT);
-				State = 2014;
-				Match(SEMI);
-				}
-				break;
-			case FINAL:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2015;
-				Match(FINAL);
-				State = 2016;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case ABSTRACT:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2013;
+						Match(ABSTRACT);
+						State = 2014;
+						Match(SEMI);
+					}
+					break;
+				case FINAL:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2015;
+						Match(FINAL);
+						State = 2016;
+						Match(SEMI);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class InlineDirectiveContext : ParserRuleContext {
+	public partial class InlineDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INLINE() { return GetToken(DelphiParser.INLINE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ASSEMBLER() { return GetToken(DelphiParser.ASSEMBLER, 0); }
@@ -13314,59 +15693,67 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_inlineDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterInlineDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitInlineDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public InlineDirectiveContext inlineDirective() {
+	public InlineDirectiveContext inlineDirective()
+	{
 		InlineDirectiveContext _localctx = new InlineDirectiveContext(Context, State);
 		EnterRule(_localctx, 314, RULE_inlineDirective);
-		try {
+		try
+		{
 			State = 2023;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case INLINE:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2019;
-				Match(INLINE);
-				State = 2020;
-				Match(SEMI);
-				}
-				break;
-			case ASSEMBLER:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2021;
-				Match(ASSEMBLER);
-				State = 2022;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case INLINE:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2019;
+						Match(INLINE);
+						State = 2020;
+						Match(SEMI);
+					}
+					break;
+				case ASSEMBLER:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2021;
+						Match(ASSEMBLER);
+						State = 2022;
+						Match(SEMI);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CallConventionContext : ParserRuleContext {
+	public partial class CallConventionContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CDECL() { return GetToken(DelphiParser.CDECL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PASCAL() { return GetToken(DelphiParser.PASCAL, 0); }
@@ -13380,95 +15767,103 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_callConvention; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCallConvention(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCallConvention(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CallConventionContext callConvention() {
+	public CallConventionContext callConvention()
+	{
 		CallConventionContext _localctx = new CallConventionContext(Context, State);
 		EnterRule(_localctx, 316, RULE_callConvention);
-		try {
+		try
+		{
 			State = 2037;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case CDECL:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2025;
-				Match(CDECL);
-				State = 2026;
-				Match(SEMI);
-				}
-				break;
-			case PASCAL:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2027;
-				Match(PASCAL);
-				State = 2028;
-				Match(SEMI);
-				}
-				break;
-			case REGISTER:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 2029;
-				Match(REGISTER);
-				State = 2030;
-				Match(SEMI);
-				}
-				break;
-			case SAFECALL:
-				EnterOuterAlt(_localctx, 4);
-				{
-				State = 2031;
-				Match(SAFECALL);
-				State = 2032;
-				Match(SEMI);
-				}
-				break;
-			case STDCALL:
-				EnterOuterAlt(_localctx, 5);
-				{
-				State = 2033;
-				Match(STDCALL);
-				State = 2034;
-				Match(SEMI);
-				}
-				break;
-			case EXPORT:
-				EnterOuterAlt(_localctx, 6);
-				{
-				State = 2035;
-				Match(EXPORT);
-				State = 2036;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case CDECL:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2025;
+						Match(CDECL);
+						State = 2026;
+						Match(SEMI);
+					}
+					break;
+				case PASCAL:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2027;
+						Match(PASCAL);
+						State = 2028;
+						Match(SEMI);
+					}
+					break;
+				case REGISTER:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 2029;
+						Match(REGISTER);
+						State = 2030;
+						Match(SEMI);
+					}
+					break;
+				case SAFECALL:
+					EnterOuterAlt(_localctx, 4);
+					{
+						State = 2031;
+						Match(SAFECALL);
+						State = 2032;
+						Match(SEMI);
+					}
+					break;
+				case STDCALL:
+					EnterOuterAlt(_localctx, 5);
+					{
+						State = 2033;
+						Match(STDCALL);
+						State = 2034;
+						Match(SEMI);
+					}
+					break;
+				case EXPORT:
+					EnterOuterAlt(_localctx, 6);
+					{
+						State = 2035;
+						Match(EXPORT);
+						State = 2036;
+						Match(SEMI);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class CallConventionNoSemiContext : ParserRuleContext {
+	public partial class CallConventionNoSemiContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CDECL() { return GetToken(DelphiParser.CDECL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PASCAL() { return GetToken(DelphiParser.PASCAL, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode REGISTER() { return GetToken(DelphiParser.REGISTER, 0); }
@@ -13481,48 +15876,57 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_callConventionNoSemi; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterCallConventionNoSemi(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitCallConventionNoSemi(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public CallConventionNoSemiContext callConventionNoSemi() {
+	public CallConventionNoSemiContext callConventionNoSemi()
+	{
 		CallConventionNoSemiContext _localctx = new CallConventionNoSemiContext(Context, State);
 		EnterRule(_localctx, 318, RULE_callConventionNoSemi);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2039;
-			_la = TokenStream.LA(1);
-			if ( !(_la==CDECL || _la==EXPORT || ((((_la - 82)) & ~0x3f) == 0 && ((1L << (_la - 82)) & 272662529L) != 0)) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 2039;
+				_la = TokenStream.LA(1);
+				if (!(_la == CDECL || _la == EXPORT || ((((_la - 82)) & ~0x3f) == 0 && ((1L << (_la - 82)) & 272662529L) != 0)))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class OldCallConventionDirectiveContext : ParserRuleContext {
+	public partial class OldCallConventionDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FAR() { return GetToken(DelphiParser.FAR, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LOCAL() { return GetToken(DelphiParser.LOCAL, 0); }
@@ -13533,70 +15937,80 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_oldCallConventionDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterOldCallConventionDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitOldCallConventionDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public OldCallConventionDirectiveContext oldCallConventionDirective() {
+	public OldCallConventionDirectiveContext oldCallConventionDirective()
+	{
 		OldCallConventionDirectiveContext _localctx = new OldCallConventionDirectiveContext(Context, State);
 		EnterRule(_localctx, 320, RULE_oldCallConventionDirective);
-		try {
+		try
+		{
 			State = 2047;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case FAR:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2041;
-				Match(FAR);
-				State = 2042;
-				Match(SEMI);
-				}
-				break;
-			case LOCAL:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2043;
-				Match(LOCAL);
-				State = 2044;
-				Match(SEMI);
-				}
-				break;
-			case NEAR:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 2045;
-				Match(NEAR);
-				State = 2046;
-				Match(SEMI);
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case FAR:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2041;
+						Match(FAR);
+						State = 2042;
+						Match(SEMI);
+					}
+					break;
+				case LOCAL:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2043;
+						Match(LOCAL);
+						State = 2044;
+						Match(SEMI);
+					}
+					break;
+				case NEAR:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 2045;
+						Match(NEAR);
+						State = 2046;
+						Match(SEMI);
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class HintingDirectiveContext : ParserRuleContext {
+	public partial class HintingDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DEPRECATED() { return GetToken(DelphiParser.DEPRECATED, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public StringFactorContext stringFactor() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public StringFactorContext stringFactor()
+		{
 			return GetRuleContext<StringFactorContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXPERIMENTAL() { return GetToken(DelphiParser.EXPERIMENTAL, 0); }
@@ -13608,85 +16022,102 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_hintingDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterHintingDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitHintingDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public HintingDirectiveContext hintingDirective() {
+	public HintingDirectiveContext hintingDirective()
+	{
 		HintingDirectiveContext _localctx = new HintingDirectiveContext(Context, State);
 		EnterRule(_localctx, 322, RULE_hintingDirective);
 		int _la;
-		try {
+		try
+		{
 			State = 2054;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case DEPRECATED:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2049;
-				Match(DEPRECATED);
-				State = 2051;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				if (_la==QuotedString || _la==ControlString) {
+			switch (TokenStream.LA(1))
+			{
+				case DEPRECATED:
+					EnterOuterAlt(_localctx, 1);
 					{
-					State = 2050;
-					stringFactor();
-					}
-				}
+						State = 2049;
+						Match(DEPRECATED);
+						State = 2051;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						if (_la == QuotedString || _la == ControlString)
+						{
+							{
+								State = 2050;
+								stringFactor();
+							}
+						}
 
-				}
-				break;
-			case EXPERIMENTAL:
-			case LIBRARY:
-			case PLATFORM:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2053;
-				_la = TokenStream.LA(1);
-				if ( !(((((_la - 38)) & ~0x3f) == 0 && ((1L << (_la - 38)) & 35184405643265L) != 0)) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+					}
+					break;
+				case EXPERIMENTAL:
+				case LIBRARY:
+				case PLATFORM:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2053;
+						_la = TokenStream.LA(1);
+						if (!(((((_la - 38)) & ~0x3f) == 0 && ((1L << (_la - 38)) & 35184405643265L) != 0)))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExternalDirectiveContext : ParserRuleContext {
+	public partial class ExternalDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VARARGS() { return GetToken(DelphiParser.VARARGS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EXTERNAL() { return GetToken(DelphiParser.EXTERNAL, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression()
+		{
 			return GetRuleContext<ConstExpressionContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExternalSpecifierContext[] externalSpecifier() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExternalSpecifierContext[] externalSpecifier()
+		{
 			return GetRuleContexts<ExternalSpecifierContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ExternalSpecifierContext externalSpecifier(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExternalSpecifierContext externalSpecifier(int i)
+		{
 			return GetRuleContext<ExternalSpecifierContext>(i);
 		}
 		public ExternalDirectiveContext(ParserRuleContext parent, int invokingState)
@@ -13695,85 +16126,96 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_externalDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExternalDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExternalDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExternalDirectiveContext externalDirective() {
+	public ExternalDirectiveContext externalDirective()
+	{
 		ExternalDirectiveContext _localctx = new ExternalDirectiveContext(Context, State);
 		EnterRule(_localctx, 324, RULE_externalDirective);
 		int _la;
-		try {
+		try
+		{
 			State = 2070;
 			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,278,Context) ) {
-			case 1:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2056;
-				Match(VARARGS);
-				State = 2057;
-				Match(SEMI);
-				}
-				break;
-			case 2:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2058;
-				Match(EXTERNAL);
-				State = 2059;
-				Match(SEMI);
-				}
-				break;
-			case 3:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 2060;
-				Match(EXTERNAL);
-				State = 2061;
-				constExpression();
-				State = 2065;
-				ErrorHandler.Sync(this);
-				_la = TokenStream.LA(1);
-				while (_la==INDEX || _la==NAME) {
+			switch (Interpreter.AdaptivePredict(TokenStream, 278, Context))
+			{
+				case 1:
+					EnterOuterAlt(_localctx, 1);
 					{
+						State = 2056;
+						Match(VARARGS);
+						State = 2057;
+						Match(SEMI);
+					}
+					break;
+				case 2:
+					EnterOuterAlt(_localctx, 2);
 					{
-					State = 2062;
-					externalSpecifier();
+						State = 2058;
+						Match(EXTERNAL);
+						State = 2059;
+						Match(SEMI);
 					}
+					break;
+				case 3:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 2060;
+						Match(EXTERNAL);
+						State = 2061;
+						constExpression();
+						State = 2065;
+						ErrorHandler.Sync(this);
+						_la = TokenStream.LA(1);
+						while (_la == INDEX || _la == NAME)
+						{
+							{
+								{
+									State = 2062;
+									externalSpecifier();
+								}
+							}
+							State = 2067;
+							ErrorHandler.Sync(this);
+							_la = TokenStream.LA(1);
+						}
+						State = 2068;
+						Match(SEMI);
 					}
-					State = 2067;
-					ErrorHandler.Sync(this);
-					_la = TokenStream.LA(1);
-				}
-				State = 2068;
-				Match(SEMI);
-				}
-				break;
+					break;
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class ExternalSpecifierContext : ParserRuleContext {
+	public partial class ExternalSpecifierContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NAME() { return GetToken(DelphiParser.NAME, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ConstExpressionContext constExpression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ConstExpressionContext constExpression()
+		{
 			return GetRuleContext<ConstExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode INDEX() { return GetToken(DelphiParser.INDEX, 0); }
@@ -13783,61 +16225,71 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_externalSpecifier; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterExternalSpecifier(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitExternalSpecifier(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public ExternalSpecifierContext externalSpecifier() {
+	public ExternalSpecifierContext externalSpecifier()
+	{
 		ExternalSpecifierContext _localctx = new ExternalSpecifierContext(Context, State);
 		EnterRule(_localctx, 326, RULE_externalSpecifier);
-		try {
+		try
+		{
 			State = 2076;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case NAME:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2072;
-				Match(NAME);
-				State = 2073;
-				constExpression();
-				}
-				break;
-			case INDEX:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2074;
-				Match(INDEX);
-				State = 2075;
-				constExpression();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case NAME:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2072;
+						Match(NAME);
+						State = 2073;
+						constExpression();
+					}
+					break;
+				case INDEX:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2074;
+						Match(INDEX);
+						State = 2075;
+						constExpression();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class DispIDDirectiveContext : ParserRuleContext {
+	public partial class DispIDDirectiveContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DISPID() { return GetToken(DelphiParser.DISPID, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ExpressionContext expression()
+		{
 			return GetRuleContext<ExpressionContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEMI() { return GetToken(DelphiParser.SEMI, 0); }
@@ -13847,47 +16299,56 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_dispIDDirective; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterDispIDDirective(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitDispIDDirective(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public DispIDDirectiveContext dispIDDirective() {
+	public DispIDDirectiveContext dispIDDirective()
+	{
 		DispIDDirectiveContext _localctx = new DispIDDirectiveContext(Context, State);
 		EnterRule(_localctx, 328, RULE_dispIDDirective);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2078;
-			Match(DISPID);
-			State = 2079;
-			expression();
-			State = 2080;
-			Match(SEMI);
+				State = 2078;
+				Match(DISPID);
+				State = 2079;
+				expression();
+				State = 2080;
+				Match(SEMI);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class IdentContext : ParserRuleContext {
+	public partial class IdentContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkIdentifier() { return GetToken(DelphiParser.TkIdentifier, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AMBER() { return GetToken(DelphiParser.AMBER, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public UsedKeywordsAsNamesContext usedKeywordsAsNames() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UsedKeywordsAsNamesContext usedKeywordsAsNames()
+		{
 			return GetRuleContext<UsedKeywordsAsNamesContext>(0);
 		}
 		public IdentContext(ParserRuleContext parent, int invokingState)
@@ -13896,92 +16357,100 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_ident; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterIdent(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitIdent(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public IdentContext ident() {
+	public IdentContext ident()
+	{
 		IdentContext _localctx = new IdentContext(Context, State);
 		EnterRule(_localctx, 330, RULE_ident);
-		try {
+		try
+		{
 			State = 2086;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case TkIdentifier:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2082;
-				Match(TkIdentifier);
-				}
-				break;
-			case AMBER:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2083;
-				Match(AMBER);
-				State = 2084;
-				Match(TkIdentifier);
-				}
-				break;
-			case ADD:
-			case ANSISTRING:
-			case AT:
-			case BREAK:
-			case CONTAINS:
-			case CONTINUE:
-			case DEFAULT:
-			case EXIT:
-			case EXPORT:
-			case FINAL:
-			case IMPLEMENTS:
-			case INDEX:
-			case LOCAL:
-			case MESSAGE:
-			case NAME:
-			case OBJECT:
-			case OPERATOR:
-			case OUT:
-			case POINTER:
-			case READ:
-			case READONLY:
-			case REFERENCE:
-			case REGISTER:
-			case REMOVE:
-			case STORED:
-			case STRICT:
-			case STRING:
-			case VARIANT:
-			case WRITE:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 2085;
-				usedKeywordsAsNames();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case TkIdentifier:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2082;
+						Match(TkIdentifier);
+					}
+					break;
+				case AMBER:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2083;
+						Match(AMBER);
+						State = 2084;
+						Match(TkIdentifier);
+					}
+					break;
+				case ADD:
+				case ANSISTRING:
+				case AT:
+				case BREAK:
+				case CONTAINS:
+				case CONTINUE:
+				case DEFAULT:
+				case EXIT:
+				case EXPORT:
+				case FINAL:
+				case IMPLEMENTS:
+				case INDEX:
+				case LOCAL:
+				case MESSAGE:
+				case NAME:
+				case OBJECT:
+				case OPERATOR:
+				case OUT:
+				case POINTER:
+				case READ:
+				case READONLY:
+				case REFERENCE:
+				case REGISTER:
+				case REMOVE:
+				case STORED:
+				case STRICT:
+				case STRING:
+				case VARIANT:
+				case WRITE:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 2085;
+						usedKeywordsAsNames();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class UsedKeywordsAsNamesContext : ParserRuleContext {
+	public partial class UsedKeywordsAsNamesContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NAME() { return GetToken(DelphiParser.NAME, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode READONLY() { return GetToken(DelphiParser.READONLY, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ADD() { return GetToken(DelphiParser.ADD, 0); }
@@ -14017,118 +16486,138 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_usedKeywordsAsNames; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterUsedKeywordsAsNames(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitUsedKeywordsAsNames(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public UsedKeywordsAsNamesContext usedKeywordsAsNames() {
+	public UsedKeywordsAsNamesContext usedKeywordsAsNames()
+	{
 		UsedKeywordsAsNamesContext _localctx = new UsedKeywordsAsNamesContext(Context, State);
 		EnterRule(_localctx, 332, RULE_usedKeywordsAsNames);
 		int _la;
-		try {
+		try
+		{
 			State = 2091;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case ADD:
-			case AT:
-			case CONTINUE:
-			case DEFAULT:
-			case INDEX:
-			case MESSAGE:
-			case NAME:
-			case POINTER:
-			case READONLY:
-			case STRING:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2088;
-				_la = TokenStream.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 72057594050514960L) != 0) || ((((_la - 65)) & ~0x3f) == 0 && ((1L << (_la - 65)) & 281475514105861L) != 0)) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			case CONTAINS:
-			case FINAL:
-			case LOCAL:
-			case OPERATOR:
-			case READ:
-			case REFERENCE:
-			case REGISTER:
-			case REMOVE:
-			case VARIANT:
-			case WRITE:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2089;
-				_la = TokenStream.LA(1);
-				if ( !(((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 18023194610892801L) != 0) || ((((_la - 93)) & ~0x3f) == 0 && ((1L << (_la - 93)) & 73014444121L) != 0)) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			case ANSISTRING:
-			case BREAK:
-			case EXIT:
-			case EXPORT:
-			case IMPLEMENTS:
-			case OBJECT:
-			case OUT:
-			case STORED:
-			case STRICT:
-				EnterOuterAlt(_localctx, 3);
-				{
-				State = 2090;
-				_la = TokenStream.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 18015085704282176L) != 0) || ((((_la - 72)) & ~0x3f) == 0 && ((1L << (_la - 72)) & 1649267441697L) != 0)) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case ADD:
+				case AT:
+				case CONTINUE:
+				case DEFAULT:
+				case INDEX:
+				case MESSAGE:
+				case NAME:
+				case POINTER:
+				case READONLY:
+				case STRING:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2088;
+						_la = TokenStream.LA(1);
+						if (!((((_la) & ~0x3f) == 0 && ((1L << _la) & 72057594050514960L) != 0) || ((((_la - 65)) & ~0x3f) == 0 && ((1L << (_la - 65)) & 281475514105861L) != 0)))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				case CONTAINS:
+				case FINAL:
+				case LOCAL:
+				case OPERATOR:
+				case READ:
+				case REFERENCE:
+				case REGISTER:
+				case REMOVE:
+				case VARIANT:
+				case WRITE:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2089;
+						_la = TokenStream.LA(1);
+						if (!(((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 18023194610892801L) != 0) || ((((_la - 93)) & ~0x3f) == 0 && ((1L << (_la - 93)) & 73014444121L) != 0)))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				case ANSISTRING:
+				case BREAK:
+				case EXIT:
+				case EXPORT:
+				case IMPLEMENTS:
+				case OBJECT:
+				case OUT:
+				case STORED:
+				case STRICT:
+					EnterOuterAlt(_localctx, 3);
+					{
+						State = 2090;
+						_la = TokenStream.LA(1);
+						if (!((((_la) & ~0x3f) == 0 && ((1L << _la) & 18015085704282176L) != 0) || ((((_la - 72)) & ~0x3f) == 0 && ((1L << (_la - 72)) & 1649267441697L) != 0)))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class IdentListContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+	public partial class IdentListContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public IdentListContext(ParserRuleContext parent, int invokingState)
@@ -14137,65 +16626,79 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_identList; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterIdentList(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitIdentList(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public IdentListContext identList() {
+	public IdentListContext identList()
+	{
 		IdentListContext _localctx = new IdentListContext(Context, State);
 		EnterRule(_localctx, 334, RULE_identList);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2093;
-			ident();
-			State = 2098;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 2094;
-				Match(COMMA);
-				State = 2095;
+				State = 2093;
 				ident();
-				}
-				}
-				State = 2100;
+				State = 2098;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 2094;
+							Match(COMMA);
+							State = 2095;
+							ident();
+						}
+					}
+					State = 2100;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class IdentListFlatContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+	public partial class IdentListFlatContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] COMMA() { return GetTokens(DelphiParser.COMMA); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode COMMA(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode COMMA(int i)
+		{
 			return GetToken(DelphiParser.COMMA, i);
 		}
 		public IdentListFlatContext(ParserRuleContext parent, int invokingState)
@@ -14204,61 +16707,71 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_identListFlat; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterIdentListFlat(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitIdentListFlat(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public IdentListFlatContext identListFlat() {
+	public IdentListFlatContext identListFlat()
+	{
 		IdentListFlatContext _localctx = new IdentListFlatContext(Context, State);
 		EnterRule(_localctx, 336, RULE_identListFlat);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2101;
-			ident();
-			State = 2106;
-			ErrorHandler.Sync(this);
-			_la = TokenStream.LA(1);
-			while (_la==COMMA) {
-				{
-				{
-				State = 2102;
-				Match(COMMA);
-				State = 2103;
+				State = 2101;
 				ident();
-				}
-				}
-				State = 2108;
+				State = 2106;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
-			}
+				while (_la == COMMA)
+				{
+					{
+						{
+							State = 2102;
+							Match(COMMA);
+							State = 2103;
+							ident();
+						}
+					}
+					State = 2108;
+					ErrorHandler.Sync(this);
+					_la = TokenStream.LA(1);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class LabelContext : ParserRuleContext {
+	public partial class LabelContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkIdentifier() { return GetToken(DelphiParser.TkIdentifier, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkIntNum() { return GetToken(DelphiParser.TkIntNum, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkHexNum() { return GetToken(DelphiParser.TkHexNum, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public UsedKeywordsAsNamesContext usedKeywordsAsNames() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public UsedKeywordsAsNamesContext usedKeywordsAsNames()
+		{
 			return GetRuleContext<UsedKeywordsAsNamesContext>(0);
 		}
 		public LabelContext(ParserRuleContext parent, int invokingState)
@@ -14267,93 +16780,103 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_label; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterLabel(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitLabel(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public LabelContext label() {
+	public LabelContext label()
+	{
 		LabelContext _localctx = new LabelContext(Context, State);
 		EnterRule(_localctx, 338, RULE_label);
 		int _la;
-		try {
+		try
+		{
 			State = 2111;
 			ErrorHandler.Sync(this);
-			switch (TokenStream.LA(1)) {
-			case TkIdentifier:
-			case TkIntNum:
-			case TkHexNum:
-				EnterOuterAlt(_localctx, 1);
-				{
-				State = 2109;
-				_la = TokenStream.LA(1);
-				if ( !(((((_la - 183)) & ~0x3f) == 0 && ((1L << (_la - 183)) & 11L) != 0)) ) {
-				ErrorHandler.RecoverInline(this);
-				}
-				else {
-					ErrorHandler.ReportMatch(this);
-				    Consume();
-				}
-				}
-				break;
-			case ADD:
-			case ANSISTRING:
-			case AT:
-			case BREAK:
-			case CONTAINS:
-			case CONTINUE:
-			case DEFAULT:
-			case EXIT:
-			case EXPORT:
-			case FINAL:
-			case IMPLEMENTS:
-			case INDEX:
-			case LOCAL:
-			case MESSAGE:
-			case NAME:
-			case OBJECT:
-			case OPERATOR:
-			case OUT:
-			case POINTER:
-			case READ:
-			case READONLY:
-			case REFERENCE:
-			case REGISTER:
-			case REMOVE:
-			case STORED:
-			case STRICT:
-			case STRING:
-			case VARIANT:
-			case WRITE:
-				EnterOuterAlt(_localctx, 2);
-				{
-				State = 2110;
-				usedKeywordsAsNames();
-				}
-				break;
-			default:
-				throw new NoViableAltException(this);
+			switch (TokenStream.LA(1))
+			{
+				case TkIdentifier:
+				case TkIntNum:
+				case TkHexNum:
+					EnterOuterAlt(_localctx, 1);
+					{
+						State = 2109;
+						_la = TokenStream.LA(1);
+						if (!(((((_la - 183)) & ~0x3f) == 0 && ((1L << (_la - 183)) & 11L) != 0)))
+						{
+							ErrorHandler.RecoverInline(this);
+						}
+						else
+						{
+							ErrorHandler.ReportMatch(this);
+							Consume();
+						}
+					}
+					break;
+				case ADD:
+				case ANSISTRING:
+				case AT:
+				case BREAK:
+				case CONTAINS:
+				case CONTINUE:
+				case DEFAULT:
+				case EXIT:
+				case EXPORT:
+				case FINAL:
+				case IMPLEMENTS:
+				case INDEX:
+				case LOCAL:
+				case MESSAGE:
+				case NAME:
+				case OBJECT:
+				case OPERATOR:
+				case OUT:
+				case POINTER:
+				case READ:
+				case READONLY:
+				case REFERENCE:
+				case REGISTER:
+				case REMOVE:
+				case STORED:
+				case STRICT:
+				case STRING:
+				case VARIANT:
+				case WRITE:
+					EnterOuterAlt(_localctx, 2);
+					{
+						State = 2110;
+						usedKeywordsAsNames();
+					}
+					break;
+				default:
+					throw new NoViableAltException(this);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class IntNumContext : ParserRuleContext {
+	public partial class IntNumContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkIntNum() { return GetToken(DelphiParser.TkIntNum, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkHexNum() { return GetToken(DelphiParser.TkHexNum, 0); }
 		public IntNumContext(ParserRuleContext parent, int invokingState)
@@ -14362,48 +16885,57 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_intNum; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterIntNum(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitIntNum(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public IntNumContext intNum() {
+	public IntNumContext intNum()
+	{
 		IntNumContext _localctx = new IntNumContext(Context, State);
 		EnterRule(_localctx, 340, RULE_intNum);
 		int _la;
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2113;
-			_la = TokenStream.LA(1);
-			if ( !(_la==TkIntNum || _la==TkHexNum) ) {
-			ErrorHandler.RecoverInline(this);
-			}
-			else {
-				ErrorHandler.ReportMatch(this);
-			    Consume();
-			}
+				State = 2113;
+				_la = TokenStream.LA(1);
+				if (!(_la == TkIntNum || _la == TkHexNum))
+				{
+					ErrorHandler.RecoverInline(this);
+				}
+				else
+				{
+					ErrorHandler.ReportMatch(this);
+					Consume();
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class RealNumContext : ParserRuleContext {
+	public partial class RealNumContext : ParserRuleContext
+	{
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TkRealNum() { return GetToken(DelphiParser.TkRealNum, 0); }
 		public RealNumContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
@@ -14411,44 +16943,55 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_realNum; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterRealNum(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitRealNum(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public RealNumContext realNum() {
+	public RealNumContext realNum()
+	{
 		RealNumContext _localctx = new RealNumContext(Context, State);
 		EnterRule(_localctx, 342, RULE_realNum);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2115;
-			Match(TkRealNum);
+				State = 2115;
+				Match(TkRealNum);
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class NamespacedQualifiedIdentContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public QualifiedIdentContext qualifiedIdent() {
+	public partial class NamespacedQualifiedIdentContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public QualifiedIdentContext qualifiedIdent()
+		{
 			return GetRuleContext<QualifiedIdentContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public NamespaceNameContext namespaceName() {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public NamespaceNameContext namespaceName()
+		{
 			return GetRuleContext<NamespaceNameContext>(0);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT() { return GetToken(DelphiParser.DOT, 0); }
@@ -14458,60 +17001,74 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_namespacedQualifiedIdent; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterNamespacedQualifiedIdent(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitNamespacedQualifiedIdent(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public NamespacedQualifiedIdentContext namespacedQualifiedIdent() {
+	public NamespacedQualifiedIdentContext namespacedQualifiedIdent()
+	{
 		NamespacedQualifiedIdentContext _localctx = new NamespacedQualifiedIdentContext(Context, State);
 		EnterRule(_localctx, 344, RULE_namespacedQualifiedIdent);
-		try {
+		try
+		{
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2120;
-			ErrorHandler.Sync(this);
-			switch ( Interpreter.AdaptivePredict(TokenStream,285,Context) ) {
-			case 1:
+				State = 2120;
+				ErrorHandler.Sync(this);
+				switch (Interpreter.AdaptivePredict(TokenStream, 285, Context))
 				{
-				State = 2117;
-				namespaceName();
-				State = 2118;
-				Match(DOT);
+					case 1:
+						{
+							State = 2117;
+							namespaceName();
+							State = 2118;
+							Match(DOT);
+						}
+						break;
 				}
-				break;
-			}
-			State = 2122;
-			qualifiedIdent();
+				State = 2122;
+				qualifiedIdent();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class NamespaceNameContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+	public partial class NamespaceNameContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] DOT() { return GetTokens(DelphiParser.DOT); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode DOT(int i)
+		{
 			return GetToken(DelphiParser.DOT, i);
 		}
 		public NamespaceNameContext(ParserRuleContext parent, int invokingState)
@@ -14520,67 +17077,82 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_namespaceName; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterNamespaceName(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitNamespaceName(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public NamespaceNameContext namespaceName() {
+	public NamespaceNameContext namespaceName()
+	{
 		NamespaceNameContext _localctx = new NamespaceNameContext(Context, State);
 		EnterRule(_localctx, 346, RULE_namespaceName);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2124;
-			ident();
-			State = 2129;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,286,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 2125;
-					Match(DOT);
-					State = 2126;
-					ident();
-					}
-					} 
-				}
-				State = 2131;
+				State = 2124;
+				ident();
+				State = 2129;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,286,Context);
-			}
+				_alt = Interpreter.AdaptivePredict(TokenStream, 286, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 2125;
+								Match(DOT);
+								State = 2126;
+								ident();
+							}
+						}
+					}
+					State = 2131;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 286, Context);
+				}
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;
 	}
 
-	public partial class QualifiedIdentContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext[] ident() {
+	public partial class QualifiedIdentContext : ParserRuleContext
+	{
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext[] ident()
+		{
 			return GetRuleContexts<IdentContext>();
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public IdentContext ident(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public IdentContext ident(int i)
+		{
 			return GetRuleContext<IdentContext>(i);
 		}
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] DOT() { return GetTokens(DelphiParser.DOT); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DOT(int i) {
+		[System.Diagnostics.DebuggerNonUserCode]
+		public ITerminalNode DOT(int i)
+		{
 			return GetToken(DelphiParser.DOT, i);
 		}
 		public QualifiedIdentContext(ParserRuleContext parent, int invokingState)
@@ -14589,53 +17161,61 @@ public partial class DelphiParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_qualifiedIdent; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
+		public override void EnterRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.EnterQualifiedIdent(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
+		public override void ExitRule(IParseTreeListener listener)
+		{
 			IDelphiListener typedListener = listener as IDelphiListener;
 			if (typedListener != null) typedListener.ExitQualifiedIdent(this);
 		}
 	}
 
 	[RuleVersion(0)]
-	public QualifiedIdentContext qualifiedIdent() {
+	public QualifiedIdentContext qualifiedIdent()
+	{
 		QualifiedIdentContext _localctx = new QualifiedIdentContext(Context, State);
 		EnterRule(_localctx, 348, RULE_qualifiedIdent);
-		try {
+		try
+		{
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 2137;
-			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,287,Context);
-			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					State = 2132;
-					ident();
-					State = 2133;
-					Match(DOT);
-					}
-					} 
-				}
-				State = 2139;
+				State = 2137;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,287,Context);
-			}
-			State = 2140;
-			ident();
+				_alt = Interpreter.AdaptivePredict(TokenStream, 287, Context);
+				while (_alt != 2 && _alt != global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER)
+				{
+					if (_alt == 1)
+					{
+						{
+							{
+								State = 2132;
+								ident();
+								State = 2133;
+								Match(DOT);
+							}
+						}
+					}
+					State = 2139;
+					ErrorHandler.Sync(this);
+					_alt = Interpreter.AdaptivePredict(TokenStream, 287, Context);
+				}
+				State = 2140;
+				ident();
 			}
 		}
-		catch (RecognitionException re) {
+		catch (RecognitionException re)
+		{
 			_localctx.exception = re;
 			ErrorHandler.ReportError(this, re);
 			ErrorHandler.Recover(this, re);
 		}
-		finally {
+		finally
+		{
 			ExitRule();
 		}
 		return _localctx;

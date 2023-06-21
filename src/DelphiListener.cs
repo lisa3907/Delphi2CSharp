@@ -1,8 +1,10 @@
 using Antlr4.Runtime;
+using Antlr4.Runtime.Misc;
 using Antlr4.Runtime.Tree;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using static DelphiParser;
 
@@ -61,13 +63,6 @@ namespace Delphi.Generated
     {
         private readonly List<object> _codeParts = new List<object>();
 
-        private readonly Dictionary<string, bool[]> _procedures = new Dictionary<string, bool[]>()
-        {
-            ["write"] = null,
-            ["writeln"] = null,
-            ["readln"] = new[] { true }
-        };
-
         public string Code
         {
             get
@@ -80,35 +75,85 @@ namespace Delphi.Generated
         {
             _codeParts.AddRange(objects);
         }
+
         protected void AppendLine(params object[] objects)
         {
             _codeParts.AddRange(objects);
             _codeParts.Add(Environment.NewLine);
         }
 
-        private static string AsType(IParseTree tree)
+        public override void EnterUnit([NotNull] UnitContext context)
         {
-            return tree.GetText() == "String" ? "string" : "int";
+            base.EnterUnit(context);
         }
 
-        public override void EnterProgram(ProgramContext context)
+        public override void ExitUnit([NotNull] UnitContext context)
         {
-            AppendLine("using System;");
-            AppendLine("class Program {");
-            AppendLine("static void readln<T>(ref T arg) {");
-            AppendLine("    arg = (T)Convert.ChangeType(Console.ReadLine(), typeof(T));");
-            AppendLine("}");
-            AppendLine("static void writeln(params object[] args) {");
-            AppendLine("    Console.WriteLine(string.Join(string.Empty, args));");
-            AppendLine("}");
-            AppendLine("static void write(params object[] args) {");
-            AppendLine("    Console.Write(string.Join(string.Empty, args));");
-            AppendLine("}");
-
+            base.ExitUnit(context);
         }
-        public override void ExitProgram(ProgramContext context)
+
+        public override void EnterUnitHead([NotNull] UnitHeadContext context)
         {
-            AppendLine("} // program");
+            base.EnterUnitHead(context);
+        }
+
+        public override void ExitUnitHead([NotNull] UnitHeadContext context)
+        {
+            base.ExitUnitHead(context);
+
+            AppendLine($"namespace {context.children[1].GetText()};");
+        }
+
+        public override void EnterUnitBlock([NotNull] UnitBlockContext context)
+        {
+            base.EnterUnitBlock(context);
+        }
+
+        public override void ExitUnitBlock([NotNull] UnitBlockContext context)
+        {
+            base.ExitUnitBlock(context);
+        }
+
+        public override void EnterIfStatement([NotNull] IfStatementContext context)
+        {
+            Append("if (");
+        }
+
+        public override void ExitIfStatement([NotNull] IfStatementContext context)
+        {
+            Append(context.expression().GetText()); // 여기에 실제 문장 변환 로직이 들어갈 수 있습니다.
+            AppendLine(") {");
+            Append("}\n");
+        }
+
+        public override void EnterFactor([NotNull] FactorContext context)
+        {
+            base.EnterFactor(context);
+        }
+
+        public override void ExitFactor([NotNull] FactorContext context)
+        {
+            base.ExitFactor(context);
+        }
+
+        public override void EnterStringFactor([NotNull] StringFactorContext context)
+        {
+            base.EnterStringFactor(context);
+        }
+
+        public override void ExitStringFactor([NotNull] StringFactorContext context)
+        {
+            base.ExitStringFactor(context);
+        }
+
+        public override void EnterUsedKeywordsAsNames([NotNull] UsedKeywordsAsNamesContext context)
+        {
+            base.EnterUsedKeywordsAsNames(context);
+        }
+
+        public override void ExitUsedKeywordsAsNames([NotNull] UsedKeywordsAsNamesContext context)
+        {
+            base.ExitUsedKeywordsAsNames(context);
         }
 
         public override void EnterBlock(BlockContext context)

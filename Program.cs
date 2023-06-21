@@ -2,6 +2,7 @@
 using Delphi.Generated;
 using System;
 using System.IO;
+using System.Text;
 
 namespace Delphi
 {
@@ -16,7 +17,7 @@ namespace Delphi
 
             var listener = new DelphiListener();
             pascalParser.AddParseListener(listener);
-            pascalParser.program();
+            pascalParser.file();
 
             return listener.Code;
         }
@@ -36,22 +37,25 @@ namespace Delphi
                         var source = File.ReadAllText(f);
                         var csharp = TranslatePascalToCSharp(source);
 
-                        File.WriteAllLines(Path.Combine(@"csharp", Path.GetFileNameWithoutExtension(f), ".cs"), new[] { csharp });
+                        File.WriteAllLines(Path.Combine(@"csharp", Path.GetFileNameWithoutExtension(f) + ".cs"), new[] { csharp }, Encoding.UTF8);
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex.InnerException.Message);
+                        Console.Write($"[{f}] ");
+                        if (ex.InnerException != null)
+                            Console.WriteLine(ex.InnerException.Message);
+                        else
+                            Console.WriteLine(ex.Message);
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex);
+                Console.WriteLine("Error: " + ex.Message);
             }
-            finally
-            {
-                Console.WriteLine("End...");
-            }
+
+            Console.WriteLine("Hit enter to exit...");
+            Console.ReadLine();
         }
     }
 }

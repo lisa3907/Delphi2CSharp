@@ -66,6 +66,7 @@
     <Compile Include="src\DelphiListener.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="antlr\create-parser.ps1" />
     <None Include="antlr\Delphi.g4" />
     <None Include="App.config" />
     <None Include="antlr\Pascal.g4" />
